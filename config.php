@@ -24,7 +24,7 @@ define('DIR_LOGS', 'C:\wamp\www\shoeocean_net/system/logs/');
 define('DB_DRIVER', 'mysql');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '123');
+define('DB_PASSWORD', '');
 define('DB_DATABASE', 'clothingnapparel_db');
 define('DB_PREFIX', '');
 ?>
