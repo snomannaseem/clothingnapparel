@@ -167,3 +167,27 @@
 2015-06-23 7:57:58 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
 2015-06-23 7:57:58 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
 2015-06-23 9:05:32 - PHP Notice:  Undefined variable: passed_color in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\product.tpl on line 79
+2015-07-12 8:20:53 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 8:30:22 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 8:48:15 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: default_color_id in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 58
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: default_color_id in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 58
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: default_color_id in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 58
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: default_color_id in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 58
+2015-07-12 8:48:47 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:47 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 9:12:30 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 9:58:00 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 10:08:06 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 10:13:36 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
