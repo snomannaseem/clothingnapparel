@@ -3674,3 +3674,12 @@ a.icon_plus.compare_link {
   position: absolute;
   z-index: 2;
 }
+
+.category-list .product-grid > div {
+  width: 212px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 9px 23px !important;
+  height: 260px;
+  border: 1px solid #000;
+}
