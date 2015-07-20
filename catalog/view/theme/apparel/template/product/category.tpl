@@ -133,7 +133,7 @@
                                                 break;
                                             }
                                             ?>
-                                            <div option_value="<?php echo $option_value['product_option_value_id']; ?>"  style="background-color:#<?php echo $option_value['op_desc1']; ?>" class="shoe_color getImages" color_id="<?php echo $option_value['option_value_id']; ?>" product_id="<?php echo $product['product_id']; ?>" ></div>
+                                            <div option_value="<?php echo $option_value['product_option_value_id']; ?>"  style="background-color:<?php echo $option_value['op_desc1']; ?>" class="shoe_color getImages" color_id="<?php echo $option_value['option_value_id']; ?>" product_id="<?php echo $product['product_id']; ?>" ></div>
                                         <?php } ?>
                                     <?php } 
                                 }
