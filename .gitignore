@@ -11,7 +11,7 @@ config.php
 admin/config.php
 image/
 system/cache/
-
+system\logs\
 
 
 
@@ -49,3 +49,5 @@ system/cache/
 Network Trash Folder
 Temporary Items
 .apdisk
+system/logs/
+*.txt
