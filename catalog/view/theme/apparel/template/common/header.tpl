@@ -37,6 +37,8 @@
 
 <script type="text/javascript" src="catalog/view/javascript/jquery/tabs.js"></script>
 <script type="text/javascript" src="catalog/view/javascript/common.js"></script>
+<script type="text/javascript" src="catalog/view/theme/apparel/js/shoes_custom.js"></script>
+<script type="text/javascript" src="catalog/view/theme/apparel/js/cloud_zoom.js"></script>
 
 <?php foreach ($scripts as $script) { ?>
 	<script type="text/javascript" src="<?php echo $script; ?>"></script>
