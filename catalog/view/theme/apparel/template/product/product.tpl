@@ -46,7 +46,8 @@
 					<?php if (!$special) { ?>
 						<?php echo $price; ?>
 					<?php } else { ?>
-						<span class="price-old"><?php echo $price; ?></span> <span class="price-new"><?php echo $special; ?></span>
+						<span class="price-old"><?php echo $price; ?></span> 
+						<span class="price-new"><?php echo $special; ?></span>
 					<?php } ?>
 					<br />
 					
@@ -71,7 +72,8 @@
 	
 			<div class="description">
 				<?php if ($manufacturer) { ?>
-					<span><?php echo $text_manufacturer; ?></span>&nbsp; <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
+					<span><?php echo $text_manufacturer; ?></span>&nbsp; 
+					<a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
 				<?php } ?>
 				
 				<span><?php echo $text_model; ?></span>&nbsp; <?php echo $model; ?><br />
@@ -93,7 +95,8 @@
 								<?php if ($option['required']) { ?>
 										<span class="required">*</span>
 								<?php } ?>
-					
+								<b><?php echo $option['name']; ?>:</b><br />	
+								
 								<input type="hidden" id="option[<?php echo $option['product_option_id']; ?>]" name="option[<?php echo $option['product_option_id']; ?>]" value=""/>
 						
 								<div id="detail_color" class="left">						
@@ -115,8 +118,7 @@
 									<span class="required">*</span>
 								<?php } ?>
 								
-								<b><?php echo $option['name']; ?>:</b><br />
-								
+								<b><?php echo $option['name']; ?>:</b><br />								
 								<select name="option[<?php echo $option['product_option_id']; ?>]">
 									<option value=""><?php echo $text_select; ?></option>
 									<?php foreach ($option['option_value'] as $option_value) { ?>
@@ -137,8 +139,7 @@
 									<span class="required">*</span>
 								<?php } ?>
 								
-								<b><?php echo $option['name']; ?>:</b><br />
-								
+								<b><?php echo $option['name']; ?>:</b><br />								
 								<?php foreach ($option['option_value'] as $option_value) { ?>
 									<input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" id="option-value-<?php echo $option_value['product_option_value_id']; ?>" />
 									<label for="option-value-<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
@@ -176,6 +177,7 @@
 								<?php if ($option['required']) { ?>
 									<span class="required">*</span>
 								<?php } ?>
+								
 								<b><?php echo $option['name']; ?>:</b><br />
 								<table class="option-image">
 									<?php foreach ($option['option_value'] as $option_value) { ?>
@@ -201,6 +203,7 @@
 								<?php if ($option['required']) { ?>
 									<span class="required">*</span>
 								<?php } ?>
+
 								<b><?php echo $option['name']; ?>:</b><br />
 								<input type="text" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option['option_value']; ?>" />
 							</div>
@@ -266,30 +269,9 @@
 				</div>
 			<?php } ?>
 		
-			<div class="cart">
-				<div>
-					<?php echo $text_qty; ?>
-					<input type="text" name="quantity" class='qty_input' size="2" value="<?php echo $minimum; ?>" />
-					<input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />&nbsp;
-					<input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
-				</div>
-				
-				<span class="cart_clearer"></span>&nbsp;
-				
-				<a onclick="addToWishList('<?php echo $product_id; ?>');" class="icon_plus wishlist_link">
-					<?php echo $button_wishlist; ?>
-				</a> &nbsp;&nbsp;
-				
-				<a onclick="addToCompare('<?php echo $product_id; ?>');" class="icon_plus compare_link"><?php echo $button_compare; ?></a>
-				
-				<?php if ($minimum > 1) { ?>
-					<div class="minimum"><?php echo $text_minimum; ?></div>
-				<?php } ?>
-			</div>
-		
+			
 			<?php if ($review_status) { ?>
 				<div class="review">
-					<div><img src="catalog/view/theme/shoes/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;(<a onclick="$('a[href=\'#tab-review\']').trigger('click');" class='rev_count'><?php echo $reviews; ?></a>)&nbsp;&nbsp;&nbsp;<span class="divider">|</span>&nbsp;&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');" class="icon_plus"><?php echo $text_write; ?></a></div>
 					<div class="share"><!-- AddThis Button BEGIN -->
 						<div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
 						<script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
@@ -342,8 +324,10 @@
 		<div id="tab-review" class="tab-content">
 			<div id="review"></div>
 			<h2 id="review-title"><?php echo $text_write; ?></h2>
+			<br>
 			<div class='r_label'><?php echo $entry_name; ?></div>
 			<input type="text" name="name" value="" class='ie_left'/>
+			<br>
 			<div class='r_label'><?php echo $entry_review; ?></div>
 			<textarea name="text" cols="40" rows="8" style="width: 98%;" class='ie_left'></textarea>
 			<span style="font-size: 11px;"><?php echo $text_note; ?></span><br />
@@ -358,12 +342,11 @@
 			<span><?php echo $entry_good; ?></span><br /><br />
 			<div class='r_label'><?php echo $entry_captcha; ?></div>
 			<input type="text" name="captcha" value=""  class='ie_left'/><br />
+			<br>
 			<img src="index.php?route=product/product/captcha" alt="" id="captcha" /><br /><br />
 			
 			<div class="buttons">
-				<div class="right">
-					<a id="button-review" class="button"><?php echo $button_continue; ?></a>
-				</div>
+				<a id="button-review" class="button"><?php  $button_continue; ?></a>
 			</div>
 		</div>
 	<?php } ?>

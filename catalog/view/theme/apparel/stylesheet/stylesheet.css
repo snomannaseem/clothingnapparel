@@ -3686,8 +3686,14 @@ a.icon_plus.compare_link {
 
 div#detail_color {
   width: 400px;
+  margin:0px 0 10px 0;
 }
 
 img#image {
   width: 100%;
+}
+
+.option {
+  margin: 10px 0 0 0;
+  width: 400px;
 }
