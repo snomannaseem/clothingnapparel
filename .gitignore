@@ -10,6 +10,7 @@ $RECYCLE.BIN/
 config.php
 admin/config.php
 image/
+system/cache/
 
 
 
