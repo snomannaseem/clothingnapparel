@@ -666,7 +666,7 @@ label {
 
 	width: 200px;
 
-	height: 46px;
+	height: 49px;
 
 	border: 1px solid #CCCCCC;
 
@@ -756,7 +756,7 @@ label {
 
   float: left;
 
-  width: 12.4%;
+  width: 14.2%;
 
   height: 90px;
 
@@ -774,7 +774,7 @@ label {
 
 #menu > ul > li > a {
 
-  font-size: 13px;
+  font-size: 18px;
 
   color: #FFF;
 
@@ -785,6 +785,7 @@ label {
   display: block;
 
   z-index: 6;
+  font-family: inherit;;
 
 }
 
@@ -809,6 +810,7 @@ label {
 	border: 1px solid #000000;
 
 	background: url('../image/menu.png');
+	width:13.1%;
 
 }
 
@@ -821,6 +823,7 @@ label {
 #menu > ul > li > div > ul {
 
 	display: table-cell;
+	font-family:inherit;
 
 }
 
@@ -855,6 +858,7 @@ label {
 #menu > ul > li > div > ul > li > a {
 
 	color: #FFFFFF;
+	font-size:15px;
 
 }
 
@@ -1198,21 +1202,11 @@ a.button, input.button {
 
 	font-weight: bold;
 
-	background: url('../image/button.png') top left repeat-x;
+	background: url('../image/cart_btn.jpg') top left repeat-x;	
+	width: 136px;
+  height: 28px;
+  margin:0 0 0 7px;
 
-	-webkit-border-radius: 7px 7px 7px 7px;
-
-	-moz-border-radius: 7px 7px 7px 7px;
-
-	-khtml-border-radius: 7px 7px 7px 7px;
-
-	border-radius: 7px 7px 7px 7px;
-
-	-webkit-box-shadow: 0px 2px 2px #DDDDDD;
-
-	-moz-box-shadow: 0px 2px 2px #DDDDDD;
-
-	box-shadow: 0px 2px 2px #DDDDDD;
 
 }
 
@@ -1238,7 +1232,7 @@ input.button {
 
   color: transparent;
 
-  background-image: url("/catalog/view/theme/apparel/image/cart_btn.jpg");
+  background-image: url("http://localhost/clothingnapparel/catalog/view/theme/apparel/image/cart_btn.jpg");
 
   border-radius:0px;
 
@@ -1246,7 +1240,7 @@ input.button {
 
 a.button:hover, input.button:hover {
 
-	background-image: url("/catalog/view/theme/apparel/image/cart_btn.jpg");
+	background-image: url("http://localhost/clothingnapparel/catalog/view/theme/apparel/image/cart_btn.jpg");
 
 }
 
@@ -1368,7 +1362,7 @@ a.button:hover, input.button:hover {
 
   float: right;
 
-  margin: 0 0 0 0;
+  margin: 0 0 90px 0;
 
 }
 
@@ -1382,7 +1376,7 @@ a.button:hover, input.button:hover {
 
 	font-family: "trajan Pro";
 
-	font-size: 26px;
+	font-size: 24px;
 
 	font-weight: bold;
 
@@ -1427,7 +1421,15 @@ a.button:hover, input.button:hover {
   float:left;
 
   border: 1px solid #000;
+  height:470px;
 
+}
+.box-product > div .name {
+  height: 80px;
+}
+
+.box-product > div .cart {
+  height: 50px;
 }
 
 .box-product > div:last-child {
@@ -1452,6 +1454,27 @@ a.button:hover, input.button:hover {
 
   border-bottom: 1px solid #000;
 
+}
+
+.color {
+  height: 30px;
+  border-bottom: 1px solid #000;
+}
+
+.shoe_color.getImages {
+  border: 1px solid;
+  width: 45px;
+  height: 20px;
+  display:inline-block;
+  margin: 4px 0 0px 14px;
+}
+
+.product-grid .shoe_color.getImages {
+  border: 1px solid;
+  width: 14px;
+  height: 20px;
+  display: inline-block;
+  margin: 0 0 0 10px;
 }
 
 .box-product .image img {
@@ -1499,6 +1522,7 @@ a.button:hover, input.button:hover {
   font-size: 16px;
 
   font-family: trebuchet ms;
+  height:26px;
 
 }
 
@@ -1520,7 +1544,7 @@ a.button:hover, input.button:hover {
 
 	display: block;
 
-	margin-bottom: 4px;
+	margin: 0 0 0 16px;
 
 }
 
@@ -1945,17 +1969,12 @@ a.button:hover, input.button:hover {
 }
 
 .product-grid > div {
-
-	width: 130px;
-
-	display: inline-block;
-
-	vertical-align: top;
-
-	margin-right: 20px;
-
-	margin-bottom: 15px;
-
+  width: 212px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 9px 23px !important;
+  height: 430px;
+  border: 1px solid #000;
 }
 
 #column-left + #column-right + #content .product-grid > div {
@@ -1965,33 +1984,32 @@ a.button:hover, input.button:hover {
 }
 
 .product-grid .image {
+  display: block;
+  width: 99%;
+  height: 160px;
+  text-align: center;
+  margin: 0 0 80px 0;
+}
 
-	display: block;
-
-	margin-bottom: 0px;
-
+.product-grid .name {
+  width: 210px;
+  margin: 0 7px;
+  height:35px;
 }
 
 .product-grid .image img {
-
-	padding: 3px;
-
-	border: 1px solid #E7E7E7;
-
+  border-bottom: 1px solid #000;
+  width: 190px;
+  height: 210px;
+  padding: 10px;
 }
 
 .product-grid .name a {
-
-	color: #38B0E3;
-
-	font-weight: bold;
-
-	text-decoration: none;
-
-	display: block;
-
-	margin-bottom: 4px;
-
+  color: #38B0E3;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  margin: 8px 0 8px 0;
 }
 
 .product-grid .description {
@@ -2009,15 +2027,22 @@ a.button:hover, input.button:hover {
 }
 
 .product-grid .price {
+  display: block;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 4px;
+  width: 210px;
+  margin:0 7px 8px;
+}
 
-	display: block;
-
-	font-weight: bold;
-
-	color: #333333;
-
-	margin-bottom: 4px;
-
+.product-grid input.button {
+  margin: 14px 7px 10px;
+  border: 0;
+  width: 160px;
+  height: 41px;
+  color: transparent;
+  background-image: url("http://localhost/clothingnapparel/catalog/view/theme/apparel/image/cart_btn.jpg");
+  border-radius: 0px;
 }
 
 .product-grid .price-old {
@@ -2042,14 +2067,13 @@ a.button:hover, input.button:hover {
 
 .product-grid .cart {
 
-	margin-bottom: 3px;
+	margin-bottom: 8px;
 
 }
 
 .product-grid .wishlist, .product-grid .compare {
-
-	margin-bottom: 3px;
-
+  margin: 0px 5px;
+  width: 211px;
 }
 
 .product-grid .wishlist a {
@@ -2100,7 +2124,7 @@ a.button:hover, input.button:hover {
 
 .product-info > .left + .right {
 
-	margin-left: 265px;
+	margin-left: 365px;
 
 }
 
@@ -2115,12 +2139,14 @@ a.button:hover, input.button:hover {
 	padding: 10px;
 
 	text-align: center;
+	width:93%;
+	height:360px;
 
 }
 
 .product-info .image-additional {
 
-	width: 260px;
+	width: 355px;
 
 	margin-left: -10px;
 
@@ -2133,6 +2159,8 @@ a.button:hover, input.button:hover {
 .product-info .image-additional img {
 
 	border: 1px solid #E7E7E7;
+	width:99%;
+	height:auto;
 
 }
 
@@ -2145,6 +2173,8 @@ a.button:hover, input.button:hover {
 	margin-left: 10px;
 
 	margin-bottom: 10px;
+	width:167px;
+	height:167px;
 
 }
 
@@ -3319,21 +3349,14 @@ a.button:hover, input.button:hover {
 }
 
 #powered {
-
   text-align: right;
-
   clear: both;
-
   text-align: center;
-
   background-color: #000;
-
   color: #fff;
-
-  height: 70px;
-
-  line-height: 70px;
-
+  height: 36px;
+  line-height: 19px;
+  padding: 17px 0;
 }
 
 /* banner */
@@ -3388,7 +3411,7 @@ div#banner2 {
 
   float: left;
 
-  margin: 30px 0 0 27px;
+  margin: 30px 0 20px 27px;
 
   border: 1px solid #000;
 
@@ -3406,7 +3429,7 @@ div#banner3 {
 
   height: 246px;
 
-  margin: 30px 0 0 0;
+  margin: 30px 0 20px 0;
 
 }
 
@@ -3485,7 +3508,7 @@ div#banner8 {
 }
 .left {
 	float: left;
-	width: 20%;
+	width: 35%;
 }
     /*----- Tab Links -----*/
     /* Clearfix */
@@ -3616,4 +3639,38 @@ div#banner8 {
 	font-size:18px;
 	color:#fff;
 	border:0px solid;
+}
+
+.options .shoe_color.getImages {
+  margin: 0 8px 0 0;
+}
+
+.options .size {
+  margin: 40px 0 0 0;
+}
+
+.thumb_loading {
+  content: url("/image/loader.gif");
+  height: 30% !important;
+  width: 30% !important;
+  padding: 50px 0 0 0;
+}
+
+#wrap .thumb_loading {
+  content: url("/image/loader.gif");
+  height: 30% !important;
+  width: 30% !important;
+  padding: 130px 0 0 110px;
+}
+
+a.icon_plus.wishlist_link {
+  margin: 57px 0 0px -270px !important;
+  position: absolute;
+  z-index: 2;
+}
+
+a.icon_plus.compare_link {
+  margin: 57px 0px 0 -180px;
+  position: absolute;
+  z-index: 2;
 }
