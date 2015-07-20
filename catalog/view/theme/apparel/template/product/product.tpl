@@ -96,7 +96,7 @@
                             <div id="detail_color" class="left">			
                                 <?php foreach ($option['option_value'] as $option_value) { ?>
                                     <?php if (!empty($option_value['op_desc1'])) {?>
-                                        <div product_option_id="option[<?php echo $option['product_option_id']; ?>]" option_value="<?php echo $option_value['product_option_value_id']; ?>"  style="background-color:#<?php echo $option_value['op_desc1']; ?>" class="shoe_color getImages" color_id="<?php echo $option_value['option_value_id']; ?>" product_id="<?php echo $product_id; ?>" ></div>
+                                        <div product_option_id="option[<?php echo $option['product_option_id']; ?>]" option_value="<?php echo $option_value['product_option_value_id']; ?>"  style="background-color:<?php echo $option_value['op_desc1']; ?>" class="shoe_color getImages" color_id="<?php echo $option_value['option_value_id']; ?>" product_id="<?php echo $product_id; ?>" ></div>
                                     <?php } ?>
                                 <?php } ?>
                             </div>

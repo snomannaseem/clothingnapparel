@@ -3683,3 +3683,11 @@ a.icon_plus.compare_link {
   height: 260px;
   border: 1px solid #000;
 }
+
+div#detail_color {
+  width: 400px;
+}
+
+img#image {
+  width: 100%;
+}
