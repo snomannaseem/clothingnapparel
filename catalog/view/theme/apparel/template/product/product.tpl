@@ -407,7 +407,7 @@ $('#button-cart').bind('click', function() {
 			} 
 			
 			if (json['success']) {
-				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '&nbsp;&nbsp;<a class="button button_accent" href="index.php?route=checkout/cart">Proceed To Checkout</a><img src="catalog/view/theme/shoes/image/close.png" alt="" class="close" /></div>');
+				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '&nbsp;&nbsp;<a class="button button_accent" href="index.php?route=checkout/cart">Proceed To Checkout</a><img src="catalog/view/theme/apparel/image/close.png" alt="" class="close" /></div>');
 					
 				$('.success').fadeIn('slow');
 					

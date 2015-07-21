@@ -937,15 +937,10 @@ label {
 }
 
 .success .close, .warning .close, .attention .close, .information .close {
-
-	float: right;
-
-	padding-top: 4px;
-
-	padding-right: 4px;
-
-	cursor: pointer;
-
+  float: right;
+  padding-top: 9px;
+  padding-right: 7px;
+  cursor: pointer;
 }
 
 .required {
@@ -1285,13 +1280,10 @@ a.button:hover, input.button:hover {
 }
 
 .htabs {
-
-	height: 30px;
-
-	line-height: 16px;
-
-	border-bottom: 1px solid #DDDDDD;
-
+  height: 30px;
+  line-height: 16px;
+  border-bottom: 1px solid #DDDDDD;
+  margin: 0 0 0 359px;
 }
 
 .htabs a {
@@ -3696,4 +3688,14 @@ img#image {
 .option {
   margin: 10px 0 0 0;
   width: 400px;
+}
+
+a.button.button_accent {
+  background-image: none;
+  color: #333;
+}
+
+.success {
+  margin: 10px 0 20px 0;
+  padding: 18px 0px 0 30px;
 }
