@@ -3708,3 +3708,24 @@ div#checkout input[type='button'] {
   margin: 0 0 0 0;
   font-size: 14px;
 }
+
+#coupon input.button {
+  background-image: none;
+  color: #fff;
+  background-color: #d30f10;
+  font-size: 15px;
+}
+
+#voucher input.button {
+  background-image: none;
+  color: #fff;
+  background-color: #d30f10;
+  font-size: 15px;
+}
+
+#shipping input.button {
+  background-image: none;
+  color: #fff;
+  background-color: #d30f10;
+  font-size: 15px;
+}
