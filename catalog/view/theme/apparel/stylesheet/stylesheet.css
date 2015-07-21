@@ -3348,7 +3348,7 @@ a.button:hover, input.button:hover {
   color: #fff;
   height: 36px;
   line-height: 19px;
-  padding: 17px 0;
+  padding: 18px 0 0 0;
 }
 
 /* banner */
