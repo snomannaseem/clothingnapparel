@@ -25,12 +25,12 @@ class Url {
 		if ($args) {
 			$url .= str_replace('&', '&amp;', '&' . ltrim($args, '&')); 
 		}
-		print "<pre>";
+		//print "<pre>";
 		foreach ($this->rewrite as $rewrite) {
 			$url = $rewrite->rewrite($url);
-            print "$url\n";
+            //print "$url\n";
 		}
-        print "</pre>";
+        //print "</pre>";
 				
 		return $url;
 	}
