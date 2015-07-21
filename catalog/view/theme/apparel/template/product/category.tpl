@@ -208,18 +208,6 @@
 							<a class='button' onclick="addToCart('<?php echo $product['product_id']; ?>');">
 							</a>
 						</div>
-      
-						<div class="wishlist">
-							<a onclick="addToWishList('<?php echo $product['product_id']; ?>');">
-								<?php echo $button_wishlist; ?>
-							</a>
-						</div>
-						
-						<div class="compare">
-							<a onclick="addToCompare('<?php echo $product['product_id']; ?>');">
-								<?php echo $button_compare; ?>
-							</a>
-						</div>
 					</div>
 				</div>
 			<?php } ?>
@@ -231,7 +219,7 @@
 	<?php if (!$categories && !$products) { ?>
 		<div class="content"><?php echo $text_empty; ?></div>
 		<div class="buttons">
-			<div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
+			<a href="<?php echo $continue; ?>" class="button"></a>
 		</div>
 	<?php } ?>
 	

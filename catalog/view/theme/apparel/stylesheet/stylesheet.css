@@ -1471,7 +1471,7 @@ a.button:hover, input.button:hover {
 
 .product-grid .shoe_color.getImages {
   border: 1px solid;
-  width: 14px;
+  width: 26px;
   height: 20px;
   display: inline-block;
   margin: 0 0 0 10px;
@@ -1973,7 +1973,7 @@ a.button:hover, input.button:hover {
   display: inline-block;
   vertical-align: top;
   margin: 0 9px 23px !important;
-  height: 430px;
+  height: 388px;
   border: 1px solid #000;
 }
 
@@ -3686,8 +3686,14 @@ a.icon_plus.compare_link {
 
 div#detail_color {
   width: 400px;
+  margin:0px 0 10px 0;
 }
 
 img#image {
   width: 100%;
+}
+
+.option {
+  margin: 10px 0 0 0;
+  width: 400px;
 }
