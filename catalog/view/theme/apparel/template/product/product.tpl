@@ -110,7 +110,7 @@
 											<?php } ?>
 										<?php } ?>
 									</div>              
-				
+								</div>
 									<?php continue; ?>
 							<?php } ?>
 				
@@ -122,12 +122,12 @@
 									
 									<b><?php echo $option['name']; ?>:</b><br />
 									
-									<select name="option[<?php echo $option['product_option_id']; ?>]">
+									<select id="opt_size" name="option[<?php echo $option['product_option_id']; ?>]">
 										<option value=""><?php echo $text_select; ?></option>
 										<?php foreach ($option['option_value'] as $option_value) { ?>
 											<option value="<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
 												<?php if ($option_value['price']) { ?>
-												(<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
+													(<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
 												<?php } ?>
 											</option>
 										<?php } ?>
@@ -290,7 +290,7 @@
 				</div>
 			<?php } ?>
 		</div>
-			</div>
+	</div>
 
 			<div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
 				<?php if ($attribute_groups) { ?>
@@ -445,7 +445,7 @@
 				} 
 				
 				if (json['success']) {
-					$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/shoes/image/close.png" alt="" class="close" /></div>');
+					$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/apparel/image/close.png" alt="" class="close" /></div>');
 						
 					$('.success').fadeIn('slow');
 						
@@ -471,7 +471,7 @@
 					autoSubmit: true,
 					responseType: 'json',
 					onSubmit: function(file, extension) {
-						$('#button-option-<?php echo $option['product_option_id']; ?>').after('<img src="catalog/view/theme/shoes/image/loading.gif" class="loading" style="padding-left: 5px;" />');
+						$('#button-option-<?php echo $option['product_option_id']; ?>').after('<img src="catalog/view/theme/apparel/image/loading.gif" class="loading" style="padding-left: 5px;" />');
 					},
 					onComplete: function(file, json) {
 						$('.error').remove();
@@ -518,7 +518,7 @@
 			beforeSend: function() {
 				$('.success, .warning').remove();
 				$('#button-review').attr('disabled', true);
-				$('#review-title').after('<div class="attention"><img src="catalog/view/theme/shoes/image/loading.gif" alt="" /> <?php echo $text_wait; ?></div>');
+				$('#review-title').after('<div class="attention"><img src="catalog/view/theme/apparel/image/loading.gif" alt="" /> <?php echo $text_wait; ?></div>');
 			},
 			complete: function() {
 				$('#button-review').attr('disabled', false);
@@ -584,16 +584,43 @@
                     
                     image_list = "";
                     $.each( json_data.images, function( key, value ) {
-                      console.log('===========================');
-                      console.log( value.thumb );
-                      console.log( value.popup );
-                      console.log('===========================');
-                      //image_list += '<a href="javascript: \''+value.popup+'\'"  rel="' + value.popup + '" title="<?php echo $heading_title; ?>" class="thumbclick"><img src="'+value.thumb+'" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a>';
-                      //<a href="http://localhost/shoeocean_net/image/cache/data/featured_img1-750x750.jpg" class="cloud-zoom-gallery" title="iMac" rel="useZoom: 'zoom1', smallImage: 'http://localhost/shoeocean_net/image/cache/data/featured_img1-314x314.jpg' "><img class="zoom-tiny-image" src="http://localhost/shoeocean_net/image/cache/data/featured_img1-314x314.jpg" alt="iMac" style="opacity: 1;"></a>                      
-                      image_list += '<a href="' + value.popup + '" class="cloud-zoom-gallery" title="iMac" rel="useZoom: \'zoom1\', smallImage: \'' + value.thumb + '\' "><img class="zoom-tiny-image" src="' + value.thumb + '" alt="iMac" style="opacity: 1;"></a>';
+                      image_list += '<a href="' + value.popup + '" class="cloud-zoom-gallery" title="" rel="useZoom: \'zoom1\', smallImage: \'' + value.thumb + '\' "><img class="zoom-tiny-image" src="' + value.thumb + '" title="Breckelle Outlaw-81 Women Riding Boots" alt="Breckelle Outlaw-81 Women Riding Boots" style="opacity: 1;"></a>';
                     });
                     
+                    
+                    $('#opt_size')
+                        .find('option')
+                        .remove()
+                        .end();
+                        
+                    if (typeof json_data.sizes  == 'undefined'){
+                         $('#opt_size')
+                        .append($('<option/>', { 
+                                value: "",
+                                text : " --- No Size In Stock --- " 
+                            }));
+                    }
+                    
+                    if (typeof json_data.sizes  != 'undefined'){
+                        $('#opt_size')
+                            .append($('<option/>', { 
+                                value: "",
+                                text : " --- Please Select --- " 
+                            }));
+                        ;
+                    
+                        $.each( json_data.sizes, function( key, value ) {
+                            $('#opt_size').append($('<option/>', { 
+                                value: value.size_id,
+                                text : value.size_name
+                            }));
+
+                        });
+                    }
+                    
                     $('.image-additional').html(image_list);
+                    $('.cloud-zoom-gallery').CloudZoom();    
+                    $('.zoom-tiny-image').first().trigger('click');
                 }  
             }
         });
