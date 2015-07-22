@@ -3825,3 +3825,13 @@ div#checkout input[type='button'] {
 .right a.button {
   color: #fff;
 }
+
+.box-heading {
+  background-color: red;
+  padding: 12px 0;
+  text-indent: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: trajan pro;
+}
