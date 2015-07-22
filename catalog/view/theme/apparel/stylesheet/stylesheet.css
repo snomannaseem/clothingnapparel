@@ -3835,3 +3835,129 @@ div#checkout input[type='button'] {
   font-weight: bold;
   font-family: trajan pro;
 }
+
+
+@media screen and (max-width: 1050) {
+	#container {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+		width: 960px;
+	}
+	
+	#menu {
+		background: #d30f10 none repeat scroll 0 0;
+		height: 60px;
+		margin-bottom: 30px;
+		padding: 0;
+	}
+	
+	#menu > ul > li {
+		border-right: 1px solid #ccc;
+		float: left;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		width: 12.8%;
+	}
+	
+	#menu > ul > li > a {
+		line-height: 60px;
+		font-size: 13px;
+		width: 14.1%;
+	}
+	
+	#menu > ul > li:last-child {
+		border-right: 0 solid;
+	}
+	
+	#slideshow0 {
+		width: 100% !important;
+		height: 434px !important;
+	}
+	
+	.banner div img {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	
+	div#banner0 {
+		border: 1px solid #000;
+		float: left;
+		height: 200px;
+		margin: 0 0 0 27px;
+		width: 218px;
+	}
+	
+	div#banner1 {
+		border: 1px solid #000;
+		float: right;
+		height: 200px;
+		width: 218px;
+	}
+	
+	div#banner2 {
+		border: 1px solid #000;
+		float: left;
+		height: 200px;
+		margin: 30px 0 20px 27px;
+		width: 218px;
+	}
+	
+	div#banner3 {
+		border: 1px solid #000;
+		float: right;
+		height: 200px;
+		margin: 30px 0 20px;
+		width: 218px;
+	}
+	
+	.box-product > div {
+		height: 403px;
+	}
+	
+	.box-product > div {
+		width: 213px;
+	}
+	
+	.shoe_color.getImages {
+		height: 16px;
+		width: 31px;
+	}
+	
+	.box-product .name a {
+		font-size: 14px;
+	}
+	
+	.box-product > div .name {
+		height: 57px;
+	}
+	
+	.box-product > div {
+		height: 403px;
+	}
+	
+	div#banner4 {
+		height: 167px;
+		width: 634px !important;
+	}
+	
+	div#banner5 {
+		height: 166px;
+		width: 304px;
+	}	
+	
+	div#banner6 {
+		height: 233px;
+		width: 49%;
+	}
+	
+	div#banner7 {
+		height: 233px;
+		width: 49%;
+	}
+	
+	#footer {
+		width: 920px;
+	}
+}
