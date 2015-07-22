@@ -3836,8 +3836,7 @@ div#checkout input[type='button'] {
   font-family: trajan pro;
 }
 
-
-@media screen and (max-width: 1050) {
+@media only screen and (min-width: 980px) and (max-width: 1050px) {
 	#container {
 		margin-left: auto;
 		margin-right: auto;
@@ -3853,22 +3852,24 @@ div#checkout input[type='button'] {
 	}
 	
 	#menu > ul > li {
-		border-right: 1px solid #ccc;
-		float: left;
 		height: 60px;
 		line-height: 60px;
-		text-align: center;
-		width: 12.8%;
+		width: 14.1%;
 	}
 	
 	#menu > ul > li > a {
 		line-height: 60px;
 		font-size: 13px;
-		width: 14.1%;
+		width: 100%;
 	}
 	
 	#menu > ul > li:last-child {
 		border-right: 0 solid;
+	}
+	
+	#menu > ul > li > div > ul > li > a {
+		color: #ffffff;
+		font-size: 13px;
 	}
 	
 	#slideshow0 {
@@ -3912,11 +3913,13 @@ div#checkout input[type='button'] {
 		width: 218px;
 	}
 	
-	.box-product > div {
-		height: 403px;
+	
+	.box {
+		margin: 0 0 10px;
 	}
 	
 	.box-product > div {
+		height: 403px;
 		width: 213px;
 	}
 	
@@ -3948,12 +3951,12 @@ div#checkout input[type='button'] {
 	}	
 	
 	div#banner6 {
-		height: 233px;
+		height: 231px;
 		width: 49%;
 	}
 	
 	div#banner7 {
-		height: 233px;
+		height: 231px;
 		width: 49%;
 	}
 	
