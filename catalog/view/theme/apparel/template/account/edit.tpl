@@ -48,7 +48,7 @@
         </tr>
       </table>
     </div>
-    <div class="buttons">
+    <div class="buttons" id="edit-button">
       <div class="left"><a href="<?php echo $back; ?>" class="button"><?php echo $button_back; ?></a></div>
       <div class="right">
         <input type="submit" value="<?php echo $button_continue; ?>" class="button" />

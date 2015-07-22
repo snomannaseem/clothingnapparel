@@ -255,11 +255,9 @@
           &nbsp;<input type="button" value="<?php echo $button_cart; ?>" id="button-cart" class="button" />
           </div>
           <span class="cart_clearer"></span>
-          &nbsp;<a onclick="addToWishList('<?php echo $product_id; ?>');" class="icon_plus wishlist_link"><?php echo $button_wishlist; ?></a> &nbsp;&nbsp;
-          <a onclick="addToCompare('<?php echo $product_id; ?>');" class="icon_plus compare_link"><?php echo $button_compare; ?></a>
-        <?php if ($minimum > 1) { ?>
-        <div class="minimum"><?php echo $text_minimum; ?></div>
-        <?php } ?>
+            <?php if ($minimum > 1) { ?>
+                <div class="minimum"><?php echo $text_minimum; ?></div>
+            <?php } ?>
       </div>
       <?php if ($review_status) { ?>
       <div class="review">
@@ -363,7 +361,11 @@
 		          <?php } ?>
 		        </div>
 		        <?php } ?>
-		        <div class="cart"><a class='button' onclick="addToCart('<?php echo $product['product_id']; ?>');"><span><?php echo $button_cart; ?></span></a></div>
+		        <div class="cart">
+                    <a class='button' onclick="addToCart('<?php echo $product['product_id']; ?>');">
+                        <span><?php echo $button_cart; ?></span>
+                    </a>
+                </div>
 			</div>
 	   </div>
 	</div><?php } ?>
