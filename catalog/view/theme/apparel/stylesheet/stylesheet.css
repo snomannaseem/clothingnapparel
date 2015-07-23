@@ -3964,3 +3964,479 @@ div#checkout input[type='button'] {
 		width: 920px;
 	}
 }
+
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.topbar {
+		background-color: #000;
+		height: 62px;
+		padding: 10px 0 0;
+	}
+	
+	
+	#welcome {
+		color: #fff;
+		float: none;
+		line-height: 24px;
+		margin: 0 auto;
+		text-align: center;
+		text-decoration: none;
+		text-indent: 0;
+		width: 100%;
+	}
+	
+	.links {
+		float: none;
+		line-height: 24px;
+		margin: 0 auto;
+		text-align: center;
+		width: 100%;
+	}
+	
+	#container {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+		width: 460px;
+	}
+	
+	#header {
+		margin-bottom: 0;	
+	}
+	
+	#logo img {
+		width: 100%;
+	}
+	
+	#header #logo {
+    left: 0;
+    position: absolute;
+    top: 16px;
+    width: 41%;
+}
+	
+	#call {
+    left: 253px;
+    position: absolute;
+    top: 11px;
+    width: 56%;
+}
+	
+	#call img {
+    float: left;
+    margin: 17% 2% 0 5%;
+    width: 15%;
+}
+	
+	
+#call h4 {
+    color: #14212b;
+    font-family: trebuchet ms;
+    font-size: 12px;
+    margin: 44px 0 0;
+    padding: 0;
+}
+	
+	#call h1 {
+    color: #14212b;
+    font-family: trebuchet ms;
+    font-size: 21px;
+    margin: 0;
+    padding: 0;
+}
+	
+	#header #cart {
+    min-width: 300px;
+    position: absolute;
+    right: 333px;
+    top: 126px;
+    z-index: 9;
+}
+
+#header #search {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 155px;
+    width: 236px;
+    z-index: 15;
+}
+	
+	#header #search input {
+		background: none repeat scroll 0 0 #f4f5f5;
+		border: 1px solid #cccccc;
+		height: 39px;
+		padding: 1px 1px 1px 33px;
+		width: 160px;
+	}
+	
+	#header .button-search {
+		background: url("../image/button-search.png") no-repeat scroll center center #f4f5f5;
+		border-right: 1px solid #cccccc;
+		cursor: pointer;
+		height: 41px;
+		left: 0;
+		margin: -42px 0 0 189px;
+		position: absolute;
+		width: 46px;
+	}
+	
+	#menu {
+    background: none repeat scroll 0 0 #d30f10;
+    height: 182px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+	
+	#menu > ul > li {
+    border-bottom: 1px solid #fff;
+    height: 60px;
+    line-height: 60px;
+    width: 33.1%;
+}
+	
+	#menu > ul > li > a {
+		line-height: 60px;
+		font-size: 17px;
+		width: 100%;
+	}
+	
+	#menu > ul > li:last-child {
+		border-right: 0 solid;
+	}
+	
+	#menu > ul > li > div > ul > li > a {
+		color: #ffffff;
+		font-size: 17px;
+	}
+	
+	.slideshow {
+		display:none;
+	}
+	
+	.banner div img {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	
+	div#banner0 {
+    height: 207px;
+    margin: 0;
+    width: 49%;
+}
+	
+	div#banner1 {
+    height: 207px;
+    margin: 0;
+    width: 49%;
+}
+	
+	div#banner2 {
+    height: 207px;
+    margin: 7px 0 20px 0;
+    width: 49%;
+}
+	
+	div#banner3 {
+    height: 207px;
+    margin: 7px 0 20px 0;
+    width: 49%;
+}
+	
+	
+	
+.box {
+    height: 910px;
+    margin: 0 0 20px;
+}
+	
+	.box-product > div {
+    height: 403px;
+    margin: 10px 8px;
+    width: 46%;
+}
+	
+	.shoe_color.getImages {
+		height: 19px;
+		width: 16px;
+	}
+	
+	.box-product .name a {
+		font-size: 14px;
+	}
+	
+	.box-product > div .name {
+		height: 58px;
+	}
+	
+	.cart .button {
+		width: 125px;
+	}
+	
+	
+div#banner4 {
+    height: 78px;
+    width: 65% !important;
+}
+	
+	div#banner5 {
+    height: 78px;
+    width: 31%;
+}
+	
+	div#banner6 {
+		height: 111px;
+		width: 49%;
+	}
+	
+	div#banner7 {
+		height: 111px;
+		width: 49%;
+	}
+	
+	#footer {
+    min-height: 437px !important;
+    width: 420px;
+}
+	#footer .column {
+    border-bottom: 1px solid #000;
+    float: left;
+    margin: 10px 0 0;
+    min-height: 100px;
+    width: 100%;
+}
+
+#header #cart .content{
+    margin: 74px 0 0 174px;
+    position: absolute;
+    width: 100%;
+}
+	
+	.product-grid .name {
+		height: 35px;
+		margin: 0 7px;
+		width: 197px;
+	}
+	
+	.product_holder_inside .cart .button {
+		font-size: 16px;
+		margin: 0 0 0 9px;
+		width: 89px;
+	}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+	.topbar {
+		background-color: #000;
+		height: 62px;
+		padding: 10px 0 0;
+	}
+	
+	#welcome {
+		color: #fff;
+		float: none;
+		line-height: 20px;
+		margin: 0 auto;
+		text-decoration: none;
+		text-indent: 0;
+		width: 37%;
+	}
+	
+	.links {
+		float: none;
+		line-height: 20px;
+		margin: 0 auto;
+		width: 41%;
+	}
+	
+	#container {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+		width: 720px;
+	}
+	
+	#header {
+		margin-bottom: 0;	
+	}
+	
+	#logo img {
+		width: 100%;
+	}
+	
+	#call {
+		left: 280px;
+		position: absolute;
+		top: 50px;
+		width: 40%;
+	}
+	
+	#call img {
+		float: left;
+		margin: 17% 2% 0 5%;
+		width: 12%;
+	}
+	
+	#call h4 {
+		color: #14212b;
+		font-family: trebuchet ms;
+		font-size: 12px;
+		margin: 44px 0 0;
+		padding: 0;
+	}
+	
+	#call h1 {
+		color: #14212b;
+		font-family: trebuchet ms;
+		font-size: 21px;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#header #search input {
+		background: none repeat scroll 0 0 #f4f5f5;
+		border: 1px solid #cccccc;
+		height: 39px;
+		padding: 1px 1px 1px 33px;
+		width: 160px;
+	}
+	
+	#header .button-search {
+		background: url("../image/button-search.png") no-repeat scroll center center #f4f5f5;
+		border-right: 1px solid #cccccc;
+		cursor: pointer;
+		height: 41px;
+		left: 0;
+		margin: -42px 0 0 189px;
+		position: absolute;
+		width: 46px;
+	}
+	
+	#menu {
+		background: none repeat scroll 0 0 #d30f10;
+		height: 120px;
+		margin-bottom: 30px;
+		padding: 0;
+	}
+	
+	#menu > ul > li {
+		border-bottom: 1px solid #fff;
+		height: 60px;
+		line-height: 60px;
+		width: 24.8%;
+	}
+	
+	#menu > ul > li > a {
+		line-height: 60px;
+		font-size: 17px;
+		width: 100%;
+	}
+	
+	#menu > ul > li:last-child {
+		border-right: 0 solid;
+	}
+	
+	#menu > ul > li > div > ul > li > a {
+		color: #ffffff;
+		font-size: 17px;
+	}
+	
+	#slideshow0 {
+		width: 100% !important;
+		height: 324px !important;
+	}
+	
+	.banner div img {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	
+	div#banner0 {
+		height: 145px;
+		width: 158px;
+	}
+	
+	div#banner1 {
+		height: 145px;
+		width: 158px;
+	}
+	
+	div#banner2 {
+		height: 145px;
+		width: 158px;
+	}
+	
+	div#banner3 {
+		height: 145px;
+		width: 158px;
+	}
+	
+	
+	.box {
+		margin: 0 0 10px;
+	}
+	
+	.box-product > div {
+		height: 403px;
+		width: 153px;
+	}
+	
+	.shoe_color.getImages {
+		height: 19px;
+		width: 16px;
+	}
+	
+	.box-product .name a {
+		font-size: 14px;
+	}
+	
+	.box-product > div .name {
+		height: 87px;
+	}
+	
+	.cart .button {
+		width: 125px;
+	}
+	
+	div#banner4 {
+		height: 124px;
+		width: 473px !important;
+	}
+	
+	div#banner5 {
+		height: 124px;
+		width: 227px;
+	}
+	
+	div#banner6 {
+		height: 173px;
+		width: 49%;
+	}
+	
+	div#banner7 {
+		height: 173px;
+		width: 49%;
+	}
+	
+	#footer {
+		width: 670px;
+	}
+	
+	.product-grid .name {
+		height: 35px;
+		margin: 0 7px;
+		width: 197px;
+	}
+	
+	.product_holder_inside .cart .button {
+		font-size: 16px;
+		margin: 0 0 0 9px;
+		width: 89px;
+	}
+}
+
+
