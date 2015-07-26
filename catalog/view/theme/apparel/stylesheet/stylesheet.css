@@ -3830,6 +3830,16 @@ div#checkout input[type='button'] {
   color: #fff;
 }
 
+.box-product .color a {
+    float: right;
+    margin: 6px 21px 0 0;
+    border: 1px solid #000;
+    width: 45px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
 .box-heading {
   background-color: red;
   padding: 12px 0;
