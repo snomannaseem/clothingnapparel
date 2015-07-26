@@ -1245,6 +1245,10 @@ a.button {
 
 }
 
+.product_holder_inside a.button {
+    margin: 0 7px;
+}
+
 input.button {
 
   margin: 4px 16px 20px;
@@ -2072,8 +2076,8 @@ table .radio a.button:hover, input.button:hover {
   width: 160px;
   height: 41px;
   color: transparent;
-  background-image: url("http://localhost/clothingnapparel/catalog/view/theme/apparel/image/cart_btn.jpg");
   border-radius: 0px;
+  color:#fff;
 }
 
 .product-grid .price-old {

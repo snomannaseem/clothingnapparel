@@ -206,6 +206,7 @@
 
 						<div class="cart">
 							<a class='button' onclick="addToCart('<?php echo $product['product_id']; ?>');">
+								Add to Cart
 							</a>
 						</div>
 					</div>
@@ -245,8 +246,6 @@ function display(view) {
             
 			html += '<div class="right">';
 			html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
-			html += '  <div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
-			html += '  <div class="compare">' + $(element).find('.compare').html() + '</div>';
 			html += '</div>';			
 			
 			html += '<div class="left">';
