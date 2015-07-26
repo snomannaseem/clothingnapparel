@@ -165,10 +165,10 @@ class ModelCatalogProduct extends Model {
 			}
 		}
 		
-		$this->db->query("DELETE FROM " . DB_PREFIX . "ocean_skus WHERE product_id = '" . (int)$product_id . "'");
+		$this->db->query("DELETE FROM " . DB_PREFIX . "ocean_inventory WHERE product_id = '" . (int)$product_id . "'");
 		if (isset($data['product_skus'])) {
 			foreach ($data['product_skus'] as $product_sku) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "ocean_skus SET product_id = '" . (int)$product_id . "', sku_no = '" . $product_sku['sku_no'] . "', color_id = '" . (int)$product_sku['color_id'] . "',  size_id = '" . (int)$product_sku['size_id'] . "'");
+				$this->db->query("INSERT INTO " . DB_PREFIX . "ocean_inventory SET product_id = '" . (int)$product_id . "', sku_no = '" . $product_sku['sku_no'] . "', color_id = '" . (int)$product_sku['color_id'] . "',  size_id = '" . (int)$product_sku['size_id'] . "'");
 			}
 		}
 		$this->db->query("DELETE FROM " . DB_PREFIX . "product_discount WHERE product_id = '" . (int)$product_id . "'");
@@ -711,7 +711,7 @@ class ModelCatalogProduct extends Model {
 	}
     
 	public function getProductSkus($product_id) {
-		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "ocean_skus WHERE product_id = '" . (int)$product_id . "'");
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "ocean_inventory WHERE product_id = '" . (int)$product_id . "'");
 		
 		return $query->rows;
 	}

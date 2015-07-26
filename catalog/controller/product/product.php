@@ -664,6 +664,7 @@ class ControllerProductProduct extends Controller {
         $results_sizes = $this->model_catalog_product->getProductSizesByColor($this->request->get['product_id'], $this->request->get['color_id']);
         
         $this->load->model('tool/image');
+
         foreach ($results_images as $result) {
             $json['images'][] = array(
                 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height')),

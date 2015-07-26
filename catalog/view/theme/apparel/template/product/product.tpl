@@ -261,7 +261,7 @@
       </div>
       <?php if ($review_status) { ?>
       <div class="review">
-        <div><img src="catalog/view/theme/shoes/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;(<a onclick="$('a[href=\'#tab-review\']').trigger('click');" class='rev_count'><?php echo $reviews; ?></a>)&nbsp;&nbsp;&nbsp;<span class="divider">|</span>&nbsp;&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');" class="icon_plus"><?php echo $text_write; ?></a></div>
+        <div><img src="catalog/view/theme/apparel/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;(<a onclick="$('a[href=\'#tab-review\']').trigger('click');" class='rev_count'><?php echo $reviews; ?></a>)&nbsp;&nbsp;&nbsp;<span class="divider">|</span>&nbsp;&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');" class="icon_plus"><?php echo $text_write; ?></a></div>
         <div class="share"><!-- AddThis Button BEGIN -->
           <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
           <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script> 
@@ -432,7 +432,7 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 	autoSubmit: true,
 	responseType: 'json',
 	onSubmit: function(file, extension) {
-		$('#button-option-<?php echo $option['product_option_id']; ?>').after('<img src="catalog/view/theme/shoes/image/loading.gif" class="loading" style="padding-left: 5px;" />');
+		$('#button-option-<?php echo $option['product_option_id']; ?>').after('<img src="catalog/view/theme/apparel/image/loading.gif" class="loading" style="padding-left: 5px;" />');
 	},
 	onComplete: function(file, json) {
 		$('.error').remove();
@@ -476,7 +476,7 @@ $('#button-review').bind('click', function() {
 		beforeSend: function() {
 			$('.success, .warning').remove();
 			$('#button-review').attr('disabled', true);
-			$('#review-title').after('<div class="attention"><img src="catalog/view/theme/shoes/image/loading.gif" alt="" /> <?php echo $text_wait; ?></div>');
+			$('#review-title').after('<div class="attention"><img src="catalog/view/theme/apparel/image/loading.gif" alt="" /> <?php echo $text_wait; ?></div>');
 		},
 		complete: function() {
 			$('#button-review').attr('disabled', false);
@@ -534,24 +534,17 @@ $('#button-review').bind('click', function() {
                 $("#image").removeClass('thumb_loading');
             },
             success: function(json_data) {
+
+                image_list = "";
+                $("#image").attr('src','image/no_image.jpg');
+                document.getElementById(product_option_id).value = '';
+                $('.image-additional').html(image_list);
                 
-                if (typeof json_data.images != "undefined") {
-                    
-                    value = json_data.images[0];
-                    $("#image").attr('src',value.thumb);
-                    document.getElementById(product_option_id).value = option_value;
-                    
-                    image_list = "";
-                    $.each( json_data.images, function( key, value ) {
-                      image_list += '<a href="' + value.popup + '" class="cloud-zoom-gallery" title="" rel="useZoom: \'zoom1\', smallImage: \'' + value.thumb + '\' "><img class="zoom-tiny-image" src="' + value.thumb + '" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" style="opacity: 1;"></a>';
-                    });
-                    
-                    
-                    $('#opt_size')
-                        .find('option')
-                        .remove()
-                        .end();
-                        
+                $('#opt_size')
+                    .find('option')
+                    .remove()
+                    .end();
+
                     if (typeof json_data.sizes  == 'undefined'){
                          $('#opt_size')
                         .append($('<option/>', { 
@@ -576,6 +569,18 @@ $('#button-review').bind('click', function() {
 
                         });
                     }
+
+                if (typeof json_data.images != "undefined") {
+                    
+                    value = json_data.images[0];
+                    $("#image").attr('src',value.thumb);
+                    document.getElementById(product_option_id).value = option_value;
+                    
+                    $.each( json_data.images, function( key, value ) {
+                      image_list += '<a href="' + value.popup + '" class="cloud-zoom-gallery" title="" rel="useZoom: \'zoom1\', smallImage: \'' + value.thumb + '\' "><img class="zoom-tiny-image" src="' + value.thumb + '" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" style="opacity: 1;"></a>';
+                    });
+                    
+                        
                     
                     $('.image-additional').html(image_list);
                     $('.cloud-zoom-gallery').CloudZoom();    
