@@ -205,14 +205,15 @@ function display(view) {
 			html = '';
 			
 			var image = $(element).find('.image').html();
-
-			if (image != null) {
-				html += '<div class="image">' + image + '</div>';
-			}
 			
 			if ($(element).children().hasClass("special_promo")){
 				html += '<div class="special_promo"></div>'
 			};
+			
+			if (image != null) {
+				html += '<div class="image">' + image + '</div>';
+			}
+			
 			html += '<div class="color">' + $(element).find('.color').html() + '</div>';
 			
 			html += '<div class="name">' + $(element).find('.name').html() + '</div>';
