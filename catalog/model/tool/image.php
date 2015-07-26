@@ -5,7 +5,7 @@ class ModelToolImage extends Model {
         $filename = trim($filename);
 		if (!file_exists(DIR_IMAGE . $filename) || !is_file(DIR_IMAGE . $filename) || empty($filename)) {
             //print "$filename\n";
-            $filename = 'no_image.jpg';
+            $filename = 'image/no_image.jpg';
         	return $filename;
 		} 
 		
