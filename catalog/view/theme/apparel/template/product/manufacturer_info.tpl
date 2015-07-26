@@ -76,71 +76,88 @@
 			</div>
 		</div>
 		
-		<div class="product-list">
-		<?php foreach ($products as $product) { ?>
-			<div class="product_holder">  
-				<div class="product_holder_inside">
-					<?php if ($product['special']) { ?>
-						<?php echo '<div class="special_promo"></div>'; ?>
-					<?php } ?> 
-	 
-					<?php if ($product['thumb']) { ?>
-						<div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
-					<?php } ?>
-					
-					<!-- please add background color code from database -->
-					<div class="color">
-						<?php 
-							$options = $product['options'];
-							//print_r($option);
-							foreach ($options as $option){?>
-								<input type="hidden" name="option[<?php echo $option['product_option_id']; ?>]" value=""/>
-								<?php $tmp_color_count = 0;
-								foreach ($option['option_value'] as $option_value) { ?>
-								<?php if (!empty($option_value['op_desc1'])) {
-								$tmp_color_count++;
-								if ($tmp_color_count > 4){
-									?>
-											<a href="<?php echo $product['href']; ?>">More</a>
-									<?php 
-											break;
-										}
-									?>
-									<div option_value="<?php echo $option_value['product_option_value_id']; ?>"  style="background-color:<?php echo $option_value['op_desc1']; ?>" class="shoe_color getImages" color_id="<?php echo $option_value['option_value_id']; ?>" product_id="<?php echo $product['product_id']; ?>" ></div>
-								<?php } ?>
-								<?php }
-							} 
-						?>
-					</div>
-					
-					<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
-					
-					<div class="description"><?php echo $product['description']; ?></div>
-					
-					<?php if ($product['price']) { ?>
-						<div class="price">
-							<?php if (!$product['special']) { ?>
-								<?php echo $product['price']; ?>
-							<?php } else { ?>
-								<span class="price-old"><?php echo $product['price']; ?></span> <span class="price-new"><?php echo $product['special']; ?></span>
-							<?php } ?>
-							
-							<?php if ($product['tax']) { ?>
-								<br />
-								<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
-							<?php } ?>
+		<div id="products" class="product-grid">
+			<?php foreach ($products as $product) { ?>
+				<div class="product_holder">
+					<div class="product_holder_inside">
+						<?php if ($product['special']) { ?>
+							<?php echo '<div class="special_promo"></div>'; ?>
+						<?php } ?>
+     
+						<?php if ($product['thumb']) { ?>
+							<div class="image">
+								<a href="<?php echo $product['href']; ?>">
+									<img id="img_<?php echo $product['product_id']; ?>" src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
+								</a>
+							</div>
+						<?php } ?> 
+        
+						<!-- please add background color code from database -->
+						<div class="color">
+							<?php 
+								$options = $product['options'];
+								//print_r($option);
+								foreach ($options as $option){?>
+									<input type="hidden" name="option[<?php echo $option['product_option_id']; ?>]" value=""/>
+									<?php $tmp_color_count = 0;
+									foreach ($option['option_value'] as $option_value) { ?>
+									<?php if (!empty($option_value['op_desc1'])) {
+									$tmp_color_count++;
+									if ($tmp_color_count > 4){
+										?>
+												<a href="<?php echo $product['href']; ?>">More</a>
+										<?php 
+												break;
+											}
+										?>
+										<div option_value="<?php echo $option_value['product_option_value_id']; ?>"  style="background-color:<?php echo $option_value['op_desc1']; ?>" class="shoe_color getImages" color_id="<?php echo $option_value['option_value_id']; ?>" product_id="<?php echo $product['product_id']; ?>" ></div>
+									<?php } ?>
+									<?php }
+								} 
+							?>
 						</div>
-					<?php } ?>
-					
-      <?php if ($product['rating']) { ?>
-      <div class="rating"><img src="catalog/view/theme/shoes/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
-      <?php } ?>
-      <div class="cart"><a class='button' onclick="addToCart('<?php echo $product['product_id']; ?>');"><span><?php echo $button_cart; ?></span></a></div>
-      <div class="wishlist"><a onclick="addToWishList('<?php echo $product['product_id']; ?>');"><?php echo $button_wishlist; ?></a></div>
-      <div class="compare"><a onclick="addToCompare('<?php echo $product['product_id']; ?>');"><?php echo $button_compare; ?></a></div>
-     </div>
-    </div><?php } ?>
-  </div>
+     
+						<div class="name">
+							<a href="<?php echo $product['href']; ?>">
+								<?php echo $product['name']; ?>
+							</a>
+						</div>     
+      
+						<div class="description">
+							<?php echo $product['description']; ?>
+						</div>
+        
+						<?php if ($product['price']) { ?>
+							<div class="price">
+								<?php if (!$product['special']) { ?>
+									<?php echo $product['price']; ?>
+								<?php } else { ?>
+									<span class="price-old"><?php echo $product['price']; ?></span> 
+									<span class="price-new"><?php echo $product['special']; ?></span>
+								<?php } ?>
+								
+								<?php if ($product['tax']) { ?>
+									<br />
+									<span class="price-tax"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>
+								<?php } ?>
+							</div>
+						<?php } ?>
+      
+						<?php if ($product['rating']) { ?>
+							<div class="rating">
+								<img src="catalog/view/theme/shoes/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" />
+							</div>
+						<?php } ?>
+
+						<div class="cart">
+							<a class='button' onclick="addToCart('<?php echo $product['product_id']; ?>');">
+								Add to Cart
+							</a>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+		</div>
   <div class="pagination"><?php echo $pagination; ?></div>
   <?php } else { ?>
   <div class="content"><?php echo $text_empty; ?></div>
