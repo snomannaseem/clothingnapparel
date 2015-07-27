@@ -105,8 +105,7 @@ class ControllerProductCategory extends Controller {
 			}
             
 			if ($category_info['image_banner']) {
-				//$this->data['thumb_banner'] = $this->model_tool_image->resize($category_info['image_banner'], 754, 150);
-				$this->data['thumb_banner'] = $category_info['image_banner'];
+				$this->data['thumb_banner'] = $this->model_tool_image->resize($category_info['image_banner'], 880, 150);
 			} else {
 				$this->data['thumb_banner'] = '';
 			}
