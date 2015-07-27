@@ -121,12 +121,12 @@ $(document).ready(function() {
             },
             success: function(json_data) {
                 
-                $("#img_" + product_id).attr('src','image/no_image.jpg');
-            
                 if (typeof json_data.images != "undefined") {
                     value = json_data.images[0];
                    $("#img_" + product_id).attr('src',value.thumb);
-                }  
+                }  else {
+                    $("#img_" + product_id).attr('src','image/no_image.jpg');
+                }
                 
             }
         });
