@@ -1245,6 +1245,10 @@ a.button {
 
 }
 
+.product_holder_inside a.button {
+    margin: 0 7px;
+}
+
 input.button {
 
   margin: 4px 16px 20px;
@@ -2072,8 +2076,8 @@ table .radio a.button:hover, input.button:hover {
   width: 160px;
   height: 41px;
   color: transparent;
-  background-image: url("http://localhost/clothingnapparel/catalog/view/theme/apparel/image/cart_btn.jpg");
   border-radius: 0px;
+  color:#fff;
 }
 
 .product-grid .price-old {
@@ -3824,6 +3828,26 @@ div#checkout input[type='button'] {
 
 .right a.button {
   color: #fff;
+}
+
+.product_holder_inside .color a {
+    float: right;
+    width: 30px;
+    height: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 20px;
+    margin: 0 11px 0 0;
+}
+
+.box-product .color a {
+    float: right;
+    margin: 6px 21px 0 0;
+    border: 1px solid #000;
+    width: 45px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
 }
 
 .box-heading {
