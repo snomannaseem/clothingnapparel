@@ -96,8 +96,11 @@ $(document).ready(function() {
             return;
         }
         
+        
         color_id = $(this).attr('color_id');
         product_id = $(this).attr('product_id');
+        
+        $("#img_" + product_id).attr('src','image/loader.gif');
         
         $.ajax({
             url: 'index.php?route=product/product/getImages&product_id=' + product_id +'&color_id=' + color_id,
@@ -117,6 +120,9 @@ $(document).ready(function() {
                 $(this).on('hover');
             },
             success: function(json_data) {
+                
+                $("#img_" + product_id).attr('src','image/no_image.jpg');
+            
                 if (typeof json_data.images != "undefined") {
                     value = json_data.images[0];
                    $("#img_" + product_id).attr('src',value.thumb);
