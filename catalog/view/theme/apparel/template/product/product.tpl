@@ -578,6 +578,7 @@ $('#button-review').bind('click', function() {
                     
                     $.each( json_data.images, function( key, value ) {
                       image_list += '<a href="' + value.popup + '" class="cloud-zoom-gallery" title="" rel="useZoom: \'zoom1\', smallImage: \'' + value.thumb + '\' "><img class="zoom-tiny-image" src="' + value.thumb + '" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" style="opacity: 1;"></a>';
+                      console.log(image_list);
                     });
                 }
                 $('.image-additional').html(image_list);
