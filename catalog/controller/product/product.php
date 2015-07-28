@@ -667,9 +667,9 @@ class ControllerProductProduct extends Controller {
 
         foreach ($results_images as $result) {
             $json['images'][] = array(
-                'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height')),
+                'thumb' => stripslashes($this->model_tool_image->resize($result['image'], $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'))),
                 /*'popup' => $this->model_tool_image->resize($result['image'], $this->config->get('config_image_related_width'), $this->config->get('config_image_related_height'))*/
-                'popup' => $this->model_tool_image->resize($result['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
+                'popup' => stripslashes($this->model_tool_image->resize($result['image'], $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height'))),
                 'pic' => $result['image']
             );
         }	
