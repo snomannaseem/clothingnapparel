@@ -88,8 +88,14 @@
 /* slider theme */
 
 .slideshow {
-  width: 49%;
-  float:left;
+    width: 49%;
+    float: left;
+    border: 1px solid #000;
+}
+
+.slideshow0{
+    width: 570px !important;
+    height: 530px !important;
 }
 
 .slideshow .nivoSlider {
