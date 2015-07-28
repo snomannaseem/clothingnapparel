@@ -93,9 +93,10 @@
         <div id="detail_color" class="left">
         <input type="hidden" id="option[<?php echo $option['product_option_id']; ?>]" name="option[<?php echo $option['product_option_id']; ?>]" value=""/>
       <?php 
+      
         foreach ($option['option_value'] as $option_value) { ?>
           <?php if (!empty($option_value['op_desc1'])) {?>
-            <div product_option_id="option[<?php echo $option['product_option_id']; ?>]" option_value="<?php echo $option_value['product_option_value_id']; ?>"  style="background-color:<?php echo $option_value['op_desc1']; ?>" class="shoe_color getImages" color_id="<?php echo $option_value['option_value_id']; ?>" product_id="<?php echo $product_id; ?>" ></div>
+            <div title = "<?php echo $option_value['name']; ?>" product_option_id="option[<?php echo $option['product_option_id']; ?>]" option_value="<?php echo $option_value['product_option_value_id']; ?>"  style="background-color:<?php echo $option_value['op_desc1']; ?>" class="shoe_color getImages" color_id="<?php echo $option_value['option_value_id']; ?>" product_id="<?php echo $product_id; ?>" ></div>
           <?php } ?>
       <?php } 
       //}
@@ -538,7 +539,6 @@ $('#button-review').bind('click', function() {
                 image_list = "";
                 $("#image").attr('src','image/no_image.jpg');
                 document.getElementById(product_option_id).value = '';
-                $('.image-additional').html(image_list);
                 
                 $('#opt_size')
                     .find('option')
@@ -579,13 +579,10 @@ $('#button-review').bind('click', function() {
                     $.each( json_data.images, function( key, value ) {
                       image_list += '<a href="' + value.popup + '" class="cloud-zoom-gallery" title="" rel="useZoom: \'zoom1\', smallImage: \'' + value.thumb + '\' "><img class="zoom-tiny-image" src="' + value.thumb + '" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" style="opacity: 1;"></a>';
                     });
-                    
-                        
-                    
-                    $('.image-additional').html(image_list);
-                    $('.cloud-zoom-gallery').CloudZoom();    
-                    $('.zoom-tiny-image').first().trigger('click');
-                }  
+                }
+                $('.image-additional').html(image_list);
+                $('.cloud-zoom-gallery').CloudZoom();    
+                $('.zoom-tiny-image').first().trigger('click');
             }
         });
     });
