@@ -1404,8 +1404,9 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .box-product > div:last-child {
-
-  margin-right:0;
+	margin-right: 0;
+    float: right;
+    margin: 17px 0 0 -22px;
 
 }
 
