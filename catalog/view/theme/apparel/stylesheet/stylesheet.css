@@ -780,7 +780,7 @@ div#call {
     background: url('../image/menu.png');
     width: 20%;
 	border-top: 5px solid #FFFFE0;
-    padding: 0 0 20px;
+    padding: 15px 0px;
 }
 
 #menu > ul > li:hover > div {

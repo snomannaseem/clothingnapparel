@@ -102,7 +102,7 @@
 .slideshow .nivoSlider {
 	position: relative;
 	background: #fff url('../image/loading.gif') no-repeat 50% 50%;	
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .slideshow .nivoSlider img {
 	position: absolute;
