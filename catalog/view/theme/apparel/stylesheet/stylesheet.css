@@ -305,7 +305,7 @@ label {
 }
 
 div#call {
-    width: 70%;
+    width: 72%;
     margin: 0 auto;
 }
 
@@ -653,7 +653,7 @@ div#call {
 #header #search input {
     background: #f4f5f5;
     padding: 1px 1px 1px 15px;
-    width: 85%;
+    width: 83%;
     height: 42px;
     border: 1px solid #CCCCCC;
     float: left;
@@ -3742,7 +3742,6 @@ div#checkout input[type='button'] {
 .box-product .color a {
     float: right;
     margin: 6px 21px 0 0;
-    border: 1px solid #000;
     width: 45px;
     height: 18px;
     line-height: 18px;
@@ -4135,26 +4134,32 @@ div#banner4 {
 @media only screen and (min-width: 768px) and (max-width: 979px) {
 	.topbar {
 		background-color: #000;
-		height: 62px;
+		height: 54px;
 		padding: 10px 0 0;
 	}
 	
 	#welcome {
-		color: #fff;
-		float: none;
-		line-height: 20px;
-		margin: 0 auto;
-		text-decoration: none;
-		text-indent: 0;
-		width: 37%;
-	}
+        color: #fff;
+        float: none;
+        line-height: 20px;
+        margin: 0 auto;
+        text-align: center;
+        text-decoration: none;
+        text-indent: 0;
+        width: 100%;
+    }
 	
 	.links {
-		float: none;
-		line-height: 20px;
-		margin: 0 auto;
-		width: 41%;
-	}
+        float: none;
+        line-height: 20px;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #header #logo {
+        margin: 18px 0 0;
+    }
 	
 	#container {
 		margin-left: auto;
@@ -4170,87 +4175,111 @@ div#banner4 {
 	#logo img {
 		width: 100%;
 	}
+    
+    
+    #header .mid {
+        float: left;
+        margin: 3px 0 0;
+        width: 45%;
+    }	
+	    
+    div#call {
+        left: 0;
+        margin: 0 auto 15px;
+        position: static;
+        top: 0;
+        width: 70%;
+    }
 	
-	#call {
-		left: 280px;
-		position: absolute;
-		top: 50px;
-		width: 40%;
-	}
+    
+    #call img {
+        float: left;
+        margin: 2% 2% 0 5%;
+        width: 15%;
+    }  
+    
+    
+#call h4 {
+    font-size: 13px;
+    margin: 35px 0 0;
+}
 	
-	#call img {
-		float: left;
-		margin: 17% 2% 0 5%;
-		width: 12%;
-	}
+#call h1 {
+    color: #14212b;
+    font-family: trebuchet ms;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
 	
-	#call h4 {
-		color: #14212b;
-		font-family: trebuchet ms;
-		font-size: 12px;
-		margin: 44px 0 0;
-		padding: 0;
-	}
+#header #search {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#header #search input {
+    background: #f4f5f5 none repeat scroll 0 0;
+    border-color: #cccccc -moz-use-text-color #cccccc #cccccc;
+    border-image: none;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    float: left;
+    height: 39px;
+    padding: 1px 1px 1px 33px;
+    width: 79%;
+}
 	
-	#call h1 {
-		color: #14212b;
-		font-family: trebuchet ms;
-		font-size: 21px;
-		margin: 0;
-		padding: 0;
-	}
-	
-	#header #search input {
-		background: none repeat scroll 0 0 #f4f5f5;
-		border: 1px solid #cccccc;
-		height: 39px;
-		padding: 1px 1px 1px 33px;
-		width: 160px;
-	}
-	
-	#header .button-search {
-		background: url("../image/button-search.png") no-repeat scroll center center #f4f5f5;
-		border-right: 1px solid #cccccc;
-		cursor: pointer;
-		height: 41px;
-		left: 0;
-		margin: -42px 0 0 189px;
-		position: absolute;
-		width: 46px;
-	}
-	
+#header .button-search {
+    background: #f4f5f5 url("../image/button-search.png") no-repeat scroll center center;
+    border-right: 1px solid #cccccc;
+    cursor: pointer;
+    float: left;
+    height: 37px;
+    left: 0;
+    margin: 0;
+    position: static;
+    width: 46px;
+}
+
+#header #cart {
+    min-width: 25%;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    z-index: 9;
+}
 	#menu {
 		background: none repeat scroll 0 0 #d30f10;
-		height: 120px;
-		margin-bottom: 30px;
+		height: 80px;
+		margin-bottom: 15px;
 		padding: 0;
 	}
 	
-	#menu > ul > li {
-		border-bottom: 1px solid #fff;
-		height: 60px;
-		line-height: 60px;
-		width: 24.8%;
-	}
+#menu > ul > li {
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    line-height: 40px;
+    width: 24.8%;
+}
 	
-	#menu > ul > li > a {
-		line-height: 60px;
-		font-size: 17px;
-		width: 100%;
-	}
+#menu > ul > li > a {
+    font-size: 17px;
+    line-height: 40px;
+    padding: 0;
+    width: 100%;
+}
 	
-	#menu > ul > li:last-child {
-		border-right: 0 solid;
-	}
+
 	
-	#menu > ul > li > div > ul > li > a {
-		color: #ffffff;
-		font-size: 17px;
-	}
+#menu > ul > li > div > ul > li > a {
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 15px;
+}
 	
 	#slideshow0 {
 		width: 100% !important;
-		height: 324px !important;
+		height: 323px !important;
 	}
 	
 	.banner div img {
@@ -4259,35 +4288,43 @@ div#banner4 {
 	}
 	
 	div#banner0 {
-		height: 145px;
-		width: 158px;
+		height: 153px;
+		width: 167px;
 	}
 	
 	div#banner1 {
-		height: 145px;
-		width: 158px;
+		height: 153px;
+		width: 167px;
 	}
 	
 	div#banner2 {
-		height: 145px;
-		width: 158px;
+		height: 153px;
+		width: 167px;
 	}
 	
 	div#banner3 {
-		height: 145px;
-		width: 158px;
+		height: 153px;
+		width: 167px;
 	}
 	
-	
+	.box-heading {
+        padding: 6px 0 2px;
+    }
 	.box {
-		margin: 0 0 10px;
+		margin: 0;
+        height: 463px;
 	}
 	
 	.box-product > div {
 		height: 403px;
-		width: 153px;
+		width: 170px;
 	}
-	
+    
+	.box-product .color a {
+        height: 19px;
+        line-height: 19px;
+        margin: 4px 11px 0 0;
+    }
 	.shoe_color.getImages {
 		height: 19px;
 		width: 16px;
@@ -4305,24 +4342,26 @@ div#banner4 {
 		width: 125px;
 	}
 	
-	div#banner4 {
-		height: 124px;
-		width: 473px !important;
-	}
+div#banner4 {
+    height: 125px;
+    width: 477px !important;
+}
 	
-	div#banner5 {
-		height: 124px;
-		width: 227px;
-	}
+div#banner5 {
+    height: 125px;
+    width: 229px;
+}
 	
 	div#banner6 {
 		height: 173px;
 		width: 49%;
+        margin: 12px 0;
 	}
 	
 	div#banner7 {
 		height: 173px;
 		width: 49%;
+        margin: 12px 0;
 	}
 	
 	#footer {
