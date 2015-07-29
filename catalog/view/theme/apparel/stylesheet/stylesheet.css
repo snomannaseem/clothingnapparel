@@ -76,24 +76,25 @@ body {
 #call img {
     float: left;
     margin: 1% 2% 0 0%;
+    width: 14%;
 }
 
 #call h4 {
     margin: 0px 0px 0 0;
     padding: 0;
-    font-size: 1.4em;
+    font-size: 12px;
     font-family: trebuchet ms;
-    color: #14212b;
+    color: #333;
+    font-weight: normal;
 }
 
 #call h1 {
     margin: 0;
     padding: 0;
-    font-size: 2.4em;
+    font-size: 20px;
     font-family: trebuchet ms;
     color: #14212b;
 }
-
 
 
 body, td, th, input, textarea, select, a {
@@ -285,7 +286,7 @@ label {
 /* header */
 
 #header {
-    height: 155px;
+    height: 115px;
     margin-bottom: 7px;
     padding-bottom: 4px;
     position: relative;
@@ -293,21 +294,26 @@ label {
 }
 
 #header #logo {
-    width: 30%;
+    width: 15%;
     float: left;
     margin: 18px 0 0 15px;
+}
+#logo img {
+    width: 100%;
 }
 
 #header .mid {
     float: left;
     width: 40%;
-    margin: 40px 0 0 0;
+    margin: 14px 0 0 160px;
 }
 
 div#call {
-    width: 72%;
+    width: 50%;
     margin: 0 auto 15px;
 }
+
+
 
 #language {
 
@@ -379,54 +385,38 @@ div#call {
 
 #header #cart {
     position: absolute;
-    top: 77px;
+    top: 17px;
     right: 0;
     z-index: 9;
     min-width: 300px;
 }
 
 #header #cart .heading {
-
-  float: right;
-
-  margin-right: 0px;
-
-  margin-top: 8px;
-
-  padding: 12px 10px 0px 10px;
-
-  border: 1px solid #d30f10;
-
-  background: #f4f5f5;
-
-  position: relative;
-
-  z-index: 1;
-
-  height: 50px;
-
+    float: right;
+    margin-right: 0px;
+    margin-top: 8px;
+    padding: 12px 10px 0px 10px;
+    border: 1px solid #d30f10;
+    background: #f4f5f5;
+    position: relative;
+    z-index: 1;
+    height: 73px;
+    width: 210px;
+    text-align: center;
 }
 
 #header #cart .heading h4 {
-
-	color: #333333;
-
-	font-size: 15px;
-
-	font-weight: bold;
-
-	margin-top: 0px;
-
-	margin-bottom: 3px;
-
+    color: #333333;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 8px;
 }
 
 #header #cart .heading a {
-
-	color: #d30f10;
-
-	text-decoration: none;
-
+    color: #d30f10;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 #header #cart .heading a span {
@@ -3392,7 +3382,7 @@ div#banner4 {
     margin: 0px 0 0 0;
     border: 1px solid #000;
     height: auto;
-    width: 67%;
+    width: 66.2%;
 }
 
 
@@ -3402,7 +3392,7 @@ div#banner5 {
     margin: 0px 0 0 0;
     height: auto;
     border: 1px solid #000;
-    width: 32%;
+    width: 31.6%;
 }
 
 
@@ -3412,7 +3402,7 @@ div#banner6 {
     margin: 15px 0;
     height: auto;
     border: 1px solid #000;
-    width: 49.4%;
+    width: 48.6%;
 }
 
 
@@ -3421,7 +3411,7 @@ div#banner7 {
     margin: 15px 0 0 0;
     height: auto;
     border: 1px solid #000;
-    width: 49.4%;
+    width: 48.6%;
 }
 
 

@@ -95,9 +95,9 @@
         
         <div class="mid">
             <div id="call">
-                <img src="image/data/call_ico.jpg">
-                <h4>CALL US NOW TOLL FREE</h4>
+                <img src="image/data/call_ico.jpg">                
                 <h1>0-800-123-4567</h1>
+				<h4>CALL US NOW TOLL FREE</h4>
             </div>
             
             <div id="search">            
