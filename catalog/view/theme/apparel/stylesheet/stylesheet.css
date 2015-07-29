@@ -653,7 +653,7 @@ div#call {
 #header #search input {
     background: #f4f5f5;
     padding: 1px 1px 1px 15px;
-    width: 86%;
+    width: 85%;
     height: 42px;
     border: 1px solid #CCCCCC;
     float: left;
@@ -760,7 +760,6 @@ div#call {
     display: block;
     z-index: 6;
     font-family: trebuchet ms;
-    text-transform: uppercase;
     padding: 0 15px;
 }
 
@@ -781,6 +780,7 @@ div#call {
     background: url('../image/menu.png');
     width: 20%;
 	border-top: 5px solid #FFFFE0;
+    padding: 0 0 20px;
 }
 
 #menu > ul > li:hover > div {
