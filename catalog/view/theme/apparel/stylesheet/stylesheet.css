@@ -304,6 +304,11 @@ label {
     margin: 40px 0 0 0;
 }
 
+div#call {
+    width: 70%;
+    margin: 0 auto;
+}
+
 #language {
 
 	position: absolute;
@@ -602,8 +607,8 @@ label {
 
 #header .button-search {
     background: url('../image/button-search.png') center center no-repeat;
-    width: 7.8%;
-    height: 26%;
+    width: 10%;
+    height: 44px;
     border-right: 1px solid #CCCCCC;
     cursor: pointer;
     background-color: #f4f5f5;
