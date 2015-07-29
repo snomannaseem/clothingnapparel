@@ -3913,36 +3913,39 @@ div#checkout input[type='button'] {
 		width: 100%;
 	}
 	
-	#header #logo {
+#header #logo {
     left: 0;
+    margin: 0;
     position: absolute;
     top: 16px;
-    width: 41%;
+    width: 36%;
+}
+
+#header .mid {
+    float: right;
+    margin: 40px 0 0;
+    width: 40%;
+}
+
+div#call {
+    margin: 0 auto;
+    width: 100%;
 }
 	
-	#call {
-    left: 253px;
-    position: absolute;
-    top: 11px;
-    width: 56%;
-}
-	
-	#call img {
+#call img {
     float: left;
-    margin: 17% 2% 0 5%;
-    width: 15%;
+    margin: 5% 2% 0 5%;
+    width: 14%;
 }
-	
-	
+
 #call h4 {
     color: #14212b;
     font-family: trebuchet ms;
     font-size: 12px;
-    margin: 44px 0 0;
+    margin: 0;
     padding: 0;
 }
-	
-	#call h1 {
+#call h1 {
     color: #14212b;
     font-family: trebuchet ms;
     font-size: 21px;
@@ -3958,63 +3961,87 @@ div#checkout input[type='button'] {
     z-index: 9;
 }
 
+
 #header #search {
     position: absolute;
-    right: 0;
+    right: 225px;
     text-align: right;
-    top: 155px;
+    top: 115px;
     width: 236px;
     z-index: 15;
 }
+
+#header #search input {
+    background: #f4f5f5 none repeat scroll 0 0;
+    border: 1px solid #cccccc;
+    float: left;
+    height: 35px;
+    padding: 1px 1px 1px 33px;
+    width: 134px;
+    border-right:0px;
+}
 	
-	#header #search input {
-		background: none repeat scroll 0 0 #f4f5f5;
-		border: 1px solid #cccccc;
-		height: 39px;
-		padding: 1px 1px 1px 33px;
-		width: 160px;
-	}
-	
-	#header .button-search {
-		background: url("../image/button-search.png") no-repeat scroll center center #f4f5f5;
-		border-right: 1px solid #cccccc;
-		cursor: pointer;
-		height: 41px;
-		left: 0;
-		margin: -42px 0 0 189px;
-		position: absolute;
-		width: 46px;
-	}
-	
+
+#header .button-search {
+    background: #f4f5f5 url("../image/button-search.png") no-repeat scroll center center;
+    border-right: 1px solid #cccccc;
+    cursor: pointer;
+    float: left;
+    height: 33px;
+    left: 0;
+    position: static;
+    width: 46px;
+}
+
+#header #cart {
+    min-width: 300px;
+    position: absolute;
+    right: 0;
+    top: 78px;
+    z-index: 9;
+}
+
+#header #cart .content {
+    margin: 79px 0 0;
+    position: absolute;
+    width: 100%;
+}
 	#menu {
-    background: none repeat scroll 0 0 #d30f10;
-    height: 182px;
-    margin-bottom: 30px;
+    background: none ;
+    height: none;
+    margin-bottom: 8px;
     padding: 0;
 }
 	
 	#menu > ul > li {
     border-bottom: 1px solid #fff;
-    height: 60px;
-    line-height: 60px;
+    height: 40px;
+    line-height: 40px;
     width: 33.1%;
+    background:#d30f10;
 }
 	
-	#menu > ul > li > a {
-		line-height: 60px;
-		font-size: 17px;
-		width: 100%;
-	}
+#menu > ul > li > a {
+    font-size: 17px;
+    line-height: 40px;
+    padding: 0;
+    width: 100%;
+}
 	
 	#menu > ul > li:last-child {
 		border-right: 0 solid;
 	}
 	
 	#menu > ul > li > div > ul > li > a {
-		color: #ffffff;
-		font-size: 17px;
-	}
-	
+        color: #ffffff;
+        font-size: 17px;
+        padding: 0 15px;
+        text-indent: 0;
+    }
+    
+    #menu > ul > li:nth-child(3) > div {
+        margin: 0 0 0 -61px;
+    }
 	.slideshow {
 		display:none;
 	}
@@ -4026,13 +4053,13 @@ div#checkout input[type='button'] {
 	
 	div#banner0 {
     height: 207px;
-    margin: 0;
+    margin: 8px 0 0;
     width: 49%;
 }
 	
 	div#banner1 {
     height: 207px;
-    margin: 0;
+    margin: 8px 0 0;
     width: 49%;
 }
 	
@@ -4051,14 +4078,14 @@ div#checkout input[type='button'] {
 	
 	
 .box {
-    height: 910px;
+    height: 867px;
     margin: 0 0 20px;
 }
 	
-	.box-product > div {
+.box-product > div {
     height: 403px;
-    margin: 10px 8px;
-    width: 46%;
+    margin: 5px 4px;
+    width: 47%;
 }
 	
 	.shoe_color.getImages {
@@ -4089,14 +4116,16 @@ div#banner4 {
     width: 31%;
 }
 	
-	div#banner6 {
-		height: 111px;
-		width: 49%;
-	}
+div#banner6 {
+    height: 111px;
+    margin: 8px 0;
+    width: 49%;
+}
 	
 	div#banner7 {
 		height: 111px;
 		width: 49%;
+        margin: 8px 0;
 	}
 	
 	#footer {
@@ -4111,11 +4140,7 @@ div#banner4 {
     width: 100%;
 }
 
-#header #cart .content{
-    margin: 74px 0 0 174px;
-    position: absolute;
-    width: 100%;
-}
+
 	
 	.product-grid .name {
 		height: 35px;
