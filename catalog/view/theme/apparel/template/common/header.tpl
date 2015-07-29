@@ -118,6 +118,7 @@
 	</div>
     
 	<?php if ($categories) { ?>
+    <div>checking</div>
     <div id="menu">
         <ul>
         	<?php foreach ($categories as $category) { ?>
