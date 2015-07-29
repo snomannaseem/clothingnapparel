@@ -712,7 +712,7 @@ div#call {
 
   background: #d30f10;
 
-  height: 60px;
+  height: 40px;
 
   margin-bottom: 15px;
 
@@ -732,8 +732,8 @@ div#call {
 
 #menu > ul > li {
     float: left;
-    height: 60px;
-    line-height: 60px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     border-right: 1px solid #ccc;
 }
@@ -745,7 +745,7 @@ div#call {
 #menu > ul > li > a {
     font-size: 1.9em;
     color: #FFF;
-    line-height: 60px;
+    line-height: 40px;
     text-decoration: none;
     display: block;
     z-index: 6;
