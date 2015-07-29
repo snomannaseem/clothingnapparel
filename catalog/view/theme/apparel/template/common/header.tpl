@@ -118,11 +118,10 @@
 	</div>
     
 	<?php if ($categories) { ?>
-    <div>checking</div>
     <div id="menu">
         <ul>
         	<?php foreach ($categories as $category) { ?>
-        	<li><a href="<?php echo $category['href']; ?>"><?php echo ucwords($category['name']); ?></a>
+        	<li><a href="<?php echo $category['href']; ?>"><?php echo ucfirst($category['name']); ?></a>
         	<?php if ($category['children']) { ?>
         	<div>
         		<?php for ($i = 0; $i < count($category['children']);) { ?>
@@ -130,7 +129,7 @@
                     <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
                     <?php for (; $i < $j; $i++) { ?>
                     <?php if (isset($category['children'][$i])) { ?>
-                    <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo ucwords($category['children'][$i]['name']); ?></a></li>
+                    <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo ucfirst($category['children'][$i]['name']); ?></a></li>
                     <?php } ?>
                     <?php } ?>
                 </ul>
