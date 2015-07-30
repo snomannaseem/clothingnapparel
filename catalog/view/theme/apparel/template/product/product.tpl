@@ -350,10 +350,10 @@
 	    <?php } ?> 
 	            
 	        <?php if ($product['thumb']) { ?>
-	        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
+	        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo str_truncate($product['name'],55); ?>" /></a></div>
 	        <?php } ?>
 	        <div class="pr_info">
-		        <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+		        <div class="name"><a href="<?php echo $product['href']; ?>"><?php echo str_truncate($product['name'],55); ?></a></div>
 		        <?php if ($product['price']) { ?>
 		        <div class="price">
 		          <?php if (!$product['special']) { ?>
