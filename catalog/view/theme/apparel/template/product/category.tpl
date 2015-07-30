@@ -174,7 +174,7 @@
      
 						<div class="name">
 							<a href="<?php echo $product['href']; ?>">
-								<?php echo $product['name']; ?>
+								<?php echo str_truncate($product['name'], 55); ?>
 							</a>
 						</div>     
       
