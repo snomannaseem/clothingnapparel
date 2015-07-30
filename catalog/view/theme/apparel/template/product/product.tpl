@@ -22,7 +22,7 @@
 		</div>
 		<?php } ?>
       <?php 
-      if ($images || 1==1) { ?>
+      if ($images) { ?>
       <div class="image-additional">
         <a href='<?php echo $popup; ?>' class='cloud-zoom-gallery' title='<?php echo $heading_title; ?>' rel="useZoom: 'zoom1', smallImage: '<?php echo $thumb; ?>' "><img class="zoom-tiny-image" src="<?php echo $thumb; ?>" alt = "<?php echo $heading_title; ?>"/></a>  
         <?php foreach ($images as $image) { ?>
@@ -590,10 +590,10 @@ $('#image').on('load', function() {
                       image_list += '<a href="' + value.popup + '" class="cloud-zoom-gallery" title="" rel="useZoom: \'zoom1\', smallImage: \'' + value.thumb + '\' "><img class="zoom-tiny-image" src="' + value.thumb + '" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" style="opacity: 1;"></a>';
                     });
                 }
-                console.log(image_list);
+                
                 $('.image-additional').html(image_list);
                 $('.cloud-zoom-gallery').CloudZoom();    
-                //$('.zoom-tiny-image').first().trigger('click');
+                $('.zoom-tiny-image').first().trigger('click');
             }
         });
     });
