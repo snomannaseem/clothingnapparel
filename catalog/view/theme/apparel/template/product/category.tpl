@@ -35,7 +35,7 @@
 			<?php if (count($categories) <= 5 && 1==2) { ?>
 				<ul>
 					<?php foreach ($categories as $category) { ?>
-					<li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
+					<li><a href="<?php echo $category['href']; ?>"><?php echo str_truncate($category['name'],55); ?></a></li>
 					<?php } ?>
 				</ul>
 			<?php } else { ?>
@@ -142,7 +142,7 @@
 						<?php if ($product['thumb']) { ?>
 							<div class="image">
 								<a href="<?php echo $product['href']; ?>">
-									<img id="img_<?php echo $product['product_id']; ?>" src="<?php echo $product['thumb']; ?>" title="<?php echo $product['name']; ?>" alt="<?php echo $product['name']; ?>" />
+									<img id="img_<?php echo $product['product_id']; ?>" src="<?php echo $product['thumb']; ?>" title="<?php echo str_truncate($product['name'],55); ?>" alt="<?php echo $str_truncate(product['name'],55); ?>" />
 								</a>
 							</div>
 						<?php } ?> 
@@ -174,7 +174,7 @@
      
 						<div class="name">
 							<a href="<?php echo $product['href']; ?>">
-								<?php echo $product['name']; ?>
+								<?php echo str_truncate($product['name'],55); ?>
 							</a>
 						</div>     
       
