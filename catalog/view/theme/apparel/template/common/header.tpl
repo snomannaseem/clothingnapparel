@@ -103,8 +103,11 @@
             <div id="search">            
                 <?php if ($filter_name) { ?>
                     <input type="text" name="filter_name" value="<?php echo $filter_name; ?>" />
-                <?php } else { ?>
-                    <input type="text" name="filter_name" value="<?php echo $text_search; ?>" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
+                <?php } else {
+					if (strtolower($text_search) == 'search') $text_search = "";
+				?>
+					
+                    <input type="text" name="filter_name" value="<?php echo $text_search; ?>" placeholder="Search" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
                 <?php } ?>
                 <div class="button-search"></div>
             </div>
