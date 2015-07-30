@@ -550,6 +550,9 @@ $('#image').on('load', function() {
                 $("#image").attr('src','image/no_image.jpg');
                 document.getElementById(product_option_id).value = '';
                 
+                $('.image-additional').html(image_list);
+                $('.cloud-zoom-gallery').CloudZoom();    
+                
                 $('#opt_size')
                     .find('option')
                     .remove()
@@ -589,11 +592,12 @@ $('#image').on('load', function() {
                     $.each( json_data.images, function( key, value ) {
                       image_list += '<a href="' + value.popup + '" class="cloud-zoom-gallery" title="" rel="useZoom: \'zoom1\', smallImage: \'' + value.thumb + '\' "><img class="zoom-tiny-image" src="' + value.thumb + '" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" style="opacity: 1;"></a>';
                     });
+                    $('.image-additional').html(image_list);
+                    $('.cloud-zoom-gallery').CloudZoom();    
+                    $('.zoom-tiny-image').first().trigger('click');
+
                 }
                 
-                $('.image-additional').html(image_list);
-                $('.cloud-zoom-gallery').CloudZoom();    
-                $('.zoom-tiny-image').first().trigger('click');
             }
         });
     });
