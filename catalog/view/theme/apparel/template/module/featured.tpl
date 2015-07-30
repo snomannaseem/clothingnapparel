@@ -45,7 +45,7 @@
                                 foreach ($option['option_value'] as $option_value) { ?>
                                     <?php if (!empty($option_value['op_desc1'])) {
                                         $tmp_color_count++;
-                                            if ($tmp_color_count > 3){
+                                            if ($tmp_color_count > 5){
                                             ?>
                                                 <a href="<?php echo $product['href']; ?>">More</a>
                                             <?php 
