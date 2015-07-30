@@ -237,7 +237,7 @@ label {
 
 #container {
 
-	width: 1180px;
+	width: 1000px;
 
 	margin-left: auto;
 
@@ -1319,15 +1319,10 @@ table .radio a.button:hover, input.button:hover {
 /* box */
 
 .box {
-
-  width: 100%;
-
-  height: 500px;
-
-  float: right;
-
-  margin: 0 0 78px 0;
-
+    width: 100%;
+    height: 350px;
+    float: right;
+    margin: 0 0 78px 0;
 }
 
 #column-right .box .box-heading {
@@ -1378,19 +1373,28 @@ table .radio a.button:hover, input.button:hover {
     width: 23.8%;
     display: inline-block;
     vertical-align: top;
-    height: 490px;
+    height: 360px;
     margin: 1.5% 1.3% 0 0;
     float: left;
     border: 1px solid #000;
 }
 
 .box-product > div .name {
-  height: 80px;
+  height: 30px;
 }
 
 .box-product > div .cart {
-  height: 50px;
-  margin: 0 7px;
+    height: 10px;
+    margin: -37px 0 0px 111px;
+}
+
+.box-product > div .cart input.button {
+    margin: 4px 16px 20px;
+    border: 0;
+    width: 100px;
+    height: 31px;
+    color: #fff;
+    border-radius: 0px;
 }
 
 .box-product > div:last-child {
@@ -1451,42 +1455,25 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .box-product .name a {
-
-	color: #F00 !important;
-
-	font-weight: bold;
-
-	text-decoration: none;
-
-	display: block;
-
-	font-family:trajan pro;
-
-	font-size: 18px;
-
-	width:88%;
-
-	margin:10px auto 4px;
-
+    color: #d30f10 !important;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    font-family: Arial;
+    font-size: 13px;
+    width: 88%;
+    margin: 10px auto 4px;
 }
 
 .box-product .price {
-
-  display: block;
-
-  font-weight: bold;
-
-  color: #333333;
-
-  margin-bottom: 4px;
-
-  padding: 3px 16px;
-
-  font-size: 16px;
-
-  font-family: trebuchet ms;
-  height:26px;
-
+    display: block;
+    font-weight: bold;
+    color: #333333;
+    padding: 3px 16px 3px;
+    font-size: 16px;
+    font-family: trebuchet ms;
+    height: 26px;
+    margin: 15px 0 0 0;
 }
 
 .box-product .price-old {
@@ -3253,7 +3240,7 @@ table .radio a.button:hover, input.button:hover {
 
   margin: 0 auto;
 
-  width: 1140px;
+  width: 960px;
 
   clear: both;
 
@@ -3348,31 +3335,31 @@ div#banner0 {
     float: left;
     margin: 0 0px 0px 15px;
     border: 1px solid #000;
-    height: 260px;
-    width: 283px;
+    height: 220px;
+    width: 240px;
 }
 
 div#banner1 {
     float: right;
     border: 1px solid #000;
-    height: 260px;
-    width: 283px;
+    height: 220px;
+    width: 240px;
 }
 
 div#banner2 {
     float: left;
     margin: 15px 0 15px 15px;
     border: 1px solid #000;
-    height: 260px;
-    width: 283px;
+    height: 220px;
+    width: 240px;
 }
 
 div#banner3 {
     float: right;
     border: 1px solid #000;
-    height: 260px;
     margin: 15px 0 15px 0;
-    width: 283px;
+    height: 220px;
+    width: 240px;
 }
 
 
@@ -3741,15 +3728,14 @@ div#checkout input[type='button'] {
 }
 
 .box-heading {
-  background-color: red;
-  padding: 12px 0;
-  text-indent: 10px;
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: trajan pro;
+    background-color: #d30f10;
+    padding: 7px 0;
+    text-indent: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial;
 }
-
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 .topbar {
