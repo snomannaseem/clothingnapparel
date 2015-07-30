@@ -1400,8 +1400,7 @@ table .radio a.button:hover, input.button:hover {
 .box-product > div:last-child {
 	margin-right: 0;
     float: right;
-    margin: 17px 0 0 -22px;
-
+    margin: 15px 0 0 -24px;
 }
 
 #column-left + #column-right + #content .box-product > div {
@@ -3335,31 +3334,31 @@ div#banner0 {
     float: left;
     margin: 0 0px 0px 15px;
     border: 1px solid #000;
-    height: 220px;
-    width: 240px;
+    height: 219px;
+    width: 239px;
 }
 
 div#banner1 {
     float: right;
     border: 1px solid #000;
-    height: 220px;
-    width: 240px;
+    height: 219px;
+    width: 239px;
 }
 
 div#banner2 {
     float: left;
     margin: 15px 0 15px 15px;
     border: 1px solid #000;
-    height: 220px;
-    width: 240px;
+    height: 219px;
+    width: 239px;
 }
 
 div#banner3 {
     float: right;
     border: 1px solid #000;
     margin: 15px 0 15px 0;
-    height: 220px;
-    width: 240px;
+    height: 219px;
+    width: 239px;
 }
 
 
@@ -3719,7 +3718,7 @@ div#checkout input[type='button'] {
 
 .box-product .color a {
     float: right;
-    margin: 6px 21px 0 0;
+    margin: 6px 10px 0 0;
     width: 45px;
     height: 18px;
     line-height: 18px;
