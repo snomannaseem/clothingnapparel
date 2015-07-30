@@ -21,7 +21,8 @@
 			</div>
 		</div>
 		<?php } ?>
-      <?php if ($images) { ?>
+      <?php 
+      if ($images || 1==1) { ?>
       <div class="image-additional">
         <a href='<?php echo $popup; ?>' class='cloud-zoom-gallery' title='<?php echo $heading_title; ?>' rel="useZoom: 'zoom1', smallImage: '<?php echo $thumb; ?>' "><img class="zoom-tiny-image" src="<?php echo $thumb; ?>" alt = "<?php echo $heading_title; ?>"/></a>  
         <?php foreach ($images as $image) { ?>
@@ -456,6 +457,10 @@ new AjaxUpload('#button-option-<?php echo $option['product_option_id']; ?>', {
 <?php } ?>
 <?php } ?>
 <script type="text/javascript">
+
+$( document ).ready(function() {
+   
+
 $('#review .pagination a').live('click', function() {
 	$('#review').slideUp('slow');
 		
@@ -500,17 +505,13 @@ $('#button-review').bind('click', function() {
 	});
 });
 
+$('#image').on('load', function() {
+    console.log('image loaded hello');
+
+});
+
     var is_processing = false;
-    var image_list = "";
-    
-    $(".zoom-tiny-image").on('load', function(){
-        $('.image-additional').html(image_list);
-        console.log(image_list);
-        $('.cloud-zoom-gallery').CloudZoom();    
-        $('.zoom-tiny-image').first().trigger('click');
-    
-    });
-    
+
     $('.getImages').click( function() {
         if (is_processing){
             return;
@@ -521,7 +522,7 @@ $('#button-review').bind('click', function() {
         option_value = $(this).attr('option_value');
         
         //$("#cloud-zoom-gallery").
-        
+                
         $.ajax({
             url: 'index.php?route=product/product/getImages&product_id=' + product_id +'&color_id=' + color_id,
             type: 'post',
@@ -587,24 +588,17 @@ $('#button-review').bind('click', function() {
                     
                     $.each( json_data.images, function( key, value ) {
                       image_list += '<a href="' + value.popup + '" class="cloud-zoom-gallery" title="" rel="useZoom: \'zoom1\', smallImage: \'' + value.thumb + '\' "><img class="zoom-tiny-image" src="' + value.thumb + '" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" style="opacity: 1;"></a>';
-                      
                     });
                 }
-                /*
-                $('.image-additional').html(image_list);
                 console.log(image_list);
+                $('.image-additional').html(image_list);
                 $('.cloud-zoom-gallery').CloudZoom();    
-                $('.zoom-tiny-image').first().trigger('click');
-                */
+                //$('.zoom-tiny-image').first().trigger('click');
             }
-            
-            
-
-            
         });
     });
     
-
+});
     
 </script> 
 <script type="text/javascript">

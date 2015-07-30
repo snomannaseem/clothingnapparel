@@ -62,7 +62,7 @@
                     </div>
 					
 					<div class="name">
-						<a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
+						<a href="<?php echo $product['href']; ?>"><?php echo str_truncate($product['name'], 55); ?></a>
 					</div>
 					
 					<?php if ($product['price']) { ?>
