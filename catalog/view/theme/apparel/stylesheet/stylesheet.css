@@ -36,7 +36,7 @@ body {
   color: #fff;
   line-height: 35px;
   text-decoration: none;
-  font-family:Trebuchet ms;
+  font-family:Arial;
   font-size:15px;
 }
 
@@ -44,7 +44,7 @@ body {
   float: right;
   margin: 0 100px 0 0;
   line-height: 35px;
-  font-family:Trebuchet ms;
+  font-family:Arial;
   font-size:15px;
 
 }
@@ -64,14 +64,14 @@ body {
 #call img {
     float: left;
     margin: 1% 2% 0 0%;
-    width: 8%;
+    width: 10%;
 }
 
 #call h4 {
     margin: 0px 0px 0 0;
     padding: 0;
     font-size: 12px;
-    font-family: trebuchet ms;
+    font-family: Arial;
     color: #333;
     font-weight: normal;
 }
@@ -80,7 +80,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 20px;
-    font-family: trebuchet ms;
+    font-family: Arial;
     color: #14212b;
 }
 
@@ -90,10 +90,10 @@ body, td, th, input, textarea, select, a {
 
 h1, .welcome {
 	color: #636E75;
-	font: Verdana;
+	font-family: Arial;
 	margin-top: 0px;
-	margin-bottom: 20px;
-	font-size: 32px;
+	margin-bottom: 10px;
+	font-size: 24px;
 	font-weight: normal;
 	text-shadow: 0 0 1px rgba(0, 0, 0, .01);
 }
@@ -221,7 +221,7 @@ label {
 }
 
 #logo img {
-    width: 87%;
+    width: 100%;
 }
 
 #header .mid {
@@ -231,8 +231,8 @@ label {
 }
 
 div#call {
-    width: 60%;
-    margin: 9px 0 12px 170px;
+    width: 70%;
+    margin: 9px 0 12px 150px;
 }
 
 #language {
@@ -523,7 +523,7 @@ div#call {
     text-decoration: none;
     display: block;
     z-index: 6;
-    font-family: trebuchet ms;
+    font-family: Arial;
     padding: 0 15px;
 }
 
@@ -538,11 +538,9 @@ div#call {
     background: #FFFFFF;
     position: absolute;
     z-index: 6;
-    padding: 0px;
     border: 1px solid #000000;
-    background: url('../image/menu.png');
     width: 20%;
-	border-top: 5px solid #FFFFE0;
+	border-top: 5px solid #000000;
     padding: 15px 0px;
 }
 
@@ -569,11 +567,11 @@ div#call {
 }
 
 #menu > ul > li ul > li > a:hover {
-	background: #d30f10;
+	color: #d30f10;
 }
 
 #menu > ul > li > div > ul > li > a {
-    color: #FFFFFF;
+    color: #000;
     font-size: 1.4em;
     font-family: arial;
     text-align: left;
@@ -3069,34 +3067,35 @@ table .radio a.button:hover, input.button:hover {
 
 
 div#banner0 {
-    float: left;
-    margin: 0 0px 0px 15px;
-    border: 1px solid #000;
-    height: 219px;
-    width: 239px;
+  float: left;
+  margin: 0 10px 15px 0;
+  border: 1px solid #000;
+  height: 220px;
+  width: 24%;
 }
 
 div#banner1 {
-    float: right;
-    border: 1px solid #000;
-    height: 219px;
-    width: 239px;
+  float: right;
+  border: 1px solid #000;
+  height: 220px;
+  width: 24%;
+  margin: 0 0 15px 0;
 }
 
 div#banner2 {
-    float: left;
-    margin: 15px 0 15px 15px;
-    border: 1px solid #000;
-    height: 219px;
-    width: 239px;
+  float: left;
+  margin: 0 0 15px 0;
+  border: 1px solid #000;
+  height: 220px;
+  width: 24%;
 }
 
 div#banner3 {
-    float: right;
-    border: 1px solid #000;
-    margin: 15px 0 15px 0;
-    height: 219px;
-    width: 239px;
+  float: right;
+  border: 1px solid #000;
+  margin: 0 10px 15px 0;
+  height: 220px;
+  width: 24%;
 }
 
 div#banner4 {
