@@ -1,39 +1,26 @@
 html {
-
 	overflow: -moz-scrollbars-vertical;
-
 	margin: 0;
-
 	padding: 0;
-
 }
 
 body {
-
 	background-color: #ffffff;
-
 	color: #000000;
-
 	font-family: Arial, Helvetica, sans-serif;
-
 	margin: 0px;
-
 	padding: 0px;
-
 }
 
 .topbar {
-
-  height: 37px;
-
-  background-color: #000;
-
+    height: 37px;
+    background-color: #f0f0f0;
 }
 
 #welcome {
   float: left;
   text-indent: 90px;
-  color: #fff;
+  color: #000;
   line-height: 35px;
   text-decoration: none;
   font-family:Arial;
@@ -50,7 +37,7 @@ body {
 }
 
 .links a, a:visited, a b{
-	color: #fff !important;
+	color: #000;
     text-decoration: underline;
     cursor: pointer;
 	font-size:15px;
@@ -89,13 +76,13 @@ body, td, th, input, textarea, select, a {
 }
 
 h1, .welcome {
-	color: #636E75;
-	font-family: Arial;
-	margin-top: 0px;
-	margin-bottom: 10px;
-	font-size: 24px;
-	font-weight: normal;
-	text-shadow: 0 0 1px rgba(0, 0, 0, .01);
+    color: #636E75;
+    font-family: Arial;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: normal;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .01);
 }
 
 h2 {
@@ -106,8 +93,11 @@ h2 {
 }
 
 p {
-	margin-top: 0px;
-	margin-bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #666;
 }
 
 a, a:visited, a b {
@@ -120,16 +110,7 @@ a:hover {
 	text-decoration: none;
 }
 
-.links a, a:visited, a b {
-	color: #fff;
-	text-decoration: underline;
-	cursor: pointer;
-}
 
-.links a:hover {
-	text-decoration: none;
-	color:red;
-}
 
 #welcome a, a:visited, a b {
 	color: #fff;
@@ -208,8 +189,6 @@ label {
 
 #header {
     height: 115px;
-    margin-bottom: 8px;
-    padding-bottom: 4px;
     position: relative;
     z-index: 99;
 }
@@ -232,7 +211,8 @@ label {
 
 div#call {
     width: 70%;
-    margin: 9px 0 12px 150px;
+    margin: 9px 0 6px 150px;
+    height: 44px;
 }
 
 #language {
@@ -495,7 +475,7 @@ div#call {
 #menu {
   background: #d30f10;
   height: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
   padding: 0px;
 }
 
@@ -1110,9 +1090,9 @@ table .radio a.button:hover, input.button:hover {
     display: inline-block;
     vertical-align: top;
     height: 360px;
-    margin: 1.5% 1.3% 0 0;
+    margin: 1% 1.3% 0 0;
     float: left;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
 }
 
 .box-product > div .name {
@@ -1136,7 +1116,7 @@ table .radio a.button:hover, input.button:hover {
 .box-product > div:last-child {
 	margin-right: 0;
     float: right;
-    margin: 15px 0 0 -24px;
+    margin: 10px 0 0 -24px;
 }
 
 #column-left + #column-right + #content .box-product > div {
@@ -1153,14 +1133,14 @@ table .radio a.button:hover, input.button:hover {
 
   text-align: center;
 
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ccc;
   padding:10px 0;
 
 }
 
 .color {
   height: 30px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ccc;
 }
 
 .shoe_color.getImages {
@@ -2983,7 +2963,7 @@ table .radio a.button:hover, input.button:hover {
 
 #footer h3 {
 
-	color: #000000;
+	color: #636e75;
 
 	font-size: 14px;
 
@@ -3020,11 +3000,8 @@ table .radio a.button:hover, input.button:hover {
 }
 
 #footer .column a {
-
-	text-decoration: none;
-
-	color: #000 !important;
-
+    color: #666 !important;
+    text-decoration: none;
 }
 
 #footer .column a:hover {
@@ -3037,8 +3014,8 @@ table .radio a.button:hover, input.button:hover {
   text-align: right;
   clear: both;
   text-align: center;
-  background-color: #000;
-  color: #fff;
+  background-color: #F0F0F0;
+  color: #666;
   height: 36px;
   line-height: 19px;
   padding: 18px 0 0 0;
@@ -3067,65 +3044,65 @@ table .radio a.button:hover, input.button:hover {
 
 
 div#banner0 {
-  float: left;
-  margin: 0 10px 15px 0;
-  border: 1px solid #000;
-  height: 220px;
-  width: 24%;
+    float: left;
+    margin: 0 10px 15px 0;
+    border: 1px solid #ccc;
+    height: 220px;
+    width: 24%;
 }
 
 div#banner1 {
-  float: right;
-  border: 1px solid #000;
-  height: 220px;
-  width: 24%;
-  margin: 0 0 15px 0;
+    float: right;
+    border: 1px solid #ccc;
+    height: 220px;
+    width: 24%;
+    margin: 0 0 15px 0;
 }
 
 div#banner2 {
-  float: left;
-  margin: 0 0 15px 0;
-  border: 1px solid #000;
-  height: 220px;
-  width: 24%;
+    float: left;
+    margin: 0 0 15px 0;
+    border: 1px solid #ccc;
+    height: 220px;
+    width: 24%;
 }
 
 div#banner3 {
-  float: right;
-  border: 1px solid #000;
-  margin: 0 10px 15px 0;
-  height: 220px;
-  width: 24%;
+    float: right;
+    border: 1px solid #ccc;
+    margin: 0 10px 15px 0;
+    height: 220px;
+    width: 24%;
 }
 
 div#banner4 {
     float: left;
-    margin: 0px 0 0 0;
-    border: 1px solid #000;
-    height: auto;
+    margin: 0;
+    border: 1px solid #ccc;
+    height: 173px;
     width: 66.2%;
 }
 
 div#banner5 {
     float: right;
-    margin: 0px 0 0 0;
-    height: auto;
+    margin: 0;
+    height: 173px;
     border: 1px solid #000;
     width: 31.6%;
 }
 
 div#banner6 {
     float: left;
-    margin: 15px 0;
-    height: auto;
+    margin: 10px 0;
+    height: 238px;
     border: 1px solid #000;
     width: 48.6%;
 }
 
 div#banner7 {
     float: right;
-    margin: 15px 0 0 0;
-    height: auto;
+    margin: 10px 0;
+    height: 238px;
     border: 1px solid #000;
     width: 48.6%;
 }
@@ -3409,7 +3386,7 @@ div#checkout input[type='button'] {
 }
 
 #powered a, a:visited, a b {
-  color: #fff;
+  color: #666;
   text-decoration: underline;
   cursor: pointer;
 }
