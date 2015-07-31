@@ -2994,9 +2994,9 @@ table .radio a.button:hover, input.button:hover {
 }
 
 #footer .column ul li:before {
-    content: "• ";
+    content: "\2666 ";
     color: white;
-    margin: 0 5px 0 0px;
+    margin: 0 8px 0 0px;
 }
 
 #footer .column ul li {
