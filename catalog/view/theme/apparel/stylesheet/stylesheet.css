@@ -267,8 +267,8 @@ div#call {
     margin-right: 0px;
     margin-top: 8px;
     padding: 12px 10px 0px 10px;
-    border: 1px solid #d30f10;
-    background: #f4f5f5;
+    border: 1px solid #ccc;
+    background: #fff;
     position: relative;
     z-index: 1;
     height: 64px;
@@ -277,7 +277,7 @@ div#call {
 }
 
 #header #cart .heading h4 {
-    color: #333333;
+    color: #666;
     font-size: 25px;
     font-weight: bold;
     margin-top: 0px;
@@ -285,7 +285,7 @@ div#call {
 }
 
 #header #cart .heading a {
-    color: #d30f10;
+    color: #ccc;
     text-decoration: none;
     font-size: 16px;
 }
