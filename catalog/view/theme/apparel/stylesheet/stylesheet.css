@@ -517,10 +517,10 @@ div#call {
     display: none;
     background: #FFFFFF;
     position: absolute;
-    z-index: 6;
-    border: 1px solid #000000;
+    z-index: 9;
+    border: 1px solid #ccc;
     width: 20%;
-	border-top: 5px solid #000000;
+	border-top: 5px solid #ccc;
     padding: 15px 0px;
 }
 
