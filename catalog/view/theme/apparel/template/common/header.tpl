@@ -64,19 +64,24 @@
 <body>
 <div class="topbar">
 	<div id="welcome">
-        <?php if (!$logged) { ?>
+        
             <?php echo $text_welcome; ?>
-        <?php } else { ?>
-            <?php echo $text_logged; ?>
-        <?php } ?>
+        
     </div>
     
     <div class="links">
+    <!--
         <a href="<?php echo $home; ?>"><?php echo $text_home; ?></a>
         <a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a>
-        <a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>
         <a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a>
         <a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a>
+        -->
+        <a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>&nbsp;&nbsp;&nbsp;
+        <?php if (!$logged) { ?>
+            <a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>
+        <?php } else { ?>
+            <?php echo $text_logged; ?>
+        <?php } ?>
     </div>
 </div>
 
