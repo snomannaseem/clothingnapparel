@@ -1036,7 +1036,7 @@ table .radio a.button:hover, input.button:hover {
 
 .box {
     width: 100%;
-    height: 350px;
+    height: 341px;
     float: right;
     margin: 0 0 78px 0;
 }
@@ -2951,7 +2951,7 @@ table .radio a.button:hover, input.button:hover {
 
   border: 1px solid #DBDEE1;
 
-  background: #fff;
+  background: #8B0000;
 
   margin: 0 auto;
 
@@ -2963,7 +2963,7 @@ table .radio a.button:hover, input.button:hover {
 
 #footer h3 {
 
-	color: #636e75;
+	color: #fff;
 
 	font-size: 14px;
 
@@ -2993,14 +2993,21 @@ table .radio a.button:hover, input.button:hover {
 
 }
 
+#footer .column ul li:before {
+    content: "• ";
+    color: white;
+    margin: 0 5px 0 0px;
+}
+
 #footer .column ul li {
 
 	margin-bottom: 3px;
+    list-style:none;
 
 }
 
 #footer .column a {
-    color: #666 !important;
+    color: #fff !important;
     text-decoration: none;
 }
 
@@ -3070,7 +3077,7 @@ div#banner2 {
 div#banner3 {
     float: right;
     border: 1px solid #ccc;
-    margin: 0 10px 15px 0;
+    margin: 0 10px 15px -20px;
     height: 220px;
     width: 24%;
 }
@@ -3079,32 +3086,32 @@ div#banner4 {
     float: left;
     margin: 0;
     border: 1px solid #ccc;
-    height: 173px;
-    width: 66.2%;
+    height: 174px;
+    width: 66.5%;
 }
 
 div#banner5 {
     float: right;
-    margin: 0;
-    height: 173px;
+    margin: 0 0 0 -20px;
+    height: 174px;
     border: 1px solid #ccc;
-    width: 31.6%;
+    width: 32.1%;
 }
 
 div#banner6 {
     float: left;
     margin: 10px 0;
-    height: 238px;
+    height: 242px;
     border: 1px solid #ccc;
-    width: 48.6%;
+    width: 49.1%;
 }
 
 div#banner7 {
     float: right;
     margin: 10px 0;
-    height: 238px;
+    height: 242px;
     border: 1px solid #ccc;
-    width: 48.6%;
+    width: 49.1%;
 }
 
 div#banner8 {
