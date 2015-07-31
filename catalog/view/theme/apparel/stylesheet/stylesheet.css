@@ -3095,7 +3095,7 @@ div#banner6 {
     float: left;
     margin: 10px 0;
     height: 238px;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
     width: 48.6%;
 }
 
@@ -3103,7 +3103,7 @@ div#banner7 {
     float: right;
     margin: 10px 0;
     height: 238px;
-    border: 1px solid #000;
+    border: 1px solid #ccc;
     width: 48.6%;
 }
 

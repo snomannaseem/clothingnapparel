@@ -95,13 +95,6 @@
 
 .slideshow .nivoSlider {
     border: 1px solid #ccc;
-    width: 100% ;
-    height: 536px ;
-}
-
-.slideshow .nivoSlider {
-	position: relative;
-	background: #fff url('../image/loading.gif') no-repeat 50% 50%;	
 	margin-bottom: 9px;
 }
 .slideshow .nivoSlider img {
