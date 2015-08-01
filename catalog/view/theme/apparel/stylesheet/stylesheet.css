@@ -3311,7 +3311,7 @@ div#banner8 {
 
 .thumb_loading {
   content: url("/image/loader.gif");
-  height: 20% !important;
+  height: 30% !important;
   width: 30% !important;
   padding: 75px 0 !important;
 }
