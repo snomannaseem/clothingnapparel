@@ -104,7 +104,7 @@
 	display: none;
 }
 .slideshow .nivoSlider a {
-	border: 1px solid #000;
+	border: 1px solid #ccc;
 	display: block;
 }
 .slideshow .nivo-controlNav {
