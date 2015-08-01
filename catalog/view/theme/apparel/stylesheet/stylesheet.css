@@ -1132,14 +1132,15 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .box-product > div .cart input.button {
-    margin: 4px 16px 20px;
-    border: 0;
-    width: 100px;
-    height: 31px;
-    color: #fff;
-    border-radius: 0px;
+  margin: 4px 35px 10px;
+  border: 0;
+  width: 80px;
+  height: 25px;
+  color: #fff;
+  border-radius: 0px;
+  line-height: 25px;
+  font-size: 12px;
 }
-
 .box-product > div:last-child {
 	margin-right: 0;
     float: right;
@@ -3301,10 +3302,10 @@ div#banner8 {
 }
 
 .thumb_loading {
-  content: url("/image/loader.gif");
-  height: 30% !important;
+  content: url("/clothingnapparel/image/loader.gif");
+  height: 20% !important;
   width: 30% !important;
-  padding: 50px 0 0 0;
+  padding: 75px 0 !important;
 }
 
 #wrap .thumb_loading {
