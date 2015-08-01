@@ -314,7 +314,7 @@ div#call {
 }
 
 #header #cart .heading a {
-    color: #ccc;
+    color: #666;
     text-decoration: none;
     font-size: 13px;
 	font-weight:400px;
@@ -3037,6 +3037,7 @@ table .radio a.button:hover, input.button:hover {
 
 .visa_icon {
   margin: 0px 0 0 -17px;
+  width:100%;
 }
 
 .visa_icon img:first-child {
