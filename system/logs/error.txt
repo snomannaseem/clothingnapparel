@@ -1,36 +1,193 @@
-2015-07-29 22:45:57 - PHP Warning:  trim() expects parameter 1 to be string, array given in C:\wamp\www\clothingnapparel\catalog\model\tool\image.php on line 5
-2015-07-29 22:45:58 - PHP Warning:  trim() expects parameter 1 to be string, array given in C:\wamp\www\clothingnapparel\catalog\model\tool\image.php on line 5
-2015-07-29 22:45:58 - PHP Warning:  trim() expects parameter 1 to be string, array given in C:\wamp\www\clothingnapparel\catalog\model\tool\image.php on line 5
-2015-07-29 22:45:58 - PHP Warning:  trim() expects parameter 1 to be string, array given in C:\wamp\www\clothingnapparel\catalog\model\tool\image.php on line 5
-2015-07-30 21:10:05 - PHP Notice:  Undefined variable: text_login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:11:54 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:11:59 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:12:04 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:12:15 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:12:25 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:13:12 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:13:41 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\wamp\www\clothingnapparel\system\library\mail.php on line 150
-2015-07-30 21:13:41 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:13:46 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:26:58 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:27:06 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 21:27:10 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-30 22:10:44 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 83
-2015-07-30 22:10:58 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 83
-2015-07-30 22:12:20 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 83
-2015-07-30 22:12:50 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 84
-2015-07-30 22:13:05 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 84
-2015-07-30 22:13:06 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 84
-2015-07-31 7:49:46 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 84
-2015-07-31 7:49:46 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 84
-2015-07-31 7:49:55 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 84
-2015-07-31 8:01:08 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-31 8:01:32 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 82
-2015-07-31 8:01:54 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 81
-2015-07-31 8:01:58 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 81
-2015-07-31 8:02:05 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 81
-2015-07-31 8:02:12 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 81
-2015-07-31 8:02:30 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 81
-2015-08-01 11:41:29 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 81
-2015-08-01 11:41:29 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 81
-2015-08-01 14:23:52 - PHP Notice:  Undefined variable: login in C:\wamp\www\clothingnapparel\catalog\view\theme\apparel\template\common\header.tpl on line 81
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-20 8:12:09 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-20 8:12:15 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-20 8:12:15 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-20 8:12:15 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:41 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 9:08:48 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 10:39:10 - PHP Notice:  Error: Table 'shoeocean_net_db.ocean_skus' doesn't exist<br />Error No: 1146<br />SELECT * FROM ocean_skus WHERE product_id = '3033' in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 12:07:09 - PHP Notice:  Error: Unknown column 'color_id' in 'where clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '886' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 12:07:14 - PHP Notice:  Error: Unknown column 'color_id' in 'where clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '151' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 12:07:36 - PHP Notice:  Error: Unknown column 'color_id' in 'where clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '886' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 12:09:03 - PHP Notice:  Error: Unknown column 'color_id' in 'where clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '886' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 12:09:06 - PHP Notice:  Error: Unknown column 'color_id' in 'where clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '151' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 12:09:22 - PHP Notice:  Error: Unknown column 'color_id' in 'where clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '151' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 12:10:02 - PHP Notice:  Error: Unknown column 'color_id' in 'where clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '886' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 12:10:05 - PHP Notice:  Error: Unknown column 'color_id' in 'where clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '151' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 12:10:06 - PHP Notice:  Error: Unknown column 'color_id' in 'where clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '886' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 12:10:26 - PHP Notice:  Error: Unknown column 'color_id' in 'where clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '886' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 17:10:54 - PHP Notice:  Error: Unknown column 'sort_order' in 'order clause'<br />Error No: 1054<br />SELECT * FROM vw_ocean_product_sizes WHERE product_id = '3193' AND color_id = '886' AND quantity > 0 ORDER BY sort_order ASC in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 17:20:39 - PHP Notice:  Error: Table 'shoeocean_net_db.ocean_skus' doesn't exist<br />Error No: 1146<br />SELECT * FROM ocean_skus WHERE product_id = '3033' in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:51 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:56 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:58 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-21 17:20:58 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-21 17:20:58 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-21 17:20:58 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:58 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:58 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:58 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 17:20:58 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 17:20:58 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 21:37:05 - PHP Notice:  Error: Unknown column 'po.option_value_id' in 'IN/ALL/ANY subquery'<br />Error No: 1054<br />SELECT * FROM product_option po LEFT JOIN `option` o ON (po.option_id = o.option_id) LEFT JOIN option_description od ON (o.option_id = od.option_id) WHERE po.product_id = '3193' AND od.language_id = '1'  AND po.option_value_id in ( SELECT size_id FROM ocean_inventory WHERE product_id = 3193 AND color_id = 151 )   AND od.name = 'size' ORDER BY o.sort_order in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 21:49:15 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-21 22:51:08 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-21 22:51:12 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-21 22:51:12 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-21 22:51:12 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-21 22:51:25 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-21 22:51:25 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-21 22:51:25 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-21 22:54:24 - PHP Notice:  Error: Table 'shoeocean_net_db.ocean_skus' doesn't exist<br />Error No: 1146<br />SELECT * FROM ocean_skus WHERE product_id = '3033' in C:\wamp\www\shoeocean_net\system\database\mysql.php on line 49
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:52:44 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 46
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 47
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: _route_ in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\common\header.tpl on line 50
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: category_id in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 55
+2015-06-23 7:57:58 - PHP Notice:  Undefined index: image in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\category.tpl on line 65
+2015-06-23 9:05:32 - PHP Notice:  Undefined variable: passed_color in C:\wamp\www\shoeocean_net\catalog\view\theme\shoes\template\product\product.tpl on line 79
+2015-07-12 8:20:53 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 8:30:22 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 8:48:15 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: default_color_id in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 58
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: default_color_id in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 58
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: default_color_id in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 58
+2015-07-12 8:48:46 - PHP Notice:  Undefined index: default_color_id in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 58
+2015-07-12 8:48:47 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 8:48:47 - PHP Notice:  Undefined index: op_desc1 in C:\wamp\www\clothingnapparel\catalog\model\catalog\product.php on line 380
+2015-07-12 9:12:30 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 9:58:00 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 10:08:06 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
+2015-07-12 10:13:36 - PHP Notice:  Error: Could not load template C:\wamp\www\clothingnapparel/catalog/view/theme/default/template/module/custom_banner.tpl! in C:\wamp\www\clothingnapparel\system\engine\controller.php on line 70
