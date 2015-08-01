@@ -3302,7 +3302,7 @@ div#banner8 {
 }
 
 .thumb_loading {
-  content: url("/clothingnapparel/image/loader.gif");
+  content: url("/image/loader.gif");
   height: 20% !important;
   width: 30% !important;
   padding: 75px 0 !important;
