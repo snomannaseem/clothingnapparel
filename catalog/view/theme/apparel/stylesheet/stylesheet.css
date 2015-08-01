@@ -3353,6 +3353,15 @@ img#image {
   width: 100%;
 }
 
+td.image img {
+  margin: 0;
+}
+
+.remove img {
+  width: 11px;
+  margin: 0;
+}
+
 .option {
   margin: 10px 0 0 0;
   width: 400px;
