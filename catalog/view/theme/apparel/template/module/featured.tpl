@@ -100,7 +100,7 @@ $(document).ready(function() {
         color_id = $(this).attr('color_id');
         product_id = $(this).attr('product_id');
         
-        $("#img_" + product_id).attr('src','image/loader.gif');
+        //$("#img_" + product_id).attr('src','image/loader.gif');
         
         $.ajax({
             url: 'index.php?route=product/product/getImages&product_id=' + product_id +'&color_id=' + color_id,
@@ -112,12 +112,14 @@ $(document).ready(function() {
                 $('.success, .warning').remove();
                 $(this).parent().attr('disabled', true);
                 $(this).off('hover');
+				$("#img_" + product_id).addClass('thumb_loading');
             },
             complete: function() {
                 is_processing = false;
                 $(this).parent().attr('disabled', false);
                 $('.attention').remove();
                 $(this).on('hover');
+				$("#img_" + product_id).removeClass('thumb_loading');
             },
             success: function(json_data) {
                 
