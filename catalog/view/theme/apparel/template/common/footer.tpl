@@ -1,7 +1,5 @@
 </div>
-<div id="follow">
-    
-</div>
+
 <div id="footer">
 	<div class="footer_in">
 		<?php if ($informations) { ?>
@@ -44,7 +42,13 @@
 		</div>
 		
 		<div class="visa_icon">
-			<img src="catalog/view/theme/apparel/image/geotrust.jpg" />
+			<div id="follow">
+				<img src="catalog/view/theme/apparel/image/fb.png">
+				<img src="catalog/view/theme/apparel/image/gplus.png">
+				<img src="catalog/view/theme/apparel/image/twiter.png">
+				<img src="catalog/view/theme/apparel/image/pinterest.png">
+				<img src="catalog/view/theme/apparel/image/blogspot_icon.png">
+			</div>
 			<img src="catalog/view/theme/apparel/image/visacards.png" />
 		</div>
 	</div>

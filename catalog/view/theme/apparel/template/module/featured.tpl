@@ -108,11 +108,11 @@ $(document).ready(function() {
             dataType: 'json',
             data: '' ,
             beforeSend: function() {
+				$("#img_" + product_id).addClass('thumb_loading');
                 is_processing = true;
                 $('.success, .warning').remove();
                 $(this).parent().attr('disabled', true);
-                $(this).off('hover');
-				$("#img_" + product_id).addClass('thumb_loading');
+                $(this).off('hover');				
             },
             complete: function() {
                 is_processing = false;
