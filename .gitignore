@@ -9,6 +9,7 @@ Desktop.ini
 $RECYCLE.BIN/
 config.php
 admin/config.php
+admin\config.php
 image/
 system/cache/
 system\logs\
