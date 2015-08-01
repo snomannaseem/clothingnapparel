@@ -63,26 +63,28 @@
 
 <body>
 <div class="topbar">
-	<div id="welcome">
-        
-            <?php echo $text_welcome; ?>
-        
-    </div>
-    
-    <div class="links">
-    <!--
-        <a href="<?php echo $home; ?>"><?php echo $text_home; ?></a>
-        <a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a>
-        <a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a>
-        <a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a>
-        -->
-        <a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>&nbsp;&nbsp;&nbsp;
-        <?php if (!$logged) { ?>
-            <a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>
-        <?php } else { ?>
-            <?php echo $text_logged; ?>
-        <?php } ?>
-    </div>
+	<div class="bar_in">
+		<div id="welcome">        
+			<?php echo $text_welcome; ?>        
+		</div>
+		
+		<div class="links">
+		<!--
+			<a href="<?php echo $home; ?>"><?php echo $text_home; ?></a>
+			<a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a>
+			<a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a>
+			<a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a>
+			-->
+			<img src="catalog/view/theme/apparel/image/setting.png" />
+			<a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>&nbsp;&nbsp;&nbsp;
+			<?php if (!$logged) { ?>
+				<img src="catalog/view/theme/apparel/image/login.png" />
+				<a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>
+			<?php } else { ?>
+				<?php echo $text_logged; ?>
+			<?php } ?>
+		</div>
+	</div>
 </div>
 
 <div id="container">
@@ -118,7 +120,10 @@
             </div>
         </div>
         
-        <?php echo $cart; ?>
+		<div class="cart_up">
+			<img src="catalog/view/theme/apparel/image/cart_img.png" />
+			<?php echo $cart; ?>
+		</div>
         
         <!-- welcome div place here this is old position -->
         
@@ -129,7 +134,7 @@
     <div id="menu">
         <ul>
         	<?php foreach ($categories as $category) { ?>
-        	<li><a href="<?php echo $category['href']; ?>"><?php echo ucwords(strtolower($category['name'])); ?></a>
+        	<li><a href="<?php echo $category['href']; ?>"><?php echo strtoupper($category['name']); ?></a>
         	<?php if ($category['children']) { ?>
         	<div>
         		<?php for ($i = 0; $i < count($category['children']);) { ?>
