@@ -13,7 +13,7 @@ system/cache/
 system\logs\
 image/cache/
 image/data/
-
+image/flags/
 
 
 # Windows Installer files
