@@ -924,7 +924,10 @@ a.button {
 }
 
 .product_holder_inside a.button {
-    margin: 0 7px;
+    margin: 0 8px 0 8px;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
 }
 
 input.button {
@@ -1175,11 +1178,11 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .product-grid .shoe_color.getImages {
-  border: 1px solid;
-  width: 26px;
-  height: 20px;
-  display: inline-block;
-  margin: 0 0 0 10px;
+    border: 1px solid;
+    width: 26px;
+    height: 20px;
+    display: inline-block;
+    margin: 6px 0 0 7px;
 }
 
 .box-product .image img {
@@ -1650,12 +1653,12 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .product-grid > div {
-  width: 212px;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 9px 23px !important;
-  height: 388px;
-  border: 1px solid #000;
+    width: 188px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 4px 10px !important;
+    height: 298px;
+    border: 1px solid #eee;
 }
 
 #column-left + #column-right + #content .product-grid > div {
@@ -1674,8 +1677,8 @@ table .radio a.button:hover, input.button:hover {
 
 .product-grid .name {
     width: 171px;
-    margin: 0 7px;
-    height: 15px;
+    margin: 0 7px 5px;
+    height: 32px;
 }
 
 .product-grid .image img {
@@ -1805,42 +1808,33 @@ table .radio a.button:hover, input.button:hover {
 
 .product-info > .left + .right {
 
-	margin-left: 365px;
+	margin-left: 465px;
 
 }
 
 .product-info .image {
-
 	border: 1px solid #E7E7E7;
-
 	float: left;
-
 	margin-bottom: 20px;
-
 	padding: 10px;
-
 	text-align: center;
-	width:93%;
-	height:360px;
+	width:340px;
+	height:340px;
 
 }
 
 .product-info .image-additional {
-
-	width: 355px;
-
-	margin-left: -10px;
-
-	clear: both;
-
-	overflow: hidden;
-
+    width: 72px;
+    margin: 0 4px 0 0;
+    clear: both;
+    overflow: hidden;
+    float: left;
 }
 
 .product-info .image-additional img {
 
-	border: 1px solid #E7E7E7;
-	width:99%;
+	border: 1px solid #eee;
+	width:100%;
 	height:auto;
 
 }
@@ -1851,11 +1845,11 @@ table .radio a.button:hover, input.button:hover {
 
 	display: block;
 
-	margin-left: 10px;
+	margin-left: 0px;
 
-	margin-bottom: 10px;
-	width:167px;
-	height:167px;
+	margin-bottom: 8px;
+	width:67px;
+	height:67px;
 
 }
 
@@ -3159,7 +3153,7 @@ div#banner8 {
 
 .left {
 	float: left;
-	width: 35%;
+	width: 45%;
 }
 
     /*----- Tab Links -----*/

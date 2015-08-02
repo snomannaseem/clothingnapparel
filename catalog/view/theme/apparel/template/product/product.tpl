@@ -1,4 +1,4 @@
-<?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
+<?php echo $header; ?><?php echo $column_right; ?>
 <div id="content" class="inside_page"><?php echo $content_top; ?>
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
@@ -11,16 +11,7 @@
   <div class="product-info">
   
     <?php if ($thumb || $images) { ?>
-    <div class="left">
-		<?php if ($thumb) { ?>
-		<div class="image">
-			<div class="image_inside">
-				<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class = 'cloud-zoom' id='zoom1' rel="tint: '#ffffff',tintOpacity:0.5 ,smoothMove:3,zoomWidth:390, zoomHeight:390, adjustY:-10, adjustX:28">
-					<img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" />
-				</a>
-			</div>
-		</div>
-		<?php } ?>
+    <div class="left">		
       <?php 
       if ($images) { ?>
       <div class="image-additional">
@@ -30,6 +21,16 @@
         <?php } ?>
       </div>
       <?php } ?>
+	  
+	  <?php if ($thumb) { ?>
+		<div class="image">
+			<div class="image_inside">
+				<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class = 'cloud-zoom' id='zoom1' rel="tint: '#ffffff',tintOpacity:0.5 ,smoothMove:3,zoomWidth:390, zoomHeight:390, adjustY:-10, adjustX:28">
+					<img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" />
+				</a>
+			</div>
+		</div>
+		<?php } ?>
     </div>
     <?php } ?>
 
@@ -109,7 +110,7 @@
         }
         
         if ($option['type'] == 'select') { ?>
-        <div id="option-<?php echo $option['product_option_id']; ?>" class="option">
+        <div id="option-<?php echo $option['product_option_id']; ?>" class="option"></div>
           <?php if ($option['required']) { ?>
           <span class="required">*</span>
           <?php } ?>
