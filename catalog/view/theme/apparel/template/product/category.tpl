@@ -58,7 +58,7 @@
 										
 										<div class="name">
 											<a href="<?php echo $categories[$i]['href']; ?>">
-												<?php echo str_truncate($categories[$i]['name'], 55); ?>
+												<?php echo str_truncate($categories[$i]['name'], 28); ?>
 											</a>
 										</div>
 									  
