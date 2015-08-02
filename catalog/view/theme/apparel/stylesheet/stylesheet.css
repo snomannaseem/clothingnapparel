@@ -1805,7 +1805,7 @@ table .radio a.button:hover, input.button:hover {
 
 .product-info > .left + .right {
 
-	margin-left: 465px;
+	margin-left: 365px;
 
 }
 
@@ -1820,32 +1820,43 @@ table .radio a.button:hover, input.button:hover {
 	padding: 10px;
 
 	text-align: center;
-	width:340px;
-	height:340px;
+	width:93%;
+	height:360px;
 
 }
 
 .product-info .image-additional {
-    width: 72px;
-    margin: 0 10px 0 0;
-    clear: both;
-    overflow: hidden;
-	float:left;
+
+	width: 355px;
+
+	margin-left: -10px;
+
+	clear: both;
+
+	overflow: hidden;
+
 }
 
 .product-info .image-additional img {
-    border: 1px solid #E7E7E7;
-    width: 100%;
-    height: auto;
+
+	border: 1px solid #E7E7E7;
+	width:99%;
+	height:auto;
+
 }
 
 .product-info .image-additional a {
-    float: left;
-    display: block;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    width: 70px;
-    height: 70px;
+
+	float: left;
+
+	display: block;
+
+	margin-left: 10px;
+
+	margin-bottom: 10px;
+	width:167px;
+	height:167px;
+
 }
 
 .product-info .description {
@@ -3148,7 +3159,7 @@ div#banner8 {
 
 .left {
 	float: left;
-	width: 46%;
+	width: 35%;
 }
 
     /*----- Tab Links -----*/
