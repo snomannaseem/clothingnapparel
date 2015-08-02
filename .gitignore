@@ -9,7 +9,6 @@ Desktop.ini
 $RECYCLE.BIN/
 config.php
 admin/config.php
-admin\config.php
 system/cache/
 system\logs\
 
@@ -50,11 +49,3 @@ Network Trash Folder
 Temporary Items
 .apdisk
 system/logs/
-<<<<<<< HEAD
-
-config.php
-admin/config.php
-system/logs/error.txt
-admin/config.php
-=======
->>>>>>> origin/master
