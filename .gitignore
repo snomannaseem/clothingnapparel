@@ -48,4 +48,19 @@ system\logs\
 Network Trash Folder
 Temporary Items
 .apdisk
+<<<<<<< HEAD
 system/logs/
+=======
+system/logs/
+<<<<<<< HEAD
+
+config.php
+admin/config.php
+system/logs/error.txt
+admin/config.php
+=======
+>>>>>>> origin/master
+config.php
+system/logs/error.txt
+system/logs/error.txt
+>>>>>>> e7f3b7e523805fc7e1e83208981e9e43db016e49
