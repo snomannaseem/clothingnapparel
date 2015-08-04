@@ -102,7 +102,7 @@
         
         <div class="mid">
             <div id="call">
-                <img src="image/data/call_ico.png">                
+                <img src="catalog/view/theme/apparel/image/call_ico.png">                
                 <h1>0-800-123-4567</h1>
 				<h4>CALL US NOW TOLL FREE</h4>
             </div>
