@@ -951,11 +951,11 @@ a.button:hover, input.button:hover {
 }
 
 table .radio a.button:hover, input.button:hover {
-
-	background-image: none;
-
+    background-image: none;
+    line-height: 24px;
+    padding: 0px 6px;
+    height: 25px;
 }
-
 .buttons {
 
 	background: #FFFFFF;
@@ -1094,7 +1094,15 @@ table .radio a.button:hover, input.button:hover {
 }
 
 #column-right .box .box-heading {
-	text-align:center;
+    text-align: left;
+    background-color: #f5f5f5;
+    color: #000;
+    font-family: Arial;
+    font-size: 12px;
+    height: 20px;
+    padding: 0;
+    line-height: 20px;
+    text-transform: uppercase;
 }
 
 .box .box-content {
@@ -1115,7 +1123,7 @@ table .radio a.button:hover, input.button:hover {
     width: 23.8%;
     display: inline-block;
     vertical-align: top;
-    height: 367px;
+    height: 351px;
     margin: 1% 1.3% 0 0;
     float: left;
     border: 1px solid #eee;
@@ -1123,22 +1131,23 @@ table .radio a.button:hover, input.button:hover {
 
 .box-product > div .name {
   height: 30px;
+  margin: 0 0 5px 0;
 }
 
 .box-product > div .cart {
-    height: 10px;
-    margin: -37px 0 0px 114px;
+    margin: 0px 7px 0px 0;
+    float: right;
 }
 
 .box-product > div .cart input.button {
-  margin: 4px 35px 10px;
-  border: 0;
-  width: 80px;
-  height: 25px;
-  color: #fff;
-  border-radius: 0px;
-  line-height: 25px;
-  font-size: 12px;
+    margin: 0;
+    border: 0;
+    color: #fff;
+    border-radius: 0px;
+    font-size: 12px;
+    padding: 0 6px;
+    height: 24px;
+    line-height: 24px;
 }
 .box-product > div:last-child {
 	margin-right: 0;
@@ -1208,11 +1217,13 @@ table .radio a.button:hover, input.button:hover {
     display: block;
     font-weight: bold;
     color: #333333;
-    padding: 3px 8px 3px;
+    padding: 0px;
     font-size: 16px;
     font-family: trebuchet ms;
     height: 26px;
-    margin: 15px 0 0 0;
+    margin: 0 0 0 7px;
+    float: left;
+    width: 100px;
 }
 
 .box-product .price-old {
@@ -1651,11 +1662,11 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .product-grid > div {
-    width: 188px;
+    width: 240px;
     display: inline-block;
     vertical-align: top;
-    margin: 10px 3px 10px !important;
-    height: 283px;
+    margin: 10px 2px 0px !important;
+    height: 363px;
     border: 1px solid #eee;
 }
 
@@ -1666,11 +1677,13 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .product-grid .image {
-  display: block;
-  width: 99%;
-  height: 160px;
-  text-align: center;
-  margin: 0;
+    display: block;
+    width: 99%;
+    height: 220px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee;
 }
 
 .product-grid .name {
@@ -1681,9 +1694,7 @@ table .radio a.button:hover, input.button:hover {
 
 .product-grid .image img {
     border-bottom: 1px solid #eee;
-    width: 175px;
-    height: 150px;
-    padding: 6px;
+    width: 93%;
 }
 
 .product-grid .name a {
@@ -3320,11 +3331,11 @@ a.icon_plus.compare_link {
 }
 
 .category-list .product-grid > div {
-    width: 187px;
+    width: 240px;
     display: inline-block;
     vertical-align: top;
     margin: 0 10px 10px 0 !important;
-    height: 185px;
+    height: 275px;
     border: 1px solid #eee;
 }
 
@@ -3421,10 +3432,13 @@ div#checkout input[type='button'] {
 }
 
 #edit-button a.button, input.button {
-  background-image: none;
-  background-color: #d30f10;
-  color: #fff;
-  padding: 6px 6px 22px 6px;
+    background-image: none;
+    background-color: #d30f10;
+    color: #fff;
+    padding: 0 6px;
+    line-height: 24px;
+    font-size: 12px;
+    height: 24px;
 }
 
 #powered a, a:visited, a b {
@@ -3434,9 +3448,12 @@ div#checkout input[type='button'] {
 }
 
 .content a, a:visited, a b {
-  color: #d30f10;
-  text-decoration: underline;
-  cursor: pointer;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
 }
 
 .success a.button.button_accent {
@@ -3446,7 +3463,10 @@ div#checkout input[type='button'] {
 }
 
 .left a.button {
-  color: #fff;
+    color: #fff;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 6px;
 }
 
 .right a.button {
