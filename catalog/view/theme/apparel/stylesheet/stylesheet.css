@@ -72,8 +72,8 @@ body {
 
 #call img {
     float: left;
-	margin: 1% 1% 0 0%;
-	width: 8%;
+    margin: -1% 1% 0 0%;
+    width: 12%;
 }
 
 #call h4 {
@@ -1666,8 +1666,17 @@ table .radio a.button:hover, input.button:hover {
     display: inline-block;
     vertical-align: top;
     margin: 10px 2px 0px !important;
-    height: 363px;
+    height: 320px;
     border: 1px solid #eee;
+}
+
+.product_holder {
+    height: 354px !important;
+}
+
+.product_holder .cart {
+    margin: 0px 0 0 0 !important;
+    float: right;
 }
 
 #column-left + #column-right + #content .product-grid > div {
@@ -1679,7 +1688,7 @@ table .radio a.button:hover, input.button:hover {
 .product-grid .image {
     display: block;
     width: 99%;
-    height: 220px;
+    height: 210px;
     text-align: center;
     margin: 0;
     padding: 10px 0px;
@@ -1693,8 +1702,8 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .product-grid .image img {
-    border-bottom: 1px solid #eee;
-    width: 93%;
+    width: 210px;
+    height: 210px;
 }
 
 .product-grid .name a {
@@ -1730,13 +1739,14 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .product-grid input.button {
-  margin: 14px 7px 10px;
-  border: 0;
-  width: 160px;
-  height: 41px;
-  color: transparent;
-  border-radius: 0px;
-  color:#fff;
+    margin: 14px 7px 10px;
+    border: 0;
+    height: 24px;
+    color: transparent;
+    border-radius: 0px;
+    color: #fff;
+    padding: 0 6px;
+    line-height: 24px;
 }
 
 .product-grid .price-old {
@@ -1761,7 +1771,7 @@ table .radio a.button:hover, input.button:hover {
 
 .product-grid .cart {
   float: right;
-  margin: 0px;
+  margin: -20px 0 0 0;
 }
 
 .product-grid .wishlist, .product-grid .compare {

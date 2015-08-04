@@ -164,8 +164,6 @@ function display(view) {
 		$('.product-list > div').each(function(index, element) {
 			html  = '<div class="right">';
 			html += '  <div class="cart">' + $(element).find('.cart').html() + '</div>';
-			html += '  <div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
-			html += '  <div class="compare">' + $(element).find('.compare').html() + '</div>';
 			html += '</div>';			
 			
 			html += '<div class="left">';
@@ -228,8 +226,6 @@ function display(view) {
 			}
 						
 			html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
-			html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
-			html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';
 			
 			$(element).html(html);
 		});	
