@@ -3340,12 +3340,16 @@ a.icon_plus.compare_link {
   z-index: 2;
 }
 
-.category-list .product-grid > div {
+.category_holder {
+    height: 266px !important;
+}
+
+.category-list .product_holder_inside {
     width: 240px;
     display: inline-block;
     vertical-align: top;
     margin: 0 10px 10px 0 !important;
-    height: 275px;
+    height: 265px;
     border: 1px solid #eee;
 }
 
