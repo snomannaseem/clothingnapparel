@@ -3430,6 +3430,7 @@ div#checkout input[type='button'] {
   background-color: #d30f10;
   font-size: 12px;
   padding: 6px 6px 22px 6px;
+  line-height:16px;
 }
 
 #cart-buttons a.button, input.button {
@@ -3443,6 +3444,29 @@ div#checkout input[type='button'] {
   line-height: 17px;
   height: 17px;
   padding:6px;
+}
+
+#checkout .left p {
+    margin: 0 0 8px 0;
+}
+
+#checkout .right p {
+    margin: 0 0 8px 0;
+}
+
+#checkout .right input[type="text"] {
+    margin: 4px 0 0 0;
+}
+
+#checkout .right input[type="password"] {
+    margin: 4px 0 8px 0;
+}
+.checkout-content input.large-field {
+    margin: 5px 0 0 0;
+}
+
+.checkout-content select.large-field {
+    margin: 5px 0 0 0;
 }
 
 #success_button a.button {
@@ -3507,6 +3531,7 @@ div#checkout input[type='button'] {
 
 .right a.button {
   color: #fff;
+  padding: 0 6px;
 }
 
 .product_holder_inside .color a {
