@@ -77,12 +77,16 @@
 			-->
 			<img src="catalog/view/theme/apparel/image/setting.png" />
 			<a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>&nbsp;&nbsp;&nbsp;
+            
 			<?php if (!$logged) { ?>
 				<img src="catalog/view/theme/apparel/image/login.png" />
-				<a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>
+				<a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>&nbsp;&nbsp;&nbsp;
 			<?php } else { ?>
 				<?php echo $text_logged; ?>
 			<?php } ?>
+            
+            <img src="catalog/view/theme/apparel/image/signup.png" />
+			<a href="<?php echo $account; ?>"><?php echo "Signup"; ?></a>
 		</div>
 	</div>
 </div>
