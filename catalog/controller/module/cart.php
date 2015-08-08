@@ -61,17 +61,20 @@ class ControllerModuleCart extends Controller {
 		$this->data['products'] = array();
 			
 		foreach ($this->cart->getProducts() as $product) {
-			if ($product['image']) {
-				$image = $this->model_tool_image->resize($product['image'], $this->config->get('config_image_cart_width'), $this->config->get('config_image_cart_height'));
-			} else {
-				$image = '';
-			}
+			// if ($product['image']) {
+				// $image = $this->model_tool_image->resize($product['image'], $this->config->get('config_image_cart_width'), $this->config->get('config_image_cart_height'));
+			// } else {
+				// $image = '';
+			// }
 							
 			$option_data = array();
 			
 			foreach ($product['option'] as $option) {
 				if ($option['type'] != 'file') {
-					$value = $option['option_value'];	
+					$value = $option['option_value'];
+					if (strtolower($option['name']) == 'color'){
+						$image = $this->model_tool_image->resize($option['image'], $this->config->get('config_image_cart_width'), $this->config->get('config_image_cart_height'));
+					}
 				} else {
 					$filename = $this->encryption->decrypt($option['option_value']);
 					
