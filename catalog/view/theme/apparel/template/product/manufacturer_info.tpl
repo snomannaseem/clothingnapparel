@@ -16,16 +16,16 @@
 	<h1><?php echo $heading_title; ?></h1>
 	<?php if ($products) { ?>
 		<div class="product-filter">
+            <!--
 			<div class="display">
-				<b><?php echo $text_display; ?></b> 
-				&nbsp;&nbsp;<a onclick="display('list');" class="list_view_link"><?php echo $text_list; ?></a>   
+				<b><?php echo $text_display; ?></b>    
 				<a onclick="display('grid');" class="grid_view_link_active"><?php echo $text_grid; ?></a>
 			</div>
 			
 			<div class="product-compare">
 				<a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a>
 			</div>
-			
+			-->
 			<div class="limit">
 				<?php echo $text_limit; ?>
 				<select onchange="location = this.value;">
@@ -253,7 +253,11 @@ function display(view) {
 			$(element).html(html);
 		});	
 					
-		$('.display').html('<b><?php echo $text_display; ?></b> &nbsp;&nbsp;<a onclick="display(\'list\');" class="list_view_link_active"><?php echo $text_list; ?></a>   <a onclick="display(\'grid\');" class="grid_view_link"><?php echo $text_grid; ?></a>');
+
+            // $('.display').html('<b><?php echo $text_display; ?></b> &nbsp;&nbsp;
+            // <a onclick="display(\'list\');" class="list_view_link_active"><?php echo $text_list; ?></a>   
+            // <a onclick="display(\'grid\');" class="grid_view_link"><?php echo $text_grid; ?></a>');
+
 			
 		$.cookie('display', 'grid');
 	}

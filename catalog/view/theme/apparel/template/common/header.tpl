@@ -86,7 +86,7 @@
 			<?php } ?>
             
             <img src="catalog/view/theme/apparel/image/signup.png" />
-			<a href="<?php echo $account; ?>"><?php echo "Signup"; ?></a>
+			<a href="http://www.clothingnapparel.com/index.php?route=account/register"><?php echo "Signup"; ?></a>
 		</div>
 	</div>
 </div>
