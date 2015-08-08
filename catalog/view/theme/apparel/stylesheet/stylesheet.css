@@ -3614,17 +3614,23 @@ div#checkout input[type='button'] {
     height: 64px;
     padding: 0;
 }
-	
+.bar_in {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+}
 #welcome {
     color: #fff;
     float: none;
     font-size: 11px;
-    margin: 0 auto -9px;
+    margin: 0px auto -9px;
     padding: 0;
     text-align: center;
     text-decoration: none;
     text-indent: 0;
-    width: 100%;
+    width: 80%;
+    line-height: 14px;
+    height: 42px;
 }
 
 #welcome a, a:visited, a b {
@@ -3663,7 +3669,7 @@ div#checkout input[type='button'] {
         
 	#header {
 		margin-bottom: 0;
-        height:350px;
+        height:310px;
 	}
 	
 	#logo img {
@@ -3680,29 +3686,29 @@ div#checkout input[type='button'] {
     
     div#call {
         left: 0;
-        margin: 0 auto 15px;
+        margin: 7px auto;
         position: static;
         top: 0;
-        width: 70%;
+        width: 68%;
     }
 	
     
     #call img {
         float: left;
-        margin: 2% 2% 0 5%;
-        width: 15%;
-    }  
+        margin: 0% 2% 0 5%;
+        width: 19%;
+    }
     
     
 #call h4 {
-    font-size: 13px;
-    margin: 35px 0 0;
+    font-size: 11px;
+    margin: 0px 0 0;
 }
 	
 #call h1 {
     color: #14212b;
     font-family: trebuchet ms;
-    font-size: 22px;
+    font-size: 17px;
     margin: 0;
     padding: 0;
 }
@@ -3719,9 +3725,9 @@ div#checkout input[type='button'] {
     border-style: solid none solid solid;
     border-width: 1px 0 1px 1px;
     float: left;
-    height: 39px;
+    height: 24px;
     padding: 1px 1px 1px 33px;
-    width: 75%;
+    width: 70%;
 }
 	
 #header .button-search {
@@ -3729,23 +3735,27 @@ div#checkout input[type='button'] {
     border-right: 1px solid #cccccc;
     cursor: pointer;
     float: left;
-    height: 41px;
+    height: 26px;
     left: 0;
     margin: 0;
     position: static;
-    width: 46px;
+    width: 22px;
 }
 
 #header #cart {
-    margin: 0 80px 0 0;
+    margin: 0 105px 0 0;
     min-width: 0;
     position: static;
     right: 0;
     top: 0;
     z-index: 9;
 }
+.cart_up img {
+    width: 90px;
+    margin: 16px 110px 0 0px;
+}
 	#menu {
-		background: none repeat scroll 0 0 #d30f10;
+		background: none repeat scroll 0 0 #000;
 		margin-bottom: 15px;
 		padding: 0;
         min-height:81px;
@@ -3756,7 +3766,7 @@ div#checkout input[type='button'] {
     height: 40px;
     line-height: 40px;
     width: 49.6%;
-    background:#d30f10;
+    background:#000;
 }
 	
 #menu > ul > li > a {
@@ -3780,7 +3790,7 @@ div#checkout input[type='button'] {
 }
     
 #menu > ul > li > div > ul > li > a {
-    color: #ffffff;
+    color: #666;
     font-size: 17px;
     padding: 0 15px;
 }
@@ -3793,7 +3803,9 @@ div#checkout input[type='button'] {
 		margin-bottom: 20px;
 		width: 100%;
 	}
-	
+	h1, .welcome {
+        font-size: 16px;
+    }
 	
 div#banner0 {
     height: 131px;
@@ -3811,14 +3823,19 @@ div#banner1 {
 
 div#banner2 {
     height: 131px;
-    margin: 10px 0 0;
+    margin: 10px 0 10px;
     width: 143px;
 }
 
 div#banner3 {
     height: 131px;
-    margin: 10px 0 0;
+    margin: 10px 0 10px;
     width: 143px;
+}
+
+.box-product .image {
+    width: 295px;
+    height: 279px;
 }
 	.box-heading {
         padding: 6px 0 2px;
@@ -3879,13 +3896,37 @@ div#banner7 {
 }
 	
 #footer {
-    height: 400px;
-    width: 79%;
+    height: 680px;
+    width: 300px;
+}
+.footer_in {
+    width: 300px;
+    margin: 0 auto;
+    height: 205px;
 }
 #footer .column {
     float: left;
     min-height: 100px;
     width: 99%;
+    padding: 15px 0 0 15px;
+}
+
+div#follow {
+    width: 100%;
+    padding: 0 45px;
+}
+
+div#follow img {
+    margin: 0 7px 7px;
+    width: 29px;
+    border-radius: 4px;
+    float: left;
+}
+.visa_icon img:last-child {
+    float: none;
+    width: 80%;
+    margin: 3px 0 0 29px;
+    height: auto;
 }
 	.product-grid .name {
 		height: 35px;
