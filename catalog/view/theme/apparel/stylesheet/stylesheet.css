@@ -32,6 +32,27 @@ td a.button {
     padding: 0 6px;
 }
 
+.sitemap-info li.h_one{
+    margin:10px 0 0 0;
+}
+
+.sitemap-info a.site_h_one {
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.sitemap-info .h_one ul li a {
+    text-decoration: none;
+}
+
+.sitemap-info ul.sub_h_one {
+    margin: 5px 0 10px 0;
+}
+.sitemap-info ul.sub_h_one a{
+    text-decoration:none;
+}
+
 .left .content p {
     margin: 0 0 7px 0;
 }
@@ -1103,7 +1124,6 @@ table .radio a.button:hover, input.button:hover {
 
 .box {
     width: 100%;
-    height: 349px;
     float: right;
     margin: 0 0 78px 0;
 }
@@ -1912,19 +1932,13 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .product-info .description {
-
 	border-top: 1px solid #E7E7E7;
-
 	border-bottom: 1px solid #E7E7E7;
-
 	padding: 5px 5px 10px 5px;
-
 	margin-bottom: 10px;
-
 	line-height: 20px;
-
 	color: #4D4D4D;
-
+    font-weight: 700;
 }
 
 .product-info .description span {
@@ -3888,7 +3902,7 @@ div#banner7 {
 
 
 
-@media only screen and (min-width: 480px) and (max-width: px) {
+@media only screen and (min-width: 480px) and (max-width: 599px) {
 	.topbar {
 		background-color: #000;
 		height: 62px;
