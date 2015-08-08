@@ -390,7 +390,7 @@ div#call {
 	position: relative;
 	top: -1px;
 	padding: 8px;
-	min-height: 394px;
+	height: 394px;
 	border-top: 1px solid #EEEEEE;
 	border-left: 1px solid #EEEEEE;
 	border-right: 1px solid #EEEEEE;
