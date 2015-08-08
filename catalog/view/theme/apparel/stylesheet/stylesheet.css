@@ -12,6 +12,26 @@ body {
 	padding: 0px;
 }
 
+form h2 {
+    margin: 10px 0;
+}
+td a.button {
+    color: #fff;
+    text-decoration: none;
+}
+
+#tab-review .r_label {
+    margin: 0 0 8px 0;
+}
+
+#tab-review input.ie_left {
+    margin: 0 0 8px 0;
+}
+
+.buttons a.button {
+    padding: 0 6px;
+}
+
 .left .content p {
     margin: 0 0 7px 0;
 }
@@ -985,7 +1005,7 @@ table .radio a.button:hover, input.button:hover {
 
 	padding: 6px;
 
-	margin-bottom: 20px;
+	margin:20px 0;
 }
 
 .buttons .left {
@@ -1690,7 +1710,7 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .product_holder {
-    height: 354px !important;
+    height: 337px !important;
 }
 
 .product_holder .cart {
@@ -1715,9 +1735,9 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .product-grid .name {
-    width: 171px;
+    width: 225px;
     margin: 0 7px 13px;
-    height: 42px;
+    height: 28px;
 }
 
 .product-grid .image img {
@@ -1915,10 +1935,9 @@ table .radio a.button:hover, input.button:hover {
 }
 
 .product-info .description a {
-
 	color: #4D4D4D;
-
 	text-decoration: none;
+    font-weight: 700;
 
 }
 
@@ -3329,7 +3348,9 @@ div#banner8 {
 .options .shoe_color.getImages {
   margin: 0 8px 0 0;
 }
-
+.shoe_color.getImages:hover {
+    border: 1px solid red;
+}
 .options .size {
   margin: 40px 0 0 0;
 }
