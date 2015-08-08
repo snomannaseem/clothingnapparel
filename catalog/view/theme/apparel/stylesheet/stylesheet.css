@@ -3937,7 +3937,8 @@ div#banner7 {
 	}
 	
 	#header {
-		margin-bottom: 0;	
+		margin-bottom: 0;
+        height:90px;
 	}
 	
 	#logo img {
@@ -3949,12 +3950,12 @@ div#banner7 {
     margin: 0;
     position: absolute;
     top: 16px;
-    width: 36%;
+    width: 25%;
 }
 
 #header .mid {
-    float: right;
-    margin: 40px 0 0;
+    float: left;
+    margin: 15px 0 0 143px;
     width: 40%;
 }
 
@@ -3965,21 +3966,21 @@ div#call {
 	
 #call img {
     float: left;
-    margin: 5% 2% 0 5%;
+    margin: 0% 2% 0 5%;
     width: 14%;
 }
 
-#call h4 {
-    color: #14212b;
-    font-family: trebuchet ms;
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-}
 #call h1 {
     color: #14212b;
     font-family: trebuchet ms;
-    font-size: 21px;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+#call h4 {
+    color: #14212b;
+    font-family: trebuchet ms;
+    font-size: 7px;
     margin: 0;
     padding: 0;
 }
@@ -3995,10 +3996,10 @@ div#call {
 
 #header #search {
     position: absolute;
-    right: 225px;
+    right: 0px;
     text-align: right;
-    top: 115px;
-    width: 236px;
+    top: 54px;
+    width: 70%;
     z-index: 15;
 }
 
@@ -4006,10 +4007,10 @@ div#call {
     background: #f4f5f5 none repeat scroll 0 0;
     border: 1px solid #cccccc;
     float: left;
-    height: 35px;
-    padding: 1px 1px 1px 33px;
-    width: 134px;
-    border-right:0px;
+    height: 20px;
+    padding: 1px 1px 1px 5px;
+    width: 162px;
+    border-right: 0px;
 }
 	
 
@@ -4018,18 +4019,23 @@ div#call {
     border-right: 1px solid #cccccc;
     cursor: pointer;
     float: left;
-    height: 33px;
+    height: 22px;
     left: 0;
     position: static;
-    width: 46px;
+    width: 21px;
 }
 
 #header #cart {
     min-width: 300px;
     position: absolute;
     right: 0;
-    top: 78px;
+    top: 57px;
     z-index: 9;
+}
+
+.cart_up img {
+    width: 100px;
+    margin: 13px 0 0 0;
 }
 
 #header #cart .content {
@@ -4049,7 +4055,7 @@ div#call {
     height: 40px;
     line-height: 40px;
     width: 33.1%;
-    background:#d30f10;
+    background:#000;
 }
 	
 #menu > ul > li > a {
@@ -4064,12 +4070,11 @@ div#call {
 	}
 	
 	#menu > ul > li > div > ul > li > a {
-        color: #ffffff;
+        color: #666;
         font-size: 17px;
         padding: 0 15px;
         text-indent: 0;
     }
-    
     #menu > ul > li:nth-child(3) > div {
         margin: 0 0 0 -61px;
     }
@@ -4109,14 +4114,28 @@ div#call {
 	
 	
 .box {
-    height: 867px;
+    height: 710px;
     margin: 0 0 20px;
 }
-	
+.box-product > div:last-child {
+    margin-right: 0;
+    float: right;
+    margin: 5px 12px 0 -24px;
+}
+
 .box-product > div {
-    height: 403px;
+    height: 337px;
     margin: 5px 4px;
     width: 47%;
+}
+.box-product .image {
+    display: block;
+    margin-bottom: 0px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    width: 215px;
+    height: 200px;
 }
 	
 	.shoe_color.getImages {
@@ -4129,8 +4148,11 @@ div#call {
 	}
 	
 	.box-product > div .name {
-		height: 58px;
+		height: 38px;
 	}
+    .box-product .price {
+        width: 60px;
+    }
 	
 	.cart .button {
 		width: 125px;
@@ -4160,19 +4182,38 @@ div#banner6 {
 	}
 	
 	#footer {
-    min-height: 437px !important;
-    width: 420px;
-}
+        min-height: 547px !important;
+        width: 460px;
+    }
+    .footer_in {
+        width: 100%;
+        margin: 0 auto;
+        height: 205px;
+    }
 	#footer .column {
-    border-bottom: 1px solid #000;
-    float: left;
-    margin: 10px 0 0;
-    min-height: 100px;
-    width: 100%;
-}
-
-
-	
+        border-bottom: 1px solid #000;
+        float: left;
+        margin: 10px 0 0;
+        min-height: 100px;
+        width: 97%;
+        padding: 0 0 0 13px;
+    }
+    div#follow {
+        width: 180px;
+        margin: 0 0 0 6px;
+    }
+    .visa_icon img:last-child {
+        float: right;
+        width: 251px;
+        margin: 6px 3px 0 0px;
+        height: auto;
+    }
+	div#follow img {
+        margin: 10px 5px 0 0;
+        width: 29px;
+        border-radius: 4px;
+        float: left;
+    }
 	.product-grid .name {
 		height: 35px;
 		margin: 0 7px;
