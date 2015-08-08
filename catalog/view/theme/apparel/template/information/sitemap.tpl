@@ -1,5 +1,5 @@
 <?php echo $header; ?><?php echo $column_left; ?><?php echo $column_right; ?>
-<div id="content"><?php echo $content_top; ?>
+<div id="content">
   <div class="breadcrumb">
     <?php foreach ($breadcrumbs as $breadcrumb) { ?>
     <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
@@ -10,7 +10,7 @@
     <div class="left">
       <ul>
         <?php foreach ($categories as $category_1) { ?>
-        <li><a href="<?php echo $category_1['href']; ?>"><?php echo $category_1['name']; ?></a>
+        <li><a href="<?php echo $category_1['href']; ?>" class="h_one"><?php echo $category_1['name']; ?></a>
           <?php if ($category_1['children']) { ?>
           <ul>
             <?php foreach ($category_1['children'] as $category_2) { ?>
