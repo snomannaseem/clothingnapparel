@@ -390,7 +390,7 @@ div#call {
 	position: relative;
 	top: -1px;
 	padding: 8px;
-	min-height: 150px;
+	min-height: 394px;
 	border-top: 1px solid #EEEEEE;
 	border-left: 1px solid #EEEEEE;
 	border-right: 1px solid #EEEEEE;
@@ -403,6 +403,7 @@ div#call {
 	-moz-box-shadow: 0px 2px 2px #DDDDDD;
 	box-shadow: 0px 2px 2px #DDDDDD;
 	background: #FFF;
+    overflow: scroll;
 }
 
 #header #cart.active .heading {
@@ -2768,6 +2769,7 @@ table .radio a.button:hover, input.button:hover {
 .cart-info tbody .image img {
 
 	border: 1px solid #DDDDDD;
+    width: 50px;
 
 }
 
@@ -4190,10 +4192,20 @@ div#banner6 {
 
 @media only screen and (min-width: 600px) and (max-width: 799px) {
 	.topbar {
-		background-color: #000;
 		height: 54px;
 		padding: 10px 0 0;
 	}
+    .bar_in {
+        width: 100%;
+    }
+    div#welcome {
+        width: 100%;
+        color: #000;
+        font-size:10px;
+    }
+    .links {
+        width: 100%;
+    }
 	
 	#welcome {
         color: #fff;
@@ -4216,6 +4228,7 @@ div#banner6 {
     
     #header #logo {
         margin: 18px 0 0;
+        width: 19%;
     }
 	
 	#container {
@@ -4226,7 +4239,8 @@ div#banner6 {
 	}
 	
 	#header {
-		margin-bottom: 0;	
+		margin-bottom: 0;
+        height:85px;
 	}
 	
 	#logo img {
@@ -4236,13 +4250,13 @@ div#banner6 {
     
     #header .mid {
         float: left;
-        margin: 3px 0 0;
-        width: 45%;
-    }	
+        margin: 10px 0 0 20px;
+        width: 62%;
+    }
 	    
     div#call {
         left: 0;
-        margin: 0 auto 15px;
+        margin: 0 auto;
         position: static;
         top: 0;
         width: 70%;
@@ -4251,27 +4265,39 @@ div#banner6 {
     
     #call img {
         float: left;
-        margin: 2% 2% 0 5%;
-        width: 15%;
-    }  
+        margin: 0% 2% 0 14%;
+        width: 12%;
+    } 
     
     
 #call h4 {
-    font-size: 13px;
-    margin: 35px 0 0;
+    font-size: 8px;
+    margin: 0px 0 0;
 }
-	
+
+.cart_up img {
+    width: 74px;
+    margin: 22px 0 0 0;
+}
+
+#header #cart .heading a {
+    color: #666;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 400px;
+}
+
 #call h1 {
     color: #14212b;
     font-family: trebuchet ms;
-    font-size: 22px;
+    font-size: 14px;
     margin: 0;
     padding: 0;
 }
 	
 #header #search {
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
 }
 
 #header #search input {
@@ -4281,9 +4307,9 @@ div#banner6 {
     border-style: solid none solid solid;
     border-width: 1px 0 1px 1px;
     float: left;
-    height: 39px;
-    padding: 1px 1px 1px 33px;
-    width: 62%;
+    height: 24px;
+    padding: 1px 1px 1px 5px;
+    width: 78%;
 }
 	
 #header .button-search {
@@ -4291,22 +4317,22 @@ div#banner6 {
     border-right: 1px solid #cccccc;
     cursor: pointer;
     float: left;
-    height: 41px;
+    height: 26px;
     left: 0;
     margin: 0;
     position: static;
-    width: 46px;
+    width: 26px;
 }
 
 #header #cart {
     min-width: 25%;
     position: absolute;
     right: 0;
-    top: 65px;
+    top: 50px;
     z-index: 9;
 }
 	#menu {
-		background: none repeat scroll 0 0 #d30f10;
+		background: none repeat scroll 0 0 #000;
 		height: 80px;
 		margin-bottom: 15px;
 		padding: 0;
@@ -4329,14 +4355,14 @@ div#banner6 {
 
 	
 #menu > ul > li > div > ul > li > a {
-    color: #ffffff;
+    color: #666;
     font-size: 17px;
     padding: 0 15px;
 }
 	
 	#slideshow0 {
 		width: 100% !important;
-		height: 323px !important;
+		height: 324px !important;
 	}
 	
 	.banner div img {
@@ -4345,37 +4371,51 @@ div#banner6 {
 	}
 	
 	div#banner0 {
-		height: 153px;
-		width: 167px;
-	}
+    height: 111px;
+    width: 120px;
+    margin: 0 13px 5px 0px;
+}
 	
 	div#banner1 {
-		height: 153px;
-		width: 167px;
-	}
+    height: 111px;
+    width: 120px;
+    margin: 0 0 5px 0;
+}
 	
-	div#banner2 {
-		height: 153px;
-		width: 167px;
-	}
+div#banner2 {
+    height: 111px;
+    width: 120px;
+    margin: 0 0 5px 0;
+}
 	
-	div#banner3 {
-		height: 153px;
-		width: 167px;
-	}
+div#banner3 {
+    height: 111px;
+    width: 120px;
+    margin: 0 13px 5px 0;
+}
 	
 	.box-heading {
         padding: 6px 0 2px;
     }
 	.box {
 		margin: 0;
-        height: 463px;
+        height: 808px;
 	}
 	
-	.box-product > div {
-		height: 403px;
-		width: 170px;
-	}
+.box-product > div {
+    height: 374px;
+    width: 251px;
+    margin: 8px 3px 0;
+}
+.box-product > div:last-child {
+    margin-right: 0;
+    float: right;
+    margin: 9px 6px 0 -24px;
+}
+.box-product .image {
+    width: 252px;
+    height: 234px;
+}
     
 	.box-product .color a {
         height: 19px;
@@ -4392,7 +4432,7 @@ div#banner6 {
 	}
 	
 	.box-product > div .name {
-		height: 87px;
+		height: 40px;
 	}
 	
 	.cart .button {
@@ -4400,30 +4440,49 @@ div#banner6 {
 	}
 	
 div#banner4 {
-    height: 125px;
-    width: 477px !important;
+    height: 136px;
+    width: 100% !important;
 }
 	
 div#banner5 {
-    height: 125px;
-    width: 229px;
+    height: 284px;
+    width: 100%;
+    margin: 8px 0 0 0;
 }
 	
 	div#banner6 {
-		height: 173px;
+		height: 125px;
 		width: 49%;
         margin: 12px 0;
 	}
 	
 	div#banner7 {
-		height: 173px;
+		height: 125px;
 		width: 49%;
         margin: 12px 0;
 	}
 	
 	#footer {
-		width: 670px;
+		width: 520px;
 	}
+    
+    .footer_in {
+        width: 96%;
+        margin: 0 auto;
+        height: 205px;
+    }
+    
+    #footer h3 {
+        font-size: 10px;
+    }
+    
+    #footer .column a {
+        color: #fff !important;
+        text-decoration: none;
+        font-size: 9px;
+        height: 20px;
+        line-height: 20px;
+    }
 	
 	.product-grid .name {
 		height: 35px;
@@ -4441,6 +4500,28 @@ div#banner5 {
 
 
 @media only screen and (min-width: 800px) and (max-width: 999px) {
+    .topbar {
+        height: 56px;
+        background-color: #f0f0f0;
+    }
+    
+    .bar_in {
+        width: 760px;
+        margin: 0 auto;
+    }
+    
+    div#welcome {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .links {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    
 	#container {
 		margin-left: auto;
 		margin-right: auto;
@@ -4451,12 +4532,12 @@ div#banner5 {
     #header #logo {
         float: left;
         margin: 20px 0 0 15px;
-        width: 24%;
+        width: 20%;
     }
     
     #header .mid {
         float: left;
-        margin: 0 0 0 20px;
+        margin: 20px 0 0 90px;
         width: 49%;
     }
     
@@ -4482,7 +4563,7 @@ div#banner5 {
 	#slideshow0 {
         height: 331px !important;
         margin: 0;
-        width: 388px !important;
+        width: 758px !important;
     }
 		
 	.banner div img {
@@ -4493,38 +4574,39 @@ div#banner5 {
     div#banner0 {
         border: 1px solid #000;
         float: left;
-        height: 161px;
-        margin: 0 0 0 27px;
-        width: 175px;
+        height: 165px;
+        margin: 10px 0 0 0px;
+        width: 180px;
     }
 	
 	div#banner1 {
-		border: 1px solid #000;
-		float: right;
-		height: 161px;
-		width: 175px;
-	}
+        border: 1px solid #000;
+        float: right;
+        height: 165px;
+        width: 180px;
+        margin: 10px 0 0 13px;
+    }
 	
 	div#banner2 {
-		border: 1px solid #000;
-		float: left;
-		height: 161px;
-		margin: 8px 0 8px 26px;
-		width: 175px;
-	}
+        border: 1px solid #000;
+        float: left;
+        height: 165px;
+        margin: 10px 0 10px 10px;
+        width: 180px;
+    }
 	
 	div#banner3 {
-		border: 1px solid #000;
-		float: right;
-		height: 161px;
-		margin: 8px 0;
-		width: 175px;
-	}
+        border: 1px solid #000;
+        float: right;
+        height: 165px;
+        margin: 10px 0;
+        width: 180px;
+    }
 	
 	
 	.box {
 		margin: 0 0 10px;
-        height:371px;
+        height:331px;
 	}
 	
 	.box-product > div {
@@ -4533,27 +4615,56 @@ div#banner5 {
 	}
 	
 	.shoe_color.getImages {
-		height: 19px;
-		width: 19px;
+		height: 14px;
+		width: 14px;
 	}
 	
 	.box-product .name a {
-		font-size: 14px;
+		font-size: 10px;
 	}
 	
 	.box-product > div .name {
-		height: 37px;
+		height: 40px;
 	}
     
+    .box-product .price {
+        font-size: 13px;
+        float: left;
+        width: 60px;
+    }
+    
     .box-product > div .cart {
-        height: 10px;
-        margin: -37px 0 0 57px;
+        margin: -5px 5px 0 0px;
+        float: right;
+        height: 25px;
     }
 	
 	.box-product > div {
-        height: 319px;
+        height: 294px;
         width: 181px;
     }
+    
+    .box-product .image {
+        display: block;
+        margin-bottom: 0px;
+        text-align: left;
+        border-bottom: 1px solid transparent;
+        padding: 3px;
+        width: 240px;
+        height: 175px;
+    }
+    
+    .box-product .image img {
+        padding: 0px;
+        width: 73%;
+        height: auto;
+    }
+    
+    .color {
+    height: 30px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+}
     
     .box-product > div:last-child {
         float: right;
@@ -4581,8 +4692,13 @@ div#banner5 {
 	}
 	
 	#footer {
-		width: 720px;
+		width: 760px;
 	}
+    .footer_in {
+        width: 720px;
+        margin: 0 auto;
+        height: 205px;
+    }
 }
 
 
