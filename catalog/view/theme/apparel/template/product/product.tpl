@@ -1,38 +1,37 @@
-<?php echo $header; ?><?php echo $column_right; ?>
-<div id="content" class="inside_page"><?php echo $content_top; ?>
-  <div class="breadcrumb">
-    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
-    <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
-    <?php } ?>
-  </div>
-<?php
-    $passed_color = false;
- ?>
-  <div class="product-info">
-  
-    <?php if ($thumb || $images) { ?>
-    <div class="left">		
-      <?php 
-      if ($images) { ?>
-      <div class="image-additional">
-        <a href='<?php echo $popup; ?>' class='cloud-zoom-gallery' title='<?php echo $heading_title; ?>' rel="useZoom: 'zoom1', smallImage: '<?php echo $thumb; ?>' "><img class="zoom-tiny-image" src="<?php echo $thumb; ?>" alt = "<?php echo $heading_title; ?>"/></a>  
-        <?php foreach ($images as $image) { ?>
-        <a href='<?php echo $image['popup']; ?>' class='cloud-zoom-gallery' title='<?php echo $heading_title; ?>' rel="useZoom: 'zoom1', smallImage: '<?php echo $image['thumb']; ?>' "><img class="zoom-tiny-image" src="<?php echo $image['thumb']; ?>" alt = "<?php echo $heading_title; ?>"/></a>
+<?php echo $header; ?>
+<?php echo $column_right; ?>
+<div id="content" class="inside_page">
+    <?php echo $content_top; ?>
+    <div class="breadcrumb">
+        <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+            <?php echo $breadcrumb['separator']; ?><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a>
         <?php } ?>
-      </div>
-      <?php } ?>
-	  
-	  <?php if ($thumb) { ?>
-		<div class="image">
-			<div class="image_inside">
-				<a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class = 'cloud-zoom' id='zoom1' rel="tint: '#ffffff',tintOpacity:0.5 ,smoothMove:3,zoomWidth:520, zoomHeight:550, adjustY:-10, adjustX:28">
-					<img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" />
-				</a>
-			</div>
-		</div>
-		<?php } ?>
     </div>
-    <?php } ?>
+    <?php $passed_color = false; ?>
+    
+    <div class="product-info">  
+        <?php if ($thumb || $images) { ?>
+            <div class="left">		
+                <?php if ($images) { ?>
+                    <div class="image-additional">
+                        <a href='<?php echo $popup; ?>' class='cloud-zoom-gallery' title='<?php echo $heading_title; ?>' rel="useZoom: 'zoom1', smallImage: '<?php echo $thumb; ?>' "><img class="zoom-tiny-image" src="<?php echo $thumb; ?>" alt = "<?php echo $heading_title; ?>"/></a>  
+                        <?php foreach ($images as $image) { ?>
+                            <a href='<?php echo $image['popup']; ?>' class='cloud-zoom-gallery' title='<?php echo $heading_title; ?>' rel="useZoom: 'zoom1', smallImage: '<?php echo $image['thumb']; ?>' "><img class="zoom-tiny-image" src="<?php echo $image['thumb']; ?>" alt = "<?php echo $heading_title; ?>"/></a>
+                        <?php } ?>
+                    </div>
+                <?php } ?>
+	  
+                <?php if ($thumb) { ?>
+                    <div class="image">
+                        <div class="image_inside">
+                            <a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class = 'cloud-zoom' id='zoom1' rel="tint: '#ffffff',tintOpacity:0.5 ,smoothMove:3,zoomWidth:520, zoomHeight:350, adjustY:-10, adjustX:28">
+                                <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" />
+                            </a>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+        <?php } ?>
 
     <div class="right"> 
       <h1 class="pr_name"><?php echo $heading_title; ?></h1>
