@@ -277,6 +277,7 @@ class ControllerProductSearch extends Controller {
 							);
 						}
 					}
+                    
 					
 					$tmp_data['options'][] = array(
 						'product_option_id' => $option['product_option_id'],
