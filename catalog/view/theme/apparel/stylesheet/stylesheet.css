@@ -3620,6 +3620,53 @@ div#checkout input[type='button'] {
     width: 100%;
 }
 
+/*********************************************************
+ZOOM : START
+/*********************************************************/
+/* This is the moving lens square underneath the mouse pointer. */
+.cloud-zoom-lens {
+	border: 1px solid #ddd;
+	margin:-1px;	/* Set this to minus the border thickness. */
+	background-color:#fff;	
+	cursor:move;		
+}
+
+/* This is for the title text. */
+.cloud-zoom-title {
+	font-family:Arial, Helvetica, sans-serif;
+	position:absolute !important;
+	background-color:#444;
+	color:#fff;
+	padding:3px;
+	width:100%;
+	text-align:center;	
+	font-weight:bold;
+	font-size:10px;
+	bottom:0px;
+	display: none;
+}
+
+/* This is the zoom window. */
+.cloud-zoom-big {
+	border: 2px solid #ffffff;
+	webkit-box-shadow: 0px 0px 6px rgba(0,0,0,0.13);
+	-moz-box-shadow: 0px 0px 6px rgba(0,0,0,0.13);
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.13);
+	overflow:hidden;
+}
+
+/* This is the loading message. */
+.cloud-zoom-loading {
+	color:white;	
+	background:#444;
+	padding:3px;
+	border:1px solid #222;
+	border-radius: 4px;
+}
+/*********************************************************
+ZOOM : END
+/*********************************************************/
+
 @media only screen and (min-width: 800px) and (max-width: 999px) {
     .topbar {
         height: 56px;
