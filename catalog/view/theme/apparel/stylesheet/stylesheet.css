@@ -4282,32 +4282,24 @@ div#banner6 {
 
 @media only screen and (min-width: 600px) and (max-width: 799px) {
 	.topbar {
-		height: 54px;
+		height: 66px;
 		padding: 10px 0 0;
 	}
     .bar_in {
-        width: 100%;
+        width: 86%;
     }
     div#welcome {
-        width: 100%;
-        color: #000;
-        font-size:10px;
-    }
+    color: #000;
+    font-size: 10px;
+    height: 37px;
+    line-height: 16px;
+    text-align: center;
+    width: 100%;
+}
     .links {
         width: 100%;
     }
-	
-	#welcome {
-        color: #fff;
-        float: none;
-        line-height: 20px;
-        margin: 0 auto;
-        text-align: center;
-        text-decoration: none;
-        text-indent: 0;
-        width: 100%;
-    }
-	
+    
 	.links {
         float: none;
         line-height: 20px;
@@ -4525,9 +4517,6 @@ div#banner3 {
 		height: 40px;
 	}
 	
-	.cart .button {
-		width: 125px;
-	}
 	
 div#banner4 {
     height: 136px;
@@ -4581,10 +4570,61 @@ div#banner5 {
 	}
 	
 	.product_holder_inside .cart .button {
-		font-size: 16px;
-		margin: 0 0 0 9px;
-		width: 89px;
+		font-size: 12px;
+		margin: 0;
 	}
+    
+    #column-right {
+        float: left;
+        width: 100%;
+    }
+    
+    
+    #column-right {
+        float: left;
+        margin: 0 0 -610px;
+        width: 100%;
+    }
+    #column-right + #content {
+        margin-right: 0;
+    }
+    #column-left {
+        display: none;
+    }
+    
+    #column-left + #column-right + #content, #column-left + #content {
+        margin-left: 0;
+    }
+    input[type="text"], input[type="password"], textarea {
+        background: #f8f8f8 none repeat scroll 0 0;
+        border: 1px solid #cccccc;
+        margin: 5px 0;
+        padding: 3px;
+    }
+    input.large-field, select.large-field {
+        width: 233px;
+    }
+    
+    .product_holder {
+        height: 355px !important;
+    }
+    .product-grid .name {
+        height: 55px;
+        margin: 0 7px;
+        width: 197px;
+    }
+    .product-grid .price {
+        color: #333333;
+        display: block;
+        float: left;
+        font-weight: bold;
+        margin: 0 0 0 6px;
+        width: 75px;
+    }
+    .product-grid .cart {
+        float: right;
+        margin: 0 6px 0 0 !important;
+    }
 }
 
 
