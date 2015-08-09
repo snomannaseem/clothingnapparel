@@ -24,7 +24,7 @@
                 <?php if ($thumb) { ?>
                     <div class="image">
                         <div class="image_inside">
-                            <a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class = 'cloud-zoom' id='zoom1' rel="tint: '#ffffff',tintOpacity:0.5 ,smoothMove:3,zoomWidth:520, zoomHeight:300, adjustY:-10, adjustX:28">
+                            <a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class = 'cloud-zoom' id='zoom1' rel="tint: '#ffffff',tintOpacity:0.5 ,smoothMove:3,zoomWidth:520, zoomHeight:350, adjustY:-10, adjustX:28">
                                 <img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" />
                             </a>
                         </div>
