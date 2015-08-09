@@ -4789,6 +4789,41 @@ div#banner5 {
         margin: 0 auto;
         height: 205px;
     }
+    
+    #column-left{
+        display:none;
+    }
+    
+    #column-left + #column-right + #content, #column-left + #content{
+        margin:0;
+    }
+    
+    .box-product .color a {
+        float: right;
+        margin: 5px 1px 0 0;
+        text-align: center;
+    }
+    
+    input[type="text"], input[type="password"], textarea {
+        background: #f8f8f8 none repeat scroll 0 0;
+        border: 1px solid #cccccc;
+        margin: 5px 0;
+        padding: 3px;
+    }
+    
+    input.large-field, select.large-field {
+        width: 250px;
+    }
+    
+    .product-grid .name {
+        height: 45px;
+        margin: 0 7px 13px;
+        width: 225px;
+    }
+    
+    .product_holder {
+        height: 357px !important;
+    }
 }
 
 
