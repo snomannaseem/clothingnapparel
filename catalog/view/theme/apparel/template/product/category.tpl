@@ -4,7 +4,7 @@
 
 <div id="content" class="inside_page"><?php echo $content_top; ?>
 	<?php if ($thumb_banner) { ?>
-		<div style="display: block;">
+		<div style="display: block;" class="cat_banner">
 			<img src="<?php echo $thumb_banner; ?>" alt="" title="">
 		</div>
 	<?php } ?>
@@ -316,8 +316,8 @@ function display(view) {
 			}
 						
 			html += '<div class="cart">' + $(element).find('.cart').html() + '</div>';
-			html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';
-			html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';
+			<!--html += '<div class="wishlist">' + $(element).find('.wishlist').html() + '</div>';-->
+			<!--html += '<div class="compare">' + $(element).find('.compare').html() + '</div>';-->
 			
 			$(element).html(html);
 		});	
