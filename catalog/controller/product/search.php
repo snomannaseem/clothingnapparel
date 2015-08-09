@@ -246,12 +246,108 @@ class ControllerProductSearch extends Controller {
 					$rating = false;
 				}
 			
+            
+            $tmp_data['options'] = array();
+			$tmp_default_color_id = $result['default_color_id'];
+            
+			foreach ($this->model_catalog_product->getProductOptions($result['product_id'], 'Color') as $option) { 
+				if ($option['type'] == 'select' || $option['type'] == 'radio' || $option['type'] == 'checkbox' || $option['type'] == 'image') { 
+					$option_value_data = array();
+					
+					foreach ($option['option_value'] as $option_value) {
+						if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+							if ((($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) && (float)$option_value['price']) {
+								$price = $this->currency->format($this->tax->calculate($option_value['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
+							} else {
+								$price = false;
+							}
+							
+                            if ($tmp_default_color_id <= 0){
+                                $tmp_default_color_id = $option_value['option_value_id'];
+                            }
+                            
+							$option_value_data[] = array(
+								'product_option_value_id' => $option_value['product_option_value_id'],
+								'option_value_id'         => $option_value['option_value_id'],
+								'name'                    => $option_value['name'],
+                                'op_desc1'                => $option_value['op_desc1'],
+								'image'                   => $this->model_tool_image->resize($option_value['image'], 50, 50),
+								'price'                   => $price,
+								'price_prefix'            => $option_value['price_prefix']
+							);
+						}
+					}
+					
+					$tmp_data['options'][] = array(
+						'product_option_id' => $option['product_option_id'],
+						'option_id'         => $option['option_id'],
+						'name'              => $option['name'],
+						'type'              => $option['type'],
+						'option_value'      => $option_value_data,
+						'required'          => $option['required']
+					);					
+				} elseif ($option['type'] == 'text' || $option['type'] == 'textarea' || $option['type'] == 'file' || $option['type'] == 'date' || $option['type'] == 'datetime' || $option['type'] == 'time') {
+					$tmp_data['options'][] = array(
+						'product_option_id' => $option['product_option_id'],
+						'option_id'         => $option['option_id'],
+						'name'              => $option['name'],
+						'type'              => $option['type'],
+						'option_value'      => $option['option_value'],
+						'required'          => $option['required']
+					);						
+				}
+			}
+            
+            
+            foreach ($this->model_catalog_product->getProductOptions($result['product_id'], '', $tmp_default_color_id) as $option) { 
+				if ($option['type'] == 'select' || $option['type'] == 'radio' || $option['type'] == 'checkbox' || $option['type'] == 'image') { 
+					$option_value_data = array();
+					
+					foreach ($option['option_value'] as $option_value) {
+						if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
+							if ((($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) && (float)$option_value['price']) {
+								$price = $this->currency->format($this->tax->calculate($option_value['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
+							} else {
+								$price = false;
+							}
+							
+							$option_value_data[] = array(
+								'product_option_value_id' => $option_value['product_option_value_id'],
+								'option_value_id'         => $option_value['option_value_id'],
+								'name'                    => $option_value['name'],
+                                'op_desc1'                => $option_value['op_desc1'],
+								'image'                   => $this->model_tool_image->resize($option_value['image'], 50, 50),
+								'price'                   => $price,
+								'price_prefix'            => $option_value['price_prefix']
+							);
+						}
+					}
+					
+					$tmp_data['options'][] = array(
+						'product_option_id' => $option['product_option_id'],
+						'option_id'         => $option['option_id'],
+						'name'              => $option['name'],
+						'type'              => $option['type'],
+						'option_value'      => $option_value_data,
+						'required'          => $option['required']
+					);					
+				} 
+			}
+            
+            
+            
+            
+            
+            
+            
+            
 				$this->data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
 					'name'        => $result['name'],
 					'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, 100) . '..',
 					'price'       => $price,
+                    'options'     => $tmp_data['options'],
 					'special'     => $special,
 					'tax'         => $tax,
 					'rating'      => $result['rating'],
