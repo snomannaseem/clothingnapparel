@@ -1413,7 +1413,7 @@ table .radio a.button:hover, input.button:hover {
 
 	overflow: auto;
 
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 
 }
 
@@ -1726,7 +1726,7 @@ table .radio a.button:hover, input.button:hover {
     display: inline-block;
     vertical-align: top;
     margin: 10px 2px 0px !important;
-    height: 320px;
+    height: 304px;
     border: 1px solid #eee;
 }
 
