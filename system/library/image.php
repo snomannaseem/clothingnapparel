@@ -90,7 +90,7 @@ class Image {
 		$new_width = (int)($this->info['width'] * $scale);
 		$new_height = (int)($this->info['height'] * $scale);			
     	$xpos = (int)(($width - $new_width) / 2);
-   		$ypos = (int)(($height - $new_height) / 2);
+   		//$ypos = (int)(($height - $new_height) / 2);
         		        
        	$image_old = $this->image;
         $this->image = imagecreatetruecolor($width, $height);
