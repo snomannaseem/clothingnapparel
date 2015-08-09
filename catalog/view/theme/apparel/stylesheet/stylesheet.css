@@ -485,16 +485,14 @@ div#call {
 }
 
 #header .button-search {
-    background: url('../image/button-search.png') center center no-repeat;
-    width: 5%;
-    height: 28px;
-    border-right: 1px solid #CCCCCC;
-    cursor: pointer;
-    background-color: #f4f5f5;
-    margin: 0px;
-    float: left;
-    border-top: 1px solid #ccc;
+    background: #f4f5f5 url("../image/button-search.png") no-repeat scroll center center;
     border-bottom: 1px solid #ccc;
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    float: left;
+    height: 28px;
+    width: 5%;
 }
 
 #header #search input[type='filter_name'] {
@@ -1124,9 +1122,9 @@ table .radio a.button:hover, input.button:hover {
 /* box */
 
 .box {
-    width: 100%;
     float: right;
-    margin: 0 0 78px 0;
+    margin: 0 0 18px;
+    width: 100%;
 }
 
 #column-right .box .box-heading {
@@ -3712,6 +3710,18 @@ ZOOM : END
     #header #search input{
         width:69%;
     }
+    
+    #header .button-search {
+        background: #f4f5f5 url("../image/button-search.png") no-repeat scroll center center;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #cccccc;
+        border-top: 1px solid #ccc;
+        cursor: pointer;
+        float: left;
+        height: 28px;
+        margin: 5px 0 0;
+        width: 5%;
+    }
 	    
     div#call {
         margin: 0 0 9px 58px;
@@ -4014,16 +4024,16 @@ ZOOM : END
     width: 90%;
 }
 
-#header #search input {
-    background: #f4f5f5 none repeat scroll 0 0;
-    border-color: #cccccc -moz-use-text-color #cccccc #cccccc;
-    border-image: none;
-    border-style: solid none solid solid;
-    border-width: 1px 0 1px 1px;
+#header .button-search {
+    background: #f4f5f5 url("../image/button-search.png") no-repeat scroll center center;
+    border-right: 1px solid #cccccc;
+    cursor: pointer;
     float: left;
-    height: 24px;
-    padding: 1px 1px 1px 5px;
-    width: 78%;
+    height: 26px;
+    left: 0;
+    margin: 5px 0 0;
+    position: static;
+    width: 26px;
 }
 	
 #header .button-search {
