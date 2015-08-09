@@ -3612,7 +3612,13 @@ div#checkout input[type='button'] {
   border: 0px solid;
   font-weight: 700;
 }
-
+.cat_banner {
+        height: auto;
+    width: 100%;
+}
+.cat_banner > img {
+    width: 100%;
+}
 
 @media only screen and (min-width: 800px) and (max-width: 999px) {
     .topbar {
@@ -3848,6 +3854,13 @@ div#checkout input[type='button'] {
     
     .product_holder {
         height: 357px !important;
+    }
+    .cat_banner {
+        height: auto;
+        width: 100%;
+    }
+    .cat_banner > img {
+        width: 100%;
     }
 }
 
@@ -4196,6 +4209,13 @@ div#banner5 {
     .product-grid .cart {
         float: right;
         margin: 0 6px 0 0 !important;
+    }
+    .cat_banner {
+        height: auto;
+        width: 100%;
+    }
+    .cat_banner > img {
+        width: 100%;
     }
 }
 
@@ -4565,6 +4585,13 @@ div#banner6 {
     
     .product-grid .price {
         margin: 7px 7px 8px;
+    }
+    .cat_banner {
+        height: auto;
+        width: 100%;
+    }
+    .cat_banner > img {
+        width: 100%;
     }
 }
 
@@ -4967,6 +4994,13 @@ div#follow img {
     
     .form select[name="country_id"] {
         width: 160px;
+    }
+    .cat_banner {
+        height: auto;
+        width: 100%;
+    }
+    .cat_banner > img {
+        width: 100%;
     }
 }
 
