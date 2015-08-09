@@ -1,19 +1,27 @@
 <?php
 class ModelToolImage extends Model {
-	public function resize($filename, $width, $height) {
-        
-        $filename = trim($filename);
-		if (!file_exists(DIR_IMAGE . $filename) || !is_file(DIR_IMAGE . $filename) || empty($filename)) {
-            //print "$filename\n";
-            $filename = 'image/no_image.jpg';
-        	return $filename;
+	/**
+	*	
+	*	@param filename string
+	*	@param width 
+	*	@param height
+	*	@param type char [default, w, h]
+	*				default = scale with white space, 
+	*				w = fill according to width, 
+	*				h = fill according to height
+	*	
+	*/
+	public function resize($filename, $width, $height, $type = "") {
+		if (!file_exists(DIR_IMAGE . $filename) || !is_file(DIR_IMAGE . $filename)) {
+			return;
 		} 
 		
 		$info = pathinfo($filename);
+		
 		$extension = $info['extension'];
 		
 		$old_image = $filename;
-		$new_image = 'cache/' . utf8_substr($filename, 0, utf8_strrpos($filename, '.')) . '-' . $width . 'x' . $height . '.' . $extension;
+		$new_image = 'cache/' . utf8_substr($filename, 0, utf8_strrpos($filename, '.')) . '-' . $width . 'x' . $height . $type .'.' . $extension;
 		
 		if (!file_exists(DIR_IMAGE . $new_image) || (filemtime(DIR_IMAGE . $old_image) > filemtime(DIR_IMAGE . $new_image))) {
 			$path = '';
@@ -32,7 +40,17 @@ class ModelToolImage extends Model {
 
 			if ($width_orig != $width || $height_orig != $height) {
 				$image = new Image(DIR_IMAGE . $old_image);
-				$image->resize($width, $height);
+				if ($type == 'a') {
+					if ($width/$height > $width_orig/$height_orig) {
+						$image->resize($width, $height, 'w');
+					} elseif ($width/$height < $width_orig/$height_orig) {
+						$image->resize($width, $height, 'h');
+					}
+				} else {
+					$image->resize($width, $height, $type);
+				}
+				
+				//$image->resize($width, $height, $type);
 				$image->save(DIR_IMAGE . $new_image);
 			} else {
 				copy(DIR_IMAGE . $old_image, DIR_IMAGE . $new_image);
@@ -40,9 +58,9 @@ class ModelToolImage extends Model {
 		}
 		
 		if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
-			return HTTPS_IMAGE . $new_image;
+			return $this->config->get('config_ssl') . 'image/' . $new_image;
 		} else {
-			return HTTP_IMAGE . $new_image;
+			return $this->config->get('config_url') . 'image/' . $new_image;
 		}	
 	}
 }
