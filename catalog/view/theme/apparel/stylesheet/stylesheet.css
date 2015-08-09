@@ -3615,7 +3615,7 @@ div#checkout input[type='button'] {
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 .topbar {
-    background-color: #000;
+    background-color: #f0f0f0;
     height: 84px;
     padding: 0;
 }
@@ -3625,7 +3625,7 @@ div#checkout input[type='button'] {
     padding: 5px 0 0 0;
 }
 #welcome {
-    color: #fff;
+    color: #000;
     float: none;
     font-size: 11px;
     margin: 0px auto -9px;
@@ -3639,7 +3639,7 @@ div#checkout input[type='button'] {
 }
 
 #welcome a, a:visited, a b {
-    color: #fff;
+    color: #666;
     cursor: pointer;
     font-size: 11px;
     text-decoration: underline;
@@ -3653,7 +3653,7 @@ div#checkout input[type='button'] {
     width: 100%;
 }
 .links a, a:visited, a b {
-    color: #fff;
+    color: #666;
     cursor: pointer;
     font-size: 11px;
     text-decoration: underline;
@@ -3668,8 +3668,8 @@ div#checkout input[type='button'] {
 
     #header #logo {
         float: none;
-        margin: 0 auto;
-        width: 80%;
+        margin: 10px auto;
+        width: 60%;
     }
         
 	#header {
@@ -3684,19 +3684,18 @@ div#checkout input[type='button'] {
     
     #header .mid {
         float: none;
-        margin: 0;
+        margin: 10px 0 0;
         width: 100%;
     }
 	    
     
     div#call {
         left: 0;
-        margin: 7px auto;
+        margin: 7px auto 17px;
         position: static;
         top: 0;
         width: 68%;
-    }
-	
+    }	
     
     #call img {
         float: left;
@@ -3945,14 +3944,79 @@ div#follow img {
 		margin: 0 0 0 9px;
 		width: 89px;
 	}
+    #column-left {
+        display: none;
+    }
+    
+    #column-left + #column-right + #content, #column-left + #content {
+        margin-left: 0;
+    }
+    .product-grid > div {
+        border: 1px solid #eee;
+        display: inline-block;
+        height: 335px;
+        margin: 10px 2px !important;
+        vertical-align: top;
+        width: 296px;
+    }
+    .product_holder {
+        height: 369px !important;
+    }
+    .product-grid .image {
+        height: 253px;
+        padding: 3px;
+        width: 233px;
+    }
+    .product-grid .image img {
+        height: 252px;
+        width: 290px;
+    }
+    .color {
+        border-bottom: 1px solid #eee;
+        border-top: 1px solid #eee;
+        height: 30px;
+    }
+        .product_holder_inside .cart .button {
+        font-size: 12px;
+        margin: 0 5px 0 0;
+    }    
+    
+    .manufacturer-list ul {
+        float: left;
+        list-style: outside none none;
+        margin: 0 0 10px;
+        padding: 0;
+        width: 100%;
+    }
+    #column-right {
+        float: left;
+        margin: 0 0 -1560px;
+        width: 100%;
+    }
+    #column-right + #content {
+        margin-right: 0;
+    }
+    .login-content .left {
+        float: left;
+        width: 100%;
+    }
+    
+    .login-content .right {
+        float: right;
+        width: 100%;
+    }    
+    
+    .form select[name="country_id"] {
+        width: 160px;
+    }
 }
 
 
 
 @media only screen and (min-width: 480px) and (max-width: 599px) {
     .topbar {
-        background-color: #000;
-        height: 52px;
+        background-color: #f0f0f0;
+        height: 70px;
         padding: 10px 0 0;
     }
 	.bar_in {
@@ -3961,15 +4025,15 @@ div#follow img {
     }
 	
 	#welcome {
-        color: #fff;
+        color: #000;
         float: none;
-        line-height: 14px;
+        height: 41px;
+        line-height: 16px;
         margin: 0 auto;
         text-align: center;
         text-decoration: none;
         text-indent: 0;
         width: 100%;
-        height: 26px;
     }
 	
 	.links {
@@ -4266,16 +4330,53 @@ div#banner6 {
         float: left;
     }
 	.product-grid .name {
-		height: 35px;
+		height: 45px;
 		margin: 0 7px;
 		width: 197px;
 	}
 	
 	.product_holder_inside .cart .button {
-		font-size: 16px;
-		margin: 0 0 0 9px;
-		width: 89px;
-	}
+        float: right;
+        font-size: 12px;
+        margin: 0 7px 0 0;
+    }
+    
+    #column-right {
+        float: right;
+        margin: 0 0 -535px;
+        width: 100%;
+    }
+    #column-right + #content {
+        margin-right: 0;
+    }
+    #column-left {
+        display: none;
+        float: left;
+        width: 180px;
+    }
+    
+    #column-left + #column-right + #content, #column-left + #content {
+        margin-left: 0;
+    }
+    
+    .product-grid > div {
+        width: 222px;
+    }
+    .product-grid .image {
+        text-align: left;
+    }
+    .product-grid .image img {
+        height: 219px;
+        width: 216px;
+    }
+    
+    .product_holder {
+        height: 345px !important;
+    }
+    
+    .product-grid .price {
+        margin: 7px 7px 8px;
+    }
 }
 
 
