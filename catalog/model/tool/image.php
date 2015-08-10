@@ -12,8 +12,10 @@ class ModelToolImage extends Model {
 	*	
 	*/
 	public function resize($filename, $width, $height, $type = "") {
-		if (!file_exists(DIR_IMAGE . $filename) || !is_file(DIR_IMAGE . $filename)) {
-			return;
+		$filename = trim($filename);
+		if (!file_exists(DIR_IMAGE . $filename) || !is_file(DIR_IMAGE . $filename) || empty($filename)) {
+            $filename = 'image/no_image.jpg';
+			return $filename;
 		} 
 		
 		$info = pathinfo($filename);
