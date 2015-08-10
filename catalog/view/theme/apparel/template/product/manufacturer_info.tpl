@@ -119,7 +119,7 @@
      
 						<div class="name">
 							<a href="<?php echo $product['href']; ?>">
-								<?php echo $product['name']; ?>
+								<?php echo str_truncate($product['name'], 55);?>
 							</a>
 						</div>     
       
@@ -145,7 +145,7 @@
       
 						<?php if ($product['rating']) { ?>
 							<div class="rating">
-								<img src="catalog/view/theme/shoes/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" />
+								<img src="catalog/view/theme/apparel/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" />
 							</div>
 						<?php } ?>
 
