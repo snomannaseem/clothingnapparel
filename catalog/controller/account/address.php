@@ -536,6 +536,14 @@ class ControllerAccountAddress extends Controller {
     	if ($this->request->post['zone_id'] == '') {
       		$this->error['zone'] = $this->language->get('error_zone');
     	}
+        
+        /*Verify Postal*/
+        $this->load->model('ocean/urlredirect');
+        $verifyPostal = $this->model_ocean_urlredirect->verifyPostal($this->request->post['postcode'],$this->request->post['city'],$this->request->post['zone_id'],$this->request->post['country_id']);
+        if(empty($verifyPostal)){
+        $this->error['postcode'] = error_postal_verification;
+        }
+        /*End Verify Postal*/
 		
     	if (!$this->error) {
       		return true;

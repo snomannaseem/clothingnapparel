@@ -17,5 +17,11 @@ class ModelOceanUrlredirect extends Model {
 		}
 	}
 
+    public function verifyPostal($postalcode, $city, $region, $country) {
+		
+        $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "ocean_global_geolocation WHERE postalCode = '" . $postalcode . "' AND city = '" . $city . "' AND region = (SELECT code FROM zone WHERE  zone_id = ". $region ." and country_id = ". $country .") AND country = (SELECT iso_code_2 from country where country_id = ". $country . ")");
+		
+		return $query->row;
+	} 
 }
 ?>

@@ -171,6 +171,15 @@ class ControllerCheckoutGuestShipping extends Controller {
 				$this->session->data['guest']['shipping']['iso_code_3'] = '';
 				$this->session->data['guest']['shipping']['address_format'] = '';
 			}
+            
+            /*Verify Postal*/
+            $this->load->model('ocean/urlredirect');
+            $verifyPostal = $this->model_ocean_urlredirect->verifyPostal($this->request->post['postcode'],$this->request->post['city'],$this->request->post['zone_id'],$this->request->post['country_id']);
+            
+            if(empty($verifyPostal)){
+                $json['error']['postcode'] = error_postal_verification;
+            }
+            /*End Verify Postal*/
 			
 			$this->load->model('localisation/zone');
 							
