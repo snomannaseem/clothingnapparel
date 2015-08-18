@@ -137,7 +137,14 @@ class ControllerCheckoutShippingAddress extends Controller {
                 $this->load->model('ocean/urlredirect');
                 $verifyPostal = $this->model_ocean_urlredirect->verifyPostal($address_info['postcode'],$address_info['city'],$address_info['zone_id'],$address_info['country_id']);
                 if(empty($verifyPostal)){
-                $json['error']['postcode'] = error_postal_verification;
+                    $json['error']['postcode'] = ERROR_POSTAL_VERIFICATION;
+                }
+                /*End Verify Postal*/
+                
+                /*Verify City*/                
+                $verifyCity = $this->model_ocean_urlredirect->verifyCity($address_info['city'],$address_info['zone_id'],$address_info['country_id']);
+                if(empty($verifyCity)){                
+                    $json['error']['city'] = ERROR_CITY_VERIFICATION;
                 }
                 /*End Verify Postal*/
 			} 
@@ -180,7 +187,14 @@ class ControllerCheckoutShippingAddress extends Controller {
                 $this->load->model('ocean/urlredirect');
                 $verifyPostal = $this->model_ocean_urlredirect->verifyPostal($this->request->post['postcode'],$this->request->post['city'],$this->request->post['zone_id'],$this->request->post['country_id']);
                 if(empty($verifyPostal)){
-                $json['error']['postcode'] = error_postal_verification;
+                    $json['error']['postcode'] = ERROR_POSTAL_VERIFICATION;
+                }
+                /*End Verify Postal*/
+                
+                /*Verify City*/                
+                $verifyCity = $this->model_ocean_urlredirect->verifyCity($this->request->post['city'],$this->request->post['zone_id'],$this->request->post['country_id']);
+                if(empty($verifyCity)){                
+                    $json['error']['city'] = ERROR_CITY_VERIFICATION;
                 }
                 /*End Verify Postal*/
 				
